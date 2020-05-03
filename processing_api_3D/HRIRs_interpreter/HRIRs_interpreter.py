@@ -4,26 +4,27 @@ from pysofaconventions import *
 
 class HRIRsInterpreter:
 
-'''
-Class in charge of searching for the appropiate IR.
-Returns: numpy array with the IR values.
-'''
+    '''
+    Class in charge of searching for the appropiate IR.
+    Returns: numpy array with the IR values.
+    '''
 
-    def __init__(self,SOFA_filename='./Resources/SOFA_Databases/MIT/mit_kemar_normal_pinna.sofa'):
+    def __init__(self,SOFA_filename='./Resources/SOFA_Databases/HUTUBS/HRIRs/pp1_HRIRs_measured.sofa'):
         self.SOFA_filename = SOFA_filename
-        set_database_name()
         self.HRIR_SOFA_file = sofa.SOFAFile( self.SOFA_filename, 'r')
-        create_IR_dictionary()
+        self.set_database_name()
+        self.create_IR_dictionary()
+
 
     def get_IR(self, azimuth_angle, elevation, distance):
-        if self.database_name = 'HUTUBS':
-            interpolate_elevation(elevation)
-            interpolate_azimuth_angle(azimuth_angle)
-            aux_IR = self.IR_dictionary[str(self.real_elevation)][str(self.real_azimuth_angle)]
-            adjust_to_distance(distance, aux_IR)
+        if self.database_name == 'HUTUBS':
+            self.interpolate_elevation(elevation)
+            self.interpolate_azimuth_angle(azimuth_angle)
+            aux_IR = np.array((self.IR_dictionary[str(self.real_elevation)][str(self.real_azimuth_angle)]['Left'], self.IR_dictionary[str(self.real_elevation)][str(self.real_azimuth_angle)]['Right']))
+            self.adjust_to_distance(distance, aux_IR)
             return self.required_IR
 
-    def create_IR_dictionary(self)
+    def create_IR_dictionary(self):
         ''' 
         This method creates nested dictionaries. 
         The first one classifies by elevation, then by azimuth angle and finally by Right or Left ear.
@@ -33,7 +34,7 @@ Returns: numpy array with the IR values.
         for i in range(90,-100,-10):
             if i == 90:
                 k=1
-                pos = np.arange(0)
+                pos = np.arange(0,1)
             elif i == 80:
                 k=6
                 pos = np.arange(1,7)
@@ -87,16 +88,16 @@ Returns: numpy array with the IR values.
                 pos = np.arange(433,439)
             elif i == -90:
                 k=1
-                pos = np.arange(440)
+                pos = np.arange(439,440)
 
             self.IR_dictionary.update({str(i): {} })
             for j in pos:
                 self.IR_dictionary[str(i)].update({str(int(self.HRIR_SOFA_file.getVariableValue('SourcePosition')[j,0])): { 'Left': np.array(self.HRIR_SOFA_file.getDataIR()[j,0,:]), 'Right': np.array(self.HRIR_SOFA_file.getDataIR()[j,1,:])}})
 
-        elif self.database_name = 'CIPIC':
+        #elif self.database_name == 'CIPIC':
 
     def interpolate_elevation(self, elevation):
-        if self.database_name = 'HUTUBS':
+        if self.database_name == 'HUTUBS':
             #HUTUBS database has measures with elevation resolution of 10°
             elevation_difference = elevation % 10
             if elevation_difference == 0:
@@ -107,18 +108,18 @@ Returns: numpy array with the IR values.
                 self.real_elevation = elevation + 10 - elevation_difference
 
     def interpolate_azimuth_angle(self,azimuth_angle):
-        if self.database_name = 'HUTUBS':
-            if abs(real_elevation) == 90:
+        if self.database_name == 'HUTUBS':
+            if abs(self.real_elevation) == 90:
                 resolution = 360
-            elif abs(real_elevation) == 90:
+            elif abs(self.real_elevation) == 90:
                 resolution = 60
-            elif abs(real_elevation) == 90:
+            elif abs(self.real_elevation) == 90:
                 resolution = 24
-            elif abs(real_elevation) == 90:
+            elif abs(self.real_elevation) == 90:
                 resolution = 20
-            elif abs(real_elevation) == 90:
+            elif abs(self.real_elevation) == 90:
                 resolution = 15
-            elif abs(real_elevation) == 90:
+            elif abs(self.real_elevation) == 90:
                 resolution = 12
             else:
                 resolution = 10
@@ -130,23 +131,25 @@ Returns: numpy array with the IR values.
                 self.real_azimuth_angle = azimuth_angle - azimuth_difference
             else:
                 self.real_azimuth_angle = azimuth_angle - azimuth_difference + resolution
-
+            if self.real_azimuth_angle == 360:
+                self.real_azimuth_angle = 0
+            
     def adjust_to_distance(self, distance, IR):
         self.database_distance = self.HRIR_SOFA_file.getVariableValue('SourcePosition')[0,2]
         adjustment_db = -6 * (distance - self.database_distance) / self.database_distance
-        adjustment_times = 10 ^ (adjustment_db * 20)
-        self.required_IR = IR / adjustment_times
+        adjustment_times = 10 ** (adjustment_db / 20)
+        self.required_IR = IR * adjustment_times
 
     def SOFA_change(self, SOFA_filename):
         self.SOFA_filename = SOFA_filename
         self.HRIR_SOFA_file = sofa.SOFAFile( self.SOFA_filename, 'r')
-        set_SOFA_conventions()
-        set_SOFA_sampling_rate()
-        create_IR_dictionary()
-        set_database_name()
+        self.set_SOFA_conventions()
+        self.set_SOFA_sampling_rate()
+        self.create_IR_dictionary()
+        self.set_database_name()
 
     def set_database_name(self):
-        SOFA_attributes = HRIR.getGlobalAttributesAsDict()
+        SOFA_attributes = self.HRIR_SOFA_file.getGlobalAttributesAsDict()
         self.database_name = SOFA_attributes['DatabaseName']
 
     def set_SOFA_conventions(self):
