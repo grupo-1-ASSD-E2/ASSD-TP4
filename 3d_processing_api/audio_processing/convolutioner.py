@@ -5,7 +5,8 @@ import scipy.signal as ss
 class Convolutioner:
     '''
     Provides methods for DSP in real time.
-    Minimum requirements for working are a given impulse response (IR), and the length of the successive samples of the signal being processed (L)
+    Minimum requirements for working are a given impulse response (IR), and the length of the successive samples of the signal being processed (L).
+    Overlap and save method is used since it requires no zero padding.
     '''
 
     def __init__(self, IR, length_of_input):
@@ -14,40 +15,23 @@ class Convolutioner:
         # L = size of input samples to process
         self.L = length_of_input
 
+        self.compute_IR(IR)
 
+        self.output_fft = np.zeros(self.L + self.M - 1)
+        self.output = np.zeros(self.L + self.M - 1)
         
 
     def compute_IR(self, IR):
+        # Impulse Response with zero padding that will match the length of the input samples
         self.IR = IR
+        # Transfer Function: DFT of the impulse response
+        self.TF = np.fft.fft(self.IR, self.L + self.M - 1)
 
 
-    def conv_cycle(self, input, impulse_response, window='hanning'):
-        input_w = self.apply_window(input, window)
+    def conv_cycle(self, input_signal, impulse_response):
         # Zero padding input so that the FFT matches the size of the TF being used.
-        inpt_fft = np.fft.fft(np.append(input, [0] * (self.M - 1)))
+        input_fft = np.fft.fft(input_signal)
 
-
-    def apply_window(self, signal, window='boxcar'):
-        ''' window can be: 
-            'boxcar' (rectangle),
-            'barthann' (Bartlett-Hann), 
-            'bartlett',
-            'hanning', 
-            'hamming',
-            'tukey',
-            'flattop',
-            'hann',
-            'nuttall',
-            'parzen',
-            'cosine',
-            'blackman',
-            'bohman',
-            'blackmanharris' '''
-
-        try:
-            window = getattr(ss, window)(len(signal))
-            signal_windowed = np.multiply(signal, window)
-        except AttributeError:
-            return None
-
-        return signal_windowed
+        self.output_fft = np.multiply(input_fft, self.TF)
+        self.output = np.fft.ifft(self.output_fft)
+        return self.output
