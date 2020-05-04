@@ -1,7 +1,9 @@
 import numpy as np
 import pysofaconventions as sofa
 from pysofaconventions import *
+..
 
+.
 class HRIRsInterpreter:
 
     '''
