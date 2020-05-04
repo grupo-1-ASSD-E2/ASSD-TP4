@@ -22,8 +22,7 @@ count = 0
 IR_left = hrir.getDataIR()[209,0,:].astype(np.float32)
 IR_right = hrir.getDataIR()[209,1,:].astype(np.float32)
 
-window = ss.hanning(2**10)
-inv_window = 1 / window
+add_leftover = np.zeros((6, 2**10 + 255), dtype=np.float32)
 
 # define callback (2)
 def callback(in_data, frame_count, time_info, status):
@@ -33,12 +32,26 @@ def callback(in_data, frame_count, time_info, status):
     br2_frame = br2_data[frame_count*count : frame_count*(count+1)]
     br3_frame = br3_data[frame_count*count : frame_count*(count+1)]
 
-    br1_left = ss.oaconvolve(np.multiply(br1_frame, window), IR_left, mode='same')
-    br1_right = ss.oaconvolve(np.multiply(br1_frame, window), IR_right, mode='same')
-    br2_left = ss.oaconvolve(np.multiply(br2_frame, window), IR_left, mode='same')
-    br2_right = ss.oaconvolve(np.multiply(br2_frame, window), IR_right, mode='same')
-    br3_left = ss.oaconvolve(np.multiply(br3_frame, window), IR_left, mode='same')
-    br3_right = ss.oaconvolve(np.multiply(br3_frame, window), IR_right, mode='same')
+    br1_left = ss.oaconvolve(br1_frame, IR_left, mode='full') + add_leftover[0]
+    br1_right = ss.oaconvolve(br1_frame, IR_right, mode='full') + add_leftover[1]
+    br2_left = ss.oaconvolve(br2_frame, IR_left, mode='full') + add_leftover[2]
+    br2_right = ss.oaconvolve(br2_frame, IR_right, mode='full') + add_leftover[3]
+    br3_left = ss.oaconvolve(br3_frame, IR_left, mode='full') + add_leftover[4]
+    br3_right = ss.oaconvolve(br3_frame, IR_right, mode='full') + add_leftover[5]
+    
+    add_leftover[0] = np.append(br1_left[2**10:], [0] * 2**10)
+    add_leftover[1] = np.append(br1_right[2**10:], [0] * 2**10)
+    add_leftover[2] = np.append(br2_left[2**10:], [0] * 2**10)
+    add_leftover[3] = np.append(br2_right[2**10:], [0] * 2**10)
+    add_leftover[4] = np.append(br3_left[2**10:], [0] * 2**10)
+    add_leftover[5] = np.append(br3_right[2**10:], [0] * 2**10)
+
+    br1_left = br1_left[:2**10]
+    br1_right = br1_right[:2**10]
+    br2_left = br2_left[:2**10]
+    br2_right = br2_right[:2**10]
+    br3_left = br3_left[:2**10]
+    br3_right = br3_right[:2**10]
 
     min_len_left = min(br1_left.size, br2_left.size, br3_left.size)
     min_len_right = min(br1_right.size, br2_right.size, br3_right.size)
