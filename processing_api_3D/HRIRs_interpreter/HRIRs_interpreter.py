@@ -9,7 +9,7 @@ class HRIRsInterpreter:
     Returns: numpy array with the IR values.
     '''
 
-    def __init__(self,SOFA_filename='./Resources/SOFA_Databases/HUTUBS/HRIRs/pp1_HRIRs_measured.sofa'):
+    def __init__(self,SOFA_filename='./Resources/SOFA_Databases/HUTUBS/HRIRs/pp1_HRIRs_measured.sofa'):#Subject 1 is a Kemar doll
         self.SOFA_filename = SOFA_filename
         self.HRIR_SOFA_file = sofa.SOFAFile( self.SOFA_filename, 'r')
         self.set_database_name()
