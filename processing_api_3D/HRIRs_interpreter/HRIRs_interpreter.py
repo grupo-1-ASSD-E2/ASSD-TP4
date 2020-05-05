@@ -1,6 +1,8 @@
 import numpy as np
 import pysofaconventions as sofa
 from pysofaconventions import *
+import functools
+
 
 class HRIRsInterpreter:
 
@@ -15,7 +17,6 @@ class HRIRsInterpreter:
         self.set_database_name()
         self.create_IR_dictionary()
 
-
     def get_IR(self, azimuth_angle, elevation, distance):
         self.interpolate_elevation(elevation)
         self.interpolate_azimuth_angle(azimuth_angle)
@@ -23,12 +24,13 @@ class HRIRsInterpreter:
         self.adjust_to_distance(distance, aux_IR)
         return self.required_IR
 
+    @functools.lru_cache(maxsize=1000000)
     def create_IR_dictionary(self):
         ''' 
         This method creates nested dictionaries. 
         The first one classifies by elevation, then by 
         azimuth angle and finally by Right or Left ear.
-        e.g.:Elevaton 80° azimuth 0° left ear is 
+        e.g.:Elevaton 80°, azimuth 0°, left ear should be 
         IR_dictionary['80']['0']['Left']
         '''
         self.IR_dictionary = {}
@@ -76,7 +78,7 @@ class HRIRsInterpreter:
                 self.IR_dictionary.update({str(elev): {} })
                 for j in pos:
                     self.IR_dictionary[str(elev)].update({str(int(self.HRIR_SOFA_file.getVariableValue('SourcePosition')[j,0])): { 'Left': np.array(self.HRIR_SOFA_file.getDataIR()[j,0,:]), 'Right': np.array(self.HRIR_SOFA_file.getDataIR()[j,1,:])}})
-                
+
         elif self.database_name == 'ARI':
             sorted_IR = np.array(self.HRIR_SOFA_file.getVariableValue('SourcePosition'))
             samples = np.shape(sorted_IR)[0]
@@ -216,7 +218,6 @@ class HRIRsInterpreter:
 
 
 class InternalError(Exception):
-
     def __init__(self, message):
         self.message = message
 
