@@ -1,7 +1,10 @@
 import numpy as np
 import pysofaconventions as sofa
 from pysofaconventions import *
-import functools
+import pickle
+import os
+
+
 
 
 class HRIRsInterpreter:
@@ -24,7 +27,6 @@ class HRIRsInterpreter:
         self.adjust_to_distance(distance, aux_IR)
         return self.required_IR
 
-    @functools.lru_cache(maxsize=1000000)
     def create_IR_dictionary(self):
         ''' 
         This method creates nested dictionaries. 
@@ -80,6 +82,10 @@ class HRIRsInterpreter:
                     self.IR_dictionary[str(elev)].update({str(int(self.HRIR_SOFA_file.getVariableValue('SourcePosition')[j,0])): { 'Left': np.array(self.HRIR_SOFA_file.getDataIR()[j,0,:]), 'Right': np.array(self.HRIR_SOFA_file.getDataIR()[j,1,:])}})
 
         elif self.database_name == 'ARI':
+            dat_path = self.SOFA_filename.replace("HRIRs", "DAT")
+            self.IR_dictionary = self.cargar_datos(dat_path.replace(".sofa",".dat"))
+
+            '''
             sorted_IR = np.array(self.HRIR_SOFA_file.getVariableValue('SourcePosition'))
             samples = np.shape(sorted_IR)[0]
             index = np.reshape(np.arange(0,samples),(samples,1))
@@ -96,7 +102,15 @@ class HRIRsInterpreter:
                         count +=1    
                     else:
                         break
-                
+            '''
+
+    def cargar_datos(self, filename):
+        try:
+            with open(filename, "rb") as f:
+                return pickle.load(f)
+        except (OSError, IOError) as e:
+            return dict()
+            
     def interpolate_elevation(self, elevation):
         '''
         This method interpolates the elevation required 
@@ -128,7 +142,7 @@ class HRIRsInterpreter:
             else:
                 self.real_elevation = elevation + resolution - elevation_difference
 
-    def interpolate_azimuth_angle(self,azimuth_angle):
+    def interpolate_azimuth_angle(self,azimuth_angle, count=0):
         if self.database_name == 'HUTUBS':
             azimuth_angle_int = int(azimuth_angle)
             #Azimuth angle resolution in HUTUBS varies depending on the elevation
@@ -168,6 +182,12 @@ class HRIRsInterpreter:
                 self.real_azimuth_angle = azimuth_angle - azimuth_difference
             else:
                 self.real_azimuth_angle = azimuth_angle + resolution - azimuth_difference
+            if self.IR_dictionary[str(self.real_elevation)].get(str(self.real_azimuth_angle)) == None: #See if its NaN
+                if count == 0:
+                    count += 1
+                    self.interpolate_azimuth_angle(self.real_azimuth_angle + 2.5, count)
+                elif count == 1:
+                    self.interpolate_azimuth_angle(self.real_azimuth_angle - 7.5)
             
     def adjust_to_distance(self, distance, IR):
         self.database_distance = self.HRIR_SOFA_file.getVariableValue('SourcePosition')[0,2]
@@ -180,8 +200,8 @@ class HRIRsInterpreter:
         self.HRIR_SOFA_file = sofa.SOFAFile( self.SOFA_filename, 'r')
         self.set_SOFA_conventions()
         self.set_SOFA_sampling_rate()
-        self.create_IR_dictionary()
         self.set_database_name()
+        self.create_IR_dictionary()
 
     def set_database_name(self):
         self.database_name = self.HRIR_SOFA_file.getGlobalAttributeValue('DatabaseName')

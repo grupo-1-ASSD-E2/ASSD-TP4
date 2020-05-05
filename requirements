@@ -3,4 +3,4 @@ scipy
 pysofaconventions
 pydub
 librosa
-numba
+pickle
