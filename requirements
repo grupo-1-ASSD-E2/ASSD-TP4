@@ -3,3 +3,5 @@ scipy
 pysofaconventions
 pydub
 librosa
+pyaudio
+ffmpeg
