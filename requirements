@@ -4,3 +4,4 @@ pysofaconventions
 pydub
 librosa
 pickle
+os
