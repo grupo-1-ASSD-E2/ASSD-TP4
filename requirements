@@ -5,3 +5,5 @@ pydub
 librosa
 pyaudio
 ffmpeg
+pickle
+os
