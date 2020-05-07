@@ -18,7 +18,7 @@ max_size_br = max(br1_data.size, br2_data.size, br3_data.size)
 br_data = np.vstack((np.append(br1_data, np.zeros(max_size_br - br1_data.size, dtype=br1_data.dtype)), np.append(br2_data, np.zeros(max_size_br - br2_data.size, dtype=br1_data.dtype)), np.append(br3_data, np.zeros(max_size_br - br3_data.size, dtype=br1_data.dtype))))
 print(br_data.dtype)
 print(br_data.size)
-hrir = sofa.SOFAFile('././Resources/SOFA_Databases/HUTUBS/HRIRs/pp2_HRIRs_simulated.sofa', 'r')
+hrir = sofa.SOFAFile('././Resources/SOFA_Databases/HUTUBS/HRIRs/pp1_HRIRs_measured.sofa', 'r') #'././Resources/SOFA_Databases/ARI/HRIRs/hrtf_nh2.sofa'
 print(hrir.getDataIR()[205,0,:].dtype)
 
 # instantiate PyAudio (1)
@@ -81,8 +81,8 @@ def callback(in_data, frame_count, time_info, status):
     br_left = br_left[:, :2**10]
     br_right = br_right[:, :2**10]
 
-    br_left = 1/3 * br_left[0,:] + 1/3 * br_left[1,:] + 1/3 * br_left[2,:]
-    br_right = 1/3 * br_right[0,:] + 1/3 * br_right[1,:] + 1/3 * br_right[2,:]
+    br_left = 2**(-3) * (br_left[0,:] + br_left[1,:] + br_left[2,:])
+    br_right = 2**(-3) * (br_right[0,:] + br_right[1,:] + br_right[2,:])
     # br_left = br_left[0,:]
     # br_right = br_right[0,:]
    
@@ -110,24 +110,24 @@ while_count = 0
 while stream.is_active():
     while_count += 1
     if while_count % 3 == 0:
-        IR_left = hrir.getDataIR()[209,0,:].astype(np.float32)
+        IR_left = hrir.getDataIR()[209,0,:].astype(np.float32) #6
         IR_left = np.vstack((IR_left, IR_left, IR_left))
         TF_left = sf.rfftn(IR_left, 2**10 + 2**8 - 1)
-        IR_right = hrir.getDataIR()[209,1,:].astype(np.float32)
+        IR_right = hrir.getDataIR()[209,1,:].astype(np.float32) #6
         IR_right = np.vstack((IR_right, IR_right, IR_right))
         TF_right = sf.rfftn(IR_right, 2**10 + 2**8 - 1)
     elif while_count % 3 == 1:
-        IR_left = hrir.getDataIR()[209,0,:].astype(np.float32) #205
+        IR_left = hrir.getDataIR()[205,0,:].astype(np.float32) #396
         IR_left = np.vstack((IR_left, IR_left, IR_left))
         TF_left = sf.rfftn(IR_left, 2**10 + 2**8 - 1)
-        IR_right = hrir.getDataIR()[209,1,:].astype(np.float32) #205
+        IR_right = hrir.getDataIR()[205,1,:].astype(np.float32) #396
         IR_right = np.vstack((IR_right, IR_right, IR_right))
         TF_right = sf.rfftn(IR_right, 2**10 + 2**8 - 1)
     elif while_count % 3 == 2:
-        IR_left = hrir.getDataIR()[209,0,:].astype(np.float32) #227
+        IR_left = hrir.getDataIR()[227,0,:].astype(np.float32) #1029
         IR_left = np.vstack((IR_left, IR_left, IR_left))
         TF_left = sf.rfftn(IR_left, 2**10 + 2**8 - 1)
-        IR_right = hrir.getDataIR()[209,1,:].astype(np.float32) #227
+        IR_right = hrir.getDataIR()[227,1,:].astype(np.float32) #1029
         IR_right = np.vstack((IR_right, IR_right, IR_right))
         TF_right = sf.rfftn(IR_right, 2**10 + 2**8 - 1)
 
