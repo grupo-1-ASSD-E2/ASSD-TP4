@@ -52,12 +52,11 @@ def callback(in_data, frame_count, time_info, status):
     br2_right = br2_right[:2**10]
     br3_left = br3_left[:2**10]
     br3_right = br3_right[:2**10]
-
-    min_len_left = min(br1_left.size, br2_left.size, br3_left.size)
-    min_len_right = min(br1_right.size, br2_right.size, br3_right.size)
-
-    br_left = 1/3 * br1_left[:min_len_left] + 1/3 * br2_left[:min_len_left] + 1/3 * br3_left[:min_len_left]
-    br_right = 1/3 * br1_right[:min_len_right] + 1/3 * br2_right[:min_len_right] + 1/3 * br3_right[:min_len_right]
+    
+    # br_left = 1/3 * br_left[0,:] + 1/3 * br_left[1,:] + 1/3 * br_left[2,:]
+    # br_right = 1/3 * br_right[0,:] + 1/3 * br_right[1,:] + 1/3 * br_right[2,:]
+    br_left = br1_left
+    br_right = br1_right
 
     ret_data = np.empty((br_left.size + br_right.size), dtype=br3_left.dtype)
     ret_data[1::2] = br_left
