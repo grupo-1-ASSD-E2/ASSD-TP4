@@ -2,13 +2,36 @@ import numpy as np
 import scipy.io.wavfile as sw
 import scipy.signal as ss
 import pyaudio
+import librosa
+
+
+np_to_pa_format = {
+    np.float32 : pyaudio.paFloat32,
+    np.int32 : pyaudio.paInt32,
+    np.int16 : pyaudio.paInt16,
+    np.int8 : pyaudio.paInt8,
+    np.uint8 : pyaudio.paUInt8
+}
+
+STEREO = 2
+MONO = 1
+
 
 class Convolutioner:
     '''
     Provides methods for DSP in real time.
     Minimum requirements for working are a given impulse response (IR), and the length of the successive samples of the signal being processed (L).
     Overlap and save method is used since it requires no zero padding.
-    input_array is the audio to be processed. Must be array-like (1D or 2D).
+
+    input_files is a list of files containing paths to files containing the tracks to be processed. self.input_array will be a numpy array constructed from the data in those files.
+    Formats like mp3 or wav are accepted.
+
+    input_rate is the sampling rate in Hz used for sampling the audio input file. Default is 44.1KHz.
+
+    input_dtype is the data type used for each element in self.input_array. Default is np.float32. 
+    np.float64 and np.int64 will be casted to np.float32 and np.int32 since float64 and int64 are not supported by PyAudio.
+
+    frame_count is the amount of samples to be processed in call of the callback. Default is 1024.
     
     IR_left, IR_right are the impulse response of the filter which will be used to process left and right channels, respectively. Must be array-like (1D or 2D). 
     If both are the same, the sound will be same as mono, if different, stereo.
@@ -18,31 +41,74 @@ class Convolutioner:
     If IR_left and IR_right are 2D but have a larger amount of rows from input_array, the exceeding rows will be ignored.
     '''
 
-    def __init__(self, IR_left=np.ones(1), IR_right=np.ones(1), input_array=np.array([])):
-        self.set_input(input_array)
-
+    def __init__(self, IR_left=np.ones(1), IR_right=np.ones(1), input_files=[], input_rate=44100, input_dtype=np.float32, frame_count=2**10):
+        self.compute_input_files(input_files, input_rate, input_dtype)
         self.compute_IR(IR_left, IR_right)
 
         # Keeps count of the frames processed by the callback in non blocking mode.
         self.cycle_count = 0
         # Output data as an ndarray, where each row is a track in the song/sound.
-        self.output_array = np.array([])
+        self.output_array = np.array([], dtype=self.input_array.dtype)
         # If True, output is saved to self.output_array
-        self.save_output = False
+        self.save_output = True
         # Determines gain of added tracks when mixing them (generally <1)
-        
+        self.adjust_mixing_gain()
 
-        #todo self.output_fft = np.zeros(self.L + self.M - 1)
-        #todo self.output = np.zeros(self.L + self.M - 1)
+
+    def compute_input_files(self, files, input_rate=44100, input_dtype=np.float32):
+        # Sampling rate of the audio files.
+        self.sampling_rate = int(input_rate)
+
+        audio_data = []
+        for file_path in files:
+            new_data, new_rate = librosa.load(file_path, sr=self.sampling_rate, dtype=input_dtype)
+            audio_data.append(new_data.tolist())
+
+        # Adding zeros to make all files of the same size.
+        max_size_file = max([len(track) for track in audio_data])
+        for track in audio_data:
+            track = track + [0] * (max_size_file - len(track))
+
+        self.set_input(audio_data, tracks_dtype=input_dtype)
+
+
+    def set_input(self, tracks, tracks_dtype):
+        '''
+        tracks_to_add must be an ndarray containint the tracks as rows.
+        '''
+        # Input data to process as an ndarray, where each row is a track in the song/sound.
+        self.input_array = np.array(tracks, dtype=tracks_dtype)
+        if self.input_array.ndim == 1:
+            self.input_array = np.reshape(self.input_array, (1, tracks.size))
+            
+        self.adjust_to_new_input()
+
+
+    def add_tracks_to_input(self, tracks_to_add):
+        '''
+        tracks_to_add must be an ndarray containint the tracks as rows.
+        '''
+        self.input_array = np.vstack(self.input_array, tracks_to_add, dtype=self.input_array.dtype)
+        self.adjust_to_new_input()
+
+
+    def adjust_to_new_input(self):
+        '''
+        Adjusts class variables to new input.
+        '''
+        # Number of tracks, a.k.a. number of rows in self.input_array.
+        self.tracks_num = self.input_array.shape[0]
+        # Number of tracks to process, i.e. number of row in self.input_array.
+        self.L = self.input_array.shape[1]
         
 
     def compute_IR(self, IR_left, IR_right):
         # Impulse Response for the left channel
-        self.IR_left = np.array(IR_left)
+        self.IR_left = np.array(IR_left, dtype=self.input_array.dtype)
         self.IR_left = self.reshape_IR(self.IR_left)
 
         # Impulse Response for the right channel
-        self.IR_right = IR_right
+        self.IR_right = np.array(IR_right, dtype=self.input_array.dtype)
         self.IR_right = self.reshape_IR(self.IR_right)
 
         # M = size of IR_left.
@@ -64,49 +130,19 @@ class Convolutioner:
             IR_ret = IR
             # Repeating IR for every track.
             for i in range(self.input_array.shape[0] - 1):
-                IR_ret = np.vstack(IR_ret, IR)
+                IR_ret = np.vstack(IR_ret, IR, dtype=self.input_array.dtype)
 
         elif IR.shape[0] < self.input_array.shape[0]:
             # Filling the IR with deltas
             IR_ret = IR
             deltas_to_add = self.input_array.shape[0] - IR.shape[0]
-            IR_delta = np.hstack((1 * np.ones((deltas_to_add, 1), dtype=IR.dtype), np.zeros((deltas_to_add, IR.shape[1] - 1), dtype=IR.dtype)))
-            IR_ret = np.vstack(IR_ret, IR_delta)
+            IR_delta = np.hstack((1 * np.ones((deltas_to_add, 1), dtype=self.input_array.dtype), np.zeros((deltas_to_add, IR.shape[1] - 1), dtype=self.input_array.dtype)))
+            IR_ret = np.vstack(IR_ret, IR_delta, dtype=self.input_array.dtype)
 
         else:
             IR_ret = IR
 
         return IR_ret
-
-
-    def set_input(self, tracks):
-        '''
-        tracks_to_add must be an ndarray containint the tracks as rows.
-        '''
-        # Input data to process as an ndarray, where each row is a track in the song/sound.
-        self.input_array = np.array(tracks)
-        if self.input_array.ndim == 1:
-            self.input_array = np.reshape(self.input_array, (1, tracks.size))
-            
-        self.adjust_to_new_input()
-
-
-    def add_tracks_to_input(self, tracks_to_add):
-        '''
-        tracks_to_add must be an ndarray containint the tracks as rows.
-        '''
-        self.input_array = np.vstack(self.input_array, tracks_to_add)
-        self.adjust_to_new_input()
-
-
-    def adjust_to_new_input(self):
-        '''
-        Adjusts class variables to new input.
-        '''
-        # Number of tracks, a.k.a. number of rows in self.input_array.
-        self.tracks_num = self.input_array.shape[0]
-        # Number of tracks to process, i.e. number of row in self.input_array.
-        self.L = self.input_array.shape[1]
 
 
     def adjust_mixing_gain(self):
@@ -137,33 +173,35 @@ class Convolutioner:
                                 dtype=self.input_array.dtype)))
 
         # Setting up output arrays.
-        audio_frame_left = np.zeros((self.tracks_num, self.L + self.M_left - 1), dtype=audio_frame.dtype)
-        audio_frame_right = np.zeros((self.tracks_num, self.L + self.M_right - 1), dtype=audio_frame.dtype)
+        audio_left = np.zeros((self.tracks_num, frame_count + self.M_left - 1), dtype=self.input_array.dtype)
+        audio_right = np.zeros((self.tracks_num, frame_count + self.M_right - 1), dtype=self.input_array.dtype)
 
         # Processing each track of the frame using the scipy overlap and add convolution, but also performing overlap and on the whole thing since we are processing the input by frames.
         for i in range(audio_frame.shape[0]):
-            audio_frame_left[i]  = ss.oaconvolve(audio_frame[i], self.IR_left[i], mode='full') + self.leftover_left[i]
-            audio_frame_right[i] = ss.oaconvolve(audio_frame[i], self.IR_right[i], mode='full') + self.leftover_right[i]
+            audio_left[i]  = ss.oaconvolve(audio_frame[i], self.IR_left[i], mode='full') + self.leftover_left[i]
+            audio_right[i] = ss.oaconvolve(audio_frame[i], self.IR_right[i], mode='full') + self.leftover_right[i]
     
         # Saving last self.M - 1 elements for next cycle.
-        self.leftover_left = np.hstack((audio_frame_left[:, frame_count:], np.zeros((self.tracks_num, frame_count), dtype=audio_frame.dtype)))
-        self.leftover_right = np.hstack((audio_frame_right[:, frame_count:], np.zeros((self.tracks_num, frame_count), dtype=audio_frame.dtype)))
+        self.leftover_left = np.hstack((audio_left[:, frame_count:], np.zeros((self.tracks_num, frame_count), dtype=self.input_array.dtype)))
+        self.leftover_right = np.hstack((audio_right[:, frame_count:], np.zeros((self.tracks_num, frame_count), dtype=self.input_array.dtype)))
 
         # Discarding last self.M - 1 elements.
-        audio_frame_left = audio_frame_left[:, :frame_count]
-        audio_frame_right = audio_frame_right[:, :frame_count]
+        audio_left = audio_left[:, :frame_count]
+        audio_right = audio_right[:, :frame_count]
 
         # Mixing tracks.
-        audio_frame_left = self.mixing_gain * np.sum(audio_frame_left, axis=0)
-        audio_frame_right = self.mixing_gain * np.sum(audio_frame_right, axis=0)
+        audio_left = self.mixing_gain * np.sum(audio_left, axis=0)
+        audio_right = self.mixing_gain * np.sum(audio_right, axis=0)
     
         # Preparing data to send to PyAudio.
-        out_data = np.empty((audio_frame_left.size + audio_frame_right.size), dtype=audio_frame.dtype)
+        out_data = np.empty((audio_left.size + audio_right.size), dtype=self.input_array.dtype)
         # Odd elements are going to the left channel.
-        out_data[1::2] = audio_frame_left
+        out_data[1::2] = audio_left
         # Even elements are going to the right channel.
-        out_data[0::2] = audio_frame_right
+        out_data[0::2] = audio_right
 
+        if self.save_output:
+            self.output_array = np.append(self.output_array, out_data)
         
         ret_data = out_data.tostring()
 
@@ -172,10 +210,82 @@ class Convolutioner:
         return (ret_data, pyaudio.paContinue)
 
 
-    # def conv_cycle(self, input_signal, impulse_response):
-    #     # Zero padding input so that the FFT matches the size of the TF being used.
-    #     input_fft = np.fft.fft(input_signal)
+    def start_non_blocking_processing(self, save_output=True, frame_count=2**10, listen_output=True):
+        '''
+        Non blocking mode works on a different thread, therefore, the main thread must be kept active with, for example:
+            while processing():
+                time.sleep(1)
+        '''
+        self.save_output = save_output
 
-    #     self.output_fft = np.multiply(input_fft, self.TF)
-    #     self.output = np.fft.ifft(self.output_fft)
-    #     return self.output
+        # Initiate PyAudio
+        self.pa = pyaudio.PyAudio()
+        # Open stream using callback
+        self.stream = self.pa.open(format=np_to_pa_format[self.input_array.dtype],
+                        channels=STEREO,
+                        rate=self.sampling_rate,
+                        output=listen_output,
+                        input=not listen_output,
+                        stream_callback=self.pyaudio_callback,
+                        frames_per_buffer=frame_count)
+
+        # Start the stream
+        self.stream.start_stream()
+
+
+    def processing(self):
+        '''
+        Returns true if the PyAudio stream is still active in non blocking mode.
+        MUST be called AFTER self.start_non_blocking_processing.
+        '''
+        return self.stream.is_active()
+
+
+    def terminate_processing(self):
+        '''
+        Terminates stream opened by self.start_non_blocking_processing.
+        MUST be called AFTER self.processing returns False.
+        '''
+        # Stop stream
+        self.stream.stop_stream()
+        self.stream.close()
+
+        # Close PyAudio
+        self.pa.terminate()
+
+
+    def start_blocking_processing(self):
+        # Setting up output arrays.
+        audio_left = np.zeros((self.tracks_num, self.L + self.M_left - 1), dtype=self.input_array.dtype)
+        audio_right = np.zeros((self.tracks_num, self.L + self.M_right - 1), dtype=self.input_array.dtype)
+
+        # Processing each track of the frame using the scipy overlap and add convolution, but also performing overlap and on the whole thing since we are processing the input by frames.
+        for i in range(self.input_array.shape[0]):
+            audio_left[i]  = ss.oaconvolve(self.input_array[i], self.IR_left[i], mode='full') + self.leftover_left[i]
+            audio_right[i] = ss.oaconvolve(self.input_array[i], self.IR_right[i], mode='full') + self.leftover_right[i]
+    
+        # Saving last self.M - 1 elements for next cycle.
+        self.leftover_left = np.hstack((audio_left[:, self.L:], np.zeros((self.tracks_num, self.L), dtype=self.input_array.dtype)))
+        self.leftover_right = np.hstack((audio_right[:, self.L:], np.zeros((self.tracks_num, self.L), dtype=self.input_array.dtype)))
+
+        # Discarding last self.M - 1 elements.
+        audio_left = audio_left[:, :self.L]
+        audio_right = audio_right[:, :self.L]
+
+        # Mixing tracks.
+        audio_left = self.mixing_gain * np.sum(audio_left, axis=0)
+        audio_right = self.mixing_gain * np.sum(audio_right, axis=0)
+    
+        # Preparing data to send to PyAudio.
+        out_data = np.empty((audio_left.size + audio_right.size), dtype=self.input_array.dtype)
+        # Odd elements are going to the left channel.
+        out_data[1::2] = audio_left
+        # Even elements are going to the right channel.
+        out_data[0::2] = audio_right
+
+        if self.save_output:
+            self.output_array = np.append(self.output_array, out_data)
+
+
+    def get_output_file(self, path_to_output):
+        pass #TODO 
