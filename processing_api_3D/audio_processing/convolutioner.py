@@ -1,8 +1,8 @@
 import numpy as np
-import scipy.io.wavfile as sw
 import scipy.signal as ss
 import pyaudio
 import librosa
+import wave
 
 
 np_to_pa_format = {
@@ -12,9 +12,15 @@ np_to_pa_format = {
     np.int8 : pyaudio.paInt8,
     np.uint8 : pyaudio.paUInt8
 }
+np_type_to_sample_width = {
+    np.float32 : 5,
+    np.int32 : 5,
+    np.int16 : 4,
+    np.int8 : 3,
+    np.uint8 : 3
+}
 
 STEREO = 2
-MONO = 1
 
 
 class Convolutioner:
@@ -52,16 +58,16 @@ class Convolutioner:
         # If True, output is saved to self.output_array
         self.save_output = True
         # Determines gain of added tracks when mixing them (generally <1)
-        self.adjust_mixing_gain()
+        self.auto_adjust_mixing_gain()
 
 
     def compute_input_files(self, files, input_rate=44100, input_dtype=np.float32):
         # Sampling rate of the audio files.
-        self.sampling_rate = int(input_rate)
+        self.sample_rate = int(input_rate)
 
         audio_data = []
         for file_path in files:
-            new_data, new_rate = librosa.load(file_path, sr=self.sampling_rate, dtype=input_dtype)
+            new_data, new_rate = librosa.load(file_path, sr=self.sample_rate, dtype=input_dtype)
             audio_data.append(new_data.tolist())
 
         # Adding zeros to make all files of the same size.
@@ -145,13 +151,16 @@ class Convolutioner:
         return IR_ret
 
 
-    def adjust_mixing_gain(self):
+    def auto_adjust_mixing_gain(self):
         '''
         Determines optimum gain to apply to the mixing of tracks.
         '''
         #TODO MAKE THIS PROPERLY: THis is hardcoded for HUTUBS HRIRs.
         self.mixing_gain = 2**(-3)
 
+
+    def set_mixing_gain(self, gain):
+        self.mixing_gain = gain
 
     def pyaudio_callback(self, in_data, frame_count, time_info, status):
         '''
@@ -223,7 +232,7 @@ class Convolutioner:
         # Open stream using callback
         self.stream = self.pa.open(format=np_to_pa_format[self.input_array.dtype],
                         channels=STEREO,
-                        rate=self.sampling_rate,
+                        rate=self.sample_rate,
                         output=listen_output,
                         input=not listen_output,
                         stream_callback=self.pyaudio_callback,
@@ -287,5 +296,13 @@ class Convolutioner:
             self.output_array = np.append(self.output_array, out_data)
 
 
-    def get_output_file(self, path_to_output):
-        pass #TODO 
+    def get_output_file(self, path_to_output, sample_rate=None):
+        if sample_rate == None:
+            sample_rate = self.sample_rate
+
+        out_file = wave.open(path_to_output, 'w')
+        sample_width = np_type_to_sample_width[self.output_array.dtype]
+        out_file.setparams((STEREO, sample_width, sample_rate, 0, 'NONE', 'not compressed'))
+
+        out_file.writeframes(self.output_array)
+        out_file.close()
