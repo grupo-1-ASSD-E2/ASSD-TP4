@@ -146,6 +146,8 @@ class HRIRsInterpreter:
         if self.database_name == 'HUTUBS':
             azimuth_angle_int = int(azimuth_angle)
             #Azimuth angle resolution in HUTUBS varies depending on the elevation
+            self.real_azimuth_angle = min(self.IR_dictionary, key = lambda v: abs(self.IR_dictionary[self.real_elevation][v] - azimuth_angle))
+            '''
             if abs(self.real_elevation) == 90:
                 resolution = 360
             elif abs(self.real_elevation) == 90:
@@ -170,12 +172,14 @@ class HRIRsInterpreter:
                 self.real_azimuth_angle = azimuth_angle_int - azimuth_difference + resolution
             if self.real_azimuth_angle == 360:
                 self.real_azimuth_angle = 0
+                '''
 
         elif self.database_name == 'ARI':
             #Azimuth angle resolution in ARI is constantly 2.5°
             resolution = 2.5
             azimuth_difference = int(np.round(azimuth_angle % resolution))
-
+            self.real_azimuth_angle = min(self.IR_dictionary, key = lambda v: abs(self.IR_dictionary[self.real_elevation][v] - azimuth_angle))
+            '''
             if azimuth_difference == 0:
                 self.real_azimuth_angle = azimuth_angle 
             elif azimuth_difference < resolution / 2:
@@ -188,7 +192,8 @@ class HRIRsInterpreter:
                     self.interpolate_azimuth_angle(self.real_azimuth_angle + 2.5, count)
                 elif count == 1:
                     self.interpolate_azimuth_angle(self.real_azimuth_angle - 7.5)
-            
+            '''
+
     def adjust_to_distance(self, distance, IR):
         self.database_distance = self.HRIR_SOFA_file.getVariableValue('SourcePosition')[0,2]
         adjustment_db = -6 * (distance - self.database_distance) / self.database_distance
