@@ -39,6 +39,11 @@ class Convolutioner:
     np.float64 and np.int64 will be casted to np.float32 and np.int32 since float64 and int64 are not supported by PyAudio.
 
     frame_count is the amount of samples to be processed in call of the callback. Default is 2**15.
+
+    The method that processes the frames can me changed. Default is processing using the IRs.
+    To change it call:
+        self.custom_processing_callback(my_callback)
+    my_callback should receive one argument 'audio_frame' of shape (self.tracks_num, self.frame_count) and return a tuple (audio_left_processed, audio_right_processed)
     
     IR_left, IR_right are the impulse response of the filter which will be used to process left and right channels, respectively. Must be array-like (1D or 2D). 
     If both are the same, the sound will be same as mono, if different, stereo.
@@ -66,6 +71,9 @@ class Convolutioner:
         # When working with non blocking mode, this saves the last elements of the previos frame processed to add them to the first elements of the new frame processed (overlap and add)
         self.leftover_left = np.zeros((self.tracks_num, self.frame_count + self.M_left - 1), dtype=self.input_array.dtype)
         self.leftover_right = np.zeros((self.tracks_num, self.frame_count + self.M_right - 1), dtype=self.input_array.dtype)
+
+        # Method that processes the frames. Default is processing using the IRs, but can be changed
+        self.processing_callback = self.convolve_cycle
 
 
     def compute_input_files(self, files, input_rate=44100, input_dtype=np.float32):
@@ -184,6 +192,10 @@ class Convolutioner:
         self.mixing_gain = gain
 
 
+    def custom_processing_callback(self, custom_callback):
+        self.processing_callback = custom_callback
+
+
     def start_non_blocking_processing(self, save_output=True, frame_count=2**15, listen_output=True):
         '''
         Non blocking mode works on a different thread, therefore, the main thread must be kept active with, for example:
@@ -281,7 +293,7 @@ class Convolutioner:
                                 np.zeros((self.tracks_num, frame_count - frames_left), 
                                 dtype=self.input_array.dtype)))
 
-        audio_left, audio_right = self.convolve_cycle(audio_frame)
+        audio_left, audio_right = self.processing_callback(audio_frame)
 
         # Mixing tracks.
         audio_left = self.mixing_gain * np.sum(audio_left, axis=0)
