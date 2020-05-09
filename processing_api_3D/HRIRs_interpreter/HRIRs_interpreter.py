@@ -14,7 +14,7 @@ class HRIRsInterpreter:
     Returns: numpy array with the IR values.
     '''
 
-    def __init__(self,SOFA_filename='./Resources/SOFA_Databases/ARI/HRIRs/hrtf_nh2.sofa'):#Subject 1 is a Kemar doll in HUTUBS
+    def __init__(self,SOFA_filename='./Resources/SOFA_Databases/HUTUBS/HRIRs/pp1_HRIRs_measured.sofa'):#Subject 1 is a Kemar doll in HUTUBS
         self.SOFA_filename = SOFA_filename
         self.HRIR_SOFA_file = sofa.SOFAFile( self.SOFA_filename, 'r')
         self.set_database_name()
@@ -174,7 +174,7 @@ class HRIRsInterpreter:
         elif self.database_name == 'ARI':
             #Azimuth angle resolution in ARI is constantly 2.5°
             resolution = 2.5
-            azimuth_difference = azimuth_angle % resolution
+            azimuth_difference = int(np.round(azimuth_angle % resolution))
 
             if azimuth_difference == 0:
                 self.real_azimuth_angle = azimuth_angle 
