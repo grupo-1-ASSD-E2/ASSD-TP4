@@ -233,12 +233,17 @@ class Convolutioner:
         Terminates stream opened by self.start_non_blocking_processing.
         MUST be called AFTER self.processing returns False.
         '''
-        # Stop stream
+        # Stop stream.
         self.stream.stop_stream()
         self.stream.close()
 
-        # Close PyAudio
+        # Close PyAudio.
         self.pa.terminate()
+
+        # Resets count.
+        self.cycle_count = 0
+        # Resets output.
+        self.output_array = np.array([[], []], dtype=self.input_array.dtype).T
 
 
     def start_blocking_processing(self):
