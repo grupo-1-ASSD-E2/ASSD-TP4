@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <SOLibPaths>C:\Users\facun\OneDrive\Desktop\ITBA\6C ASSD\ASSD-TP4\3DTIMobile\ARM\Release\lib_3DTIMobile.so;C:\Microsoft\AndroidNDK64\android-ndk-r16b\prebuilt\android-arm\gdbserver\gdbserver;C:\Microsoft\AndroidNDK64\android-ndk-r16b\sources\cxx-stl\llvm-libc++\libs\armeabi-v7a\libandroid_support.a;C:\Microsoft\AndroidNDK64\android-ndk-r16b\sources\cxx-stl\llvm-libc++\libs\armeabi-v7a\libc++_static.a;C:\Microsoft\AndroidNDK64\android-ndk-r16b\sources\cxx-stl\llvm-libc++\libs\armeabi-v7a\libc++abi.a</SOLibPaths>
+  <AndroidLibPaths />
+  <OObjPaths>C:\Users\facun\OneDrive\Desktop\ITBA\6C ASSD\ASSD-TP4\3DTIMobile\3DTIMobile\3DTIMobile.Android\ARM\Release</OObjPaths>
+  <Configuration>Release</Configuration>
+  <Platform>ARM</Platform>
+  <AndroidArchitecture>armeabi-v7a</AndroidArchitecture>
+  <!--links to other recipe files-->
+  <RecipeFiles />
+</project>
