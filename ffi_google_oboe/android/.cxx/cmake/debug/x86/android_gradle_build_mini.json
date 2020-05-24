@@ -1,0 +1,26 @@
+{
+  "buildFiles": [
+    "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\oboe\\CMakeLists.txt",
+    "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "oboe-Debug-x86": {
+      "artifactName": "oboe",
+      "buildCommand": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\x86\" oboe",
+      "abi": "x86",
+      "output": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\x86\\oboe\\liboboe.a"
+    },
+    "ffi_google_oboe-Debug-x86": {
+      "artifactName": "ffi_google_oboe",
+      "buildCommand": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\x86\" ffi_google_oboe",
+      "abi": "x86",
+      "output": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\example\\build\\ffi_google_oboe\\intermediates\\cmake\\debug\\obj\\x86\\libffi_google_oboe.so"
+    }
+  }
+}

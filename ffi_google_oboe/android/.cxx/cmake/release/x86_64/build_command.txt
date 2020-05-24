@@ -1,0 +1,20 @@
+Executable : C:\Users\facun\AppData\Local\Android\sdk\cmake\3.10.2.4988404\bin\cmake.exe
+arguments : 
+-HC:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\android
+-DCMAKE_BUILD_TYPE=Release
+-DCMAKE_TOOLCHAIN_FILE=C:\Users\facun\AppData\Local\Android\sdk\ndk\21.1.6352462\build\cmake\android.toolchain.cmake
+-DANDROID_ABI=x86_64
+-DANDROID_NDK=C:\Users\facun\AppData\Local\Android\sdk\ndk\21.1.6352462
+-DANDROID_PLATFORM=android-16
+-DCMAKE_ANDROID_ARCH_ABI=x86_64
+-DCMAKE_ANDROID_NDK=C:\Users\facun\AppData\Local\Android\sdk\ndk\21.1.6352462
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\example\build\ffi_google_oboe\intermediates\cmake\release\obj\x86_64
+-DCMAKE_MAKE_PROGRAM=C:\Users\facun\AppData\Local\Android\sdk\cmake\3.10.2.4988404\bin\ninja.exe
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_SYSTEM_VERSION=16
+-BC:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\android\.cxx\cmake\release\x86_64
+-GNinja
+jvmArgs : 
+
+Build command args:
