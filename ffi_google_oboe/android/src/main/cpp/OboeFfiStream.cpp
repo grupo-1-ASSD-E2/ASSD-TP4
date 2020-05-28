@@ -9,6 +9,7 @@ OboeFfiStream::OboeFfiStream() {
     oboe::AudioStreamBuilder builder;
     builder.setFormat(oboe::AudioFormat::Float)
         ->setChannelCount(oboe::ChannelCount::Mono);
+    builder.setSampleRate(48000);
 
     oboe::Result result = builder.openManagedStream(managedStream);
 }
@@ -30,5 +31,5 @@ void OboeFfiStream::stop() {
 }
 
 void OboeFfiStream::write(float *data, int32_t size) {
-
+    managedStream->write(data, size, 1000000);
 }

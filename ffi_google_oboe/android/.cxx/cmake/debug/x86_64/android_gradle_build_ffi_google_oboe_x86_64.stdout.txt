@@ -1,4 +1,2 @@
 ninja: Entering directory `C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\android\.cxx\cmake\debug\x86_64'
-[1/3] Building CXX object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o
-[2/3] Building CXX object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o
-[3/3] Linking CXX shared library C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\example\build\ffi_google_oboe\intermediates\cmake\debug\obj\x86_64\libffi_google_oboe.so
+ninja: no work to do.

@@ -55,3 +55,7 @@
 9	824	611970948	CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o	aac889ba8fb821df
 19	833	611970948	CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o	563c8b13d0c13b34
 833	1064	611970948	C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86/libffi_google_oboe.so	ef0ec95a034d4d3b
+10	831	612398085	CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o	aac889ba8fb821df
+831	1975	612398086	C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86/libffi_google_oboe.so	ef0ec95a034d4d3b
+12	991	612398766	CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o	aac889ba8fb821df
+992	1287	612398766	C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86/libffi_google_oboe.so	ef0ec95a034d4d3b
