@@ -7,6 +7,7 @@
 
 #include "oboe/Oboe.h"
 #include <cstdint>
+#include <cstring>
 
 class OboeFfiStream {
 public:
@@ -17,6 +18,7 @@ public:
     void start();
     void stop();
     void write(float* data, int32_t size);
+    bool loadAudioSource(std::string path);
 
 
 private:

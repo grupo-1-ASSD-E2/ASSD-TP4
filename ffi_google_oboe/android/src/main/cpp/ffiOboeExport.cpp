@@ -3,6 +3,7 @@
 //
 
 #include "OboeFfiStream.h"
+#include "utils/logging.h"
 
 #ifdef __cplusplus
 #define EXTERNC extern "C"
@@ -38,4 +39,8 @@ EXTERNC void stream_write(void* ptr, void* data, int32_t size) {
     auto stream = static_cast<OboeFfiStream*>(ptr);
     auto dataToWrite = static_cast<float*>(data);
     stream->write(dataToWrite, size);
+}
+
+EXTERNC void load_file(void* ptr) {
+
 }

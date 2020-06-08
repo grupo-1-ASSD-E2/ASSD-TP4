@@ -2,7 +2,11 @@ import 'dart:math';
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'dart:async';
+import 'package:path_provider/path_provider.dart';
+import 'package:audioplayer/audioplayer.dart';
+import 'dart:io';
 
 import 'package:ffi_google_oboe/ffi_google_oboe.dart';
 // import 'package:flutter/services.dart';
@@ -19,36 +23,23 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   final stream = OboeStream();
 
-  final noise = Float32List(512);
+  var noise = Float32List(512);
   Timer t;
 
   @override
   void initState() {
     super.initState();
     for (var i = 0; i < noise.length; i++) {
-      noise[i] = sin(8 * pi * 1 / noise.length);
+      noise[i] = sin(8 * pi * i / noise.length);
     }
+    
+    // _loadSound();
   }
 
-  // // Platform messages are asynchronous, so we initialize in an async method.
-  // Future<void> initPlatformState() async {
-  //   String platformVersion;
-  //   // Platform messages may fail, so we use a try/catch PlatformException.
-  //   try {
-  //     platformVersion = await FfiGoogleOboe.platformVersion;
-  //   } on PlatformException {
-  //     platformVersion = 'Failed to get platform version.';
-  //   }
-
-  //   // If the widget was removed from the tree while the asynchronous platform
-  //   // message was in flight, we want to discard the reply rather than calling
-  //   // setState to update our non-existent appearance.
-  //   if (!mounted) return;
-
-  //   setState(() {
-  //     _platformVersion = platformVersion;
-  //   });
-  // }
+  void _loadSound() async {
+    final ByteData data = await rootBundle.load('assets/hola.mp3');
+    noise = data.buffer.asFloat32List();
+  }
 
   @override
   void dispose() {

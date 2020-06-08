@@ -4,6 +4,7 @@
 
 #include <oboe/AudioStreamBuilder.h>
 #include "OboeFfiStream.h"
+#include "utils/logging.h"
 
 OboeFfiStream::OboeFfiStream() {
     oboe::AudioStreamBuilder builder;
@@ -32,4 +33,16 @@ void OboeFfiStream::stop() {
 
 void OboeFfiStream::write(float *data, int32_t size) {
     managedStream->write(data, size, 1000000);
+}
+
+bool OboeFfiStream::loadAudioSource(std::string path) {
+//    std::shared_ptr<AAssetDataSource> mClapSource {
+//            AAssetDataSource::newFromCompressedAsset(mAssetManager, "CLAP.mp3")
+//    };
+//    if (mClapSource == nullptr) {
+//        LOGE("Could not load source data for clap sound");
+//        return false;
+//    }
+//
+    return true;
 }
