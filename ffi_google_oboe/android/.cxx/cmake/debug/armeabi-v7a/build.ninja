@@ -41,14 +41,14 @@ build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o: CXX_COMPI
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
   DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\ffiOboeExport.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC
-  INCLUDES = -I../../../../../../oboe/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp
 build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/OboeFfiStream.cpp || cmake_object_order_depends_target_ffi_google_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
   DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\OboeFfiStream.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC
-  INCLUDES = -I../../../../../../oboe/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp
 

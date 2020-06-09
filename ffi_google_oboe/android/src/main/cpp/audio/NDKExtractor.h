@@ -20,7 +20,6 @@
 
 #include <cstdint>
 #include <android/asset_manager.h>
-#include <GameConstants.h>
 
 
 class NDKExtractor {

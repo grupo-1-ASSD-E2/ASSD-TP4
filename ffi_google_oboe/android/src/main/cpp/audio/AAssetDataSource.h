@@ -18,12 +18,7 @@
 #define RHYTHMGAME_AASSETDATASOURCE_H
 
 #include <android/asset_manager.h>
-#include "DataSource.h"
-
-struct AudioProperties {
-    int32_t channelCount;
-    int32_t sampleRate;
-};
+#include <audio/DataSource.h>
 
 class AAssetDataSource : public DataSource {
 

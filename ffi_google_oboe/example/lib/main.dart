@@ -29,15 +29,15 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    for (var i = 0; i < noise.length; i++) {
-      noise[i] = sin(8 * pi * i / noise.length);
-    }
+    // for (var i = 0; i < noise.length; i++) {
+    //   noise[i] = sin(8 * pi * i / noise.length);
+    // }
     
-    // _loadSound();
+    _loadSound();
   }
 
   void _loadSound() async {
-    final ByteData data = await rootBundle.load('assets/hola.mp3');
+    final ByteData data = await rootBundle.load('assets/queen_bohemian_rhapsody_cut.wav');
     noise = data.buffer.asFloat32List();
   }
 

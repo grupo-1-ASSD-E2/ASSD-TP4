@@ -103,3 +103,16 @@
 12141	15740	613288286	oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o	4cc213f83b487837
 15741	16938	613288287	oboe/liboboe.a	63e60db763b5e6a5
 16939	17642	613288288	C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86_64/libffi_google_oboe.so	6bd482f6da38b733
+8	913	613423056	CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o	5711564f71c317a4
+19	930	613423056	CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o	212361cbff699e32
+931	1541	613423056	C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86_64/libffi_google_oboe.so	6bd482f6da38b733
+9	776	613423880	CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o	212361cbff699e32
+776	1010	613423880	C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86_64/libffi_google_oboe.so	6bd482f6da38b733
+9	782	613424214	CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o	212361cbff699e32
+782	1030	613424214	C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86_64/libffi_google_oboe.so	6bd482f6da38b733
+9	798	613424342	CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o	212361cbff699e32
+798	1064	613424342	C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86_64/libffi_google_oboe.so	6bd482f6da38b733
+12	958	613424572	CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o	212361cbff699e32
+958	1212	613424572	C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86_64/libffi_google_oboe.so	6bd482f6da38b733
+11	730	613424723	CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o	212361cbff699e32
+730	954	613424724	C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86_64/libffi_google_oboe.so	6bd482f6da38b733

@@ -18,7 +18,12 @@
 #define RHYTHMGAME_AUDIOSOURCE_H
 
 #include <cstdint>
-#include <GameConstants.h>
+
+struct AudioProperties {
+    int32_t channelCount;
+    int32_t sampleRate;
+};
+
 
 class DataSource {
 public:
