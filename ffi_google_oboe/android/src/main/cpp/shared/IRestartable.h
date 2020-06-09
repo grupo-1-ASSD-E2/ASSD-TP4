@@ -13,20 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+#ifndef SAMPLES_IRESTARTABLE_H
+#define SAMPLES_IRESTARTABLE_H
 
-#ifndef FFMPEG_NDKMEDIAEXTRACTOR_H
-#define FFMPEG_NDKMEDIAEXTRACTOR_H
-
-
-#include "DataSource.h"
-#include <android/asset_manager.h>
-#include <cstdint>
-
-class NDKExtractor {
-
+/**
+ * Represents an object which can be restarted. For example an audio engine which has one or more
+ * streams which can be restarted following a change in audio device configuration. For example,
+ * headphones being connected.
+ */
+class IRestartable {
 public:
-    static int32_t decode(AAsset *asset, uint8_t *targetData, AudioProperties &outputProperties);
+    virtual void restart() = 0;
 };
-
-
-#endif //FFMPEG_NDKMEDIAEXTRACTOR_H
+#endif //SAMPLES_IRESTARTABLE_H

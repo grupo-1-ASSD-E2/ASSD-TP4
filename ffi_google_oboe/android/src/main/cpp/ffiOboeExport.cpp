@@ -4,6 +4,7 @@
 
 #include "OboeFfiStream.h"
 #include "utils/logging.h"
+#include <android/asset_manager_jni.h>
 
 #ifdef __cplusplus
 #define EXTERNC extern "C"
@@ -12,7 +13,13 @@
 #endif
 
 EXTERNC void* stream_create() {
-    return new OboeFfiStream();
+    AAssetManager* assetManager = AAssetManager_fromJava(env, jAssetManager);
+    if (assetManager == nullptr) {
+        LOGE("Could not obtain the AAssetManager");
+        return nullptr;
+    }
+
+    return new OboeFfiStream(*assetManager);
 }
 
 EXTERNC void stream_dispose(void* ptr) {

@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 The Android Open Source Project
+ * Copyright 2019 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,19 +14,12 @@
  * limitations under the License.
  */
 
-#ifndef FFMPEG_NDKMEDIAEXTRACTOR_H
-#define FFMPEG_NDKMEDIAEXTRACTOR_H
+#ifndef SAMPLES_ITAPPABLE_H
+#define SAMPLES_ITAPPABLE_H
 
-
-#include "DataSource.h"
-#include <android/asset_manager.h>
-#include <cstdint>
-
-class NDKExtractor {
-
+class ITappable {
 public:
-    static int32_t decode(AAsset *asset, uint8_t *targetData, AudioProperties &outputProperties);
+    virtual ~ITappable()  = default;
+    virtual void tap(bool isDown) = 0;
 };
-
-
-#endif //FFMPEG_NDKMEDIAEXTRACTOR_H
+#endif //SAMPLES_ITAPPABLE_H

@@ -14,19 +14,18 @@
  * limitations under the License.
  */
 
-#ifndef FFMPEG_NDKMEDIAEXTRACTOR_H
-#define FFMPEG_NDKMEDIAEXTRACTOR_H
+#ifndef SAMPLES_IRENDERABLEAUDIO_H
+#define SAMPLES_IRENDERABLEAUDIO_H
 
-
-#include "DataSource.h"
-#include <android/asset_manager.h>
 #include <cstdint>
+#include <string>
 
-class NDKExtractor {
+class IRenderableAudio {
 
 public:
-    static int32_t decode(AAsset *asset, uint8_t *targetData, AudioProperties &outputProperties);
+    virtual ~IRenderableAudio() = default;
+    virtual void renderAudio(float *audioData, int32_t numFrames) = 0;
 };
 
 
-#endif //FFMPEG_NDKMEDIAEXTRACTOR_H
+#endif //SAMPLES_IRENDERABLEAUDIO_H

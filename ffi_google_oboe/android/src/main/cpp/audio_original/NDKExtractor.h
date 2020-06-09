@@ -20,7 +20,6 @@
 
 #include "DataSource.h"
 #include <android/asset_manager.h>
-#include <cstdint>
 
 class NDKExtractor {
 

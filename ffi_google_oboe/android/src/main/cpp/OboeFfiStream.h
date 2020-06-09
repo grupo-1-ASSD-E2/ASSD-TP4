@@ -5,13 +5,14 @@
 #ifndef ANDROID_OBOEFFISTREAM_H
 #define ANDROID_OBOEFFISTREAM_H
 
-#include "oboe/Oboe.h"
+#include <oboe/Oboe.h>
+#include <audio/Player.h>
 #include <cstdint>
 #include <cstring>
 
 class OboeFfiStream {
 public:
-    OboeFfiStream();
+    explicit OboeFfiStream(AAssetManager& assetManager);
 
     int32_t getSampleRate();
     void close();
@@ -22,6 +23,10 @@ public:
 
 
 private:
+    // Handles assets like audio files.
+    AAssetManager& mAssetManager;
+    // Handles audio files.
+    std::unique_ptr<Player> player;
     oboe::ManagedStream managedStream;
 };
 
