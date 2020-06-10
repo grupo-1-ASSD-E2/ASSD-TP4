@@ -5,7 +5,7 @@
 #ifndef ANDROID_OBOEFFISTREAM_H
 #define ANDROID_OBOEFFISTREAM_H
 
-#include "oboe/Oboe.h"
+#include <oboe/Oboe.h>
 #include <cstdint>
 #include <cstring>
 
@@ -22,7 +22,13 @@ public:
 
 
 private:
+    void createInputStream();
+    void createOutputStream();
+    oboe::AudioStreamBuilder getBuilder();
+
     oboe::ManagedStream managedStream;
+    oboe::ManagedStream inputStream;
+    oboe::ManagedStream outputStream;
 };
 
 

@@ -2,18 +2,44 @@
 // Created by facun on 23/05/2020.
 //
 
-#include <oboe/AudioStreamBuilder.h>
-//#include "audio/AAssetDataSource.h"
 #include "OboeFfiStream.h"
 #include "utils/logging.h"
 
 OboeFfiStream::OboeFfiStream() {
-    oboe::AudioStreamBuilder builder;
-    builder.setFormat(oboe::AudioFormat::Float)
-        ->setChannelCount(oboe::ChannelCount::Mono);
-    builder.setSampleRate(44100);
+    createInputStream();
+    createOutputStream();
+}
 
-    oboe::Result result = builder.openManagedStream(managedStream);
+void OboeFfiStream::createInputStream() {
+    oboe::AudioStreamBuilder builder = getBuilder();
+
+    builder.setDirection(oboe::Direction::Input);
+    builder.openManagedStream(inputStream);
+
+}
+
+void OboeFfiStream::createOutputStream() {
+    oboe::AudioStreamBuilder builder = getBuilder();
+
+    builder.setDirection(oboe::Direction::Output);
+    builder.openManagedStream(outputStream);
+
+}
+
+oboe::AudioStreamBuilder OboeFfiStream::getBuilder() {
+    oboe::AudioStreamBuilder builder;
+    builder.setPerformanceMode(oboe::PerformanceMode::LowLatency);
+    builder.setSharingMode(oboe::SharingMode::Exclusive);
+
+    builder.setFormat(oboe::AudioFormat::Float);
+    builder.setSampleRate(48000);
+    builder.setChannelCount(oboe::ChannelCount::Mono);
+
+    builder.setSampleRateConversionQuality(oboe::SampleRateConversionQuality::Medium);
+    builder.setChannelConversionAllowed(true);
+    builder.setFormatConversionAllowed(true);
+
+    return builder;
 }
 
 int32_t OboeFfiStream::getSampleRate() {
