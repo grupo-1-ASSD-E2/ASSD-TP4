@@ -44,4 +44,10 @@ include_directories (
         src/main/cpp
 )
 
-target_link_libraries(ffi_google_oboe oboe)
+target_link_libraries(
+        ffi_google_oboe
+        oboe
+
+        # Links the log library to the target library.
+        ${log-lib}
+)

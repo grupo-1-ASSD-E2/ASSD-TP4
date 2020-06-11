@@ -21,7 +21,7 @@
 #include <android/log.h>
 #include <vector>
 
-#define APP_NAME "RhythmGame"
+#define APP_NAME "OboeFfi"
 #define LOGD(...) ((void)__android_log_print(ANDROID_LOG_DEBUG, APP_NAME, __VA_ARGS__))
 #define LOGI(...) ((void)__android_log_print(ANDROID_LOG_INFO, APP_NAME, __VA_ARGS__))
 #define LOGW(...) ((void)__android_log_print(ANDROID_LOG_WARN, APP_NAME, __VA_ARGS__))

@@ -1,5 +1,5 @@
 {
-  "ndkFolder": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462",
+  "ndkFolder": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\21.1.6352462",
   "messages": [
     {
       "level": "INFO",
@@ -7,7 +7,7 @@
     },
     {
       "level": "INFO",
-      "message": "ndk.dir in local.properties is C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462"
+      "message": "ndk.dir in local.properties is not set"
     },
     {
       "level": "INFO",
@@ -19,15 +19,15 @@
     },
     {
       "level": "INFO",
-      "message": "Considering C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462 by ndk.dir"
-    },
-    {
-      "level": "INFO",
       "message": "Considering C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk-bundle in SDK ndk-bundle folder"
     },
     {
       "level": "INFO",
       "message": "Considering C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\20.0.5594570 in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\21.0.6113669 in SDK ndk folder"
     },
     {
       "level": "INFO",
@@ -39,7 +39,7 @@
     },
     {
       "level": "INFO",
-      "message": "Choosing C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462 from ndk.dir which had the requested version 21.1.6352462"
+      "message": "Found requested NDK version 21.1.6352462 at C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\21.1.6352462"
     }
   ]
 }

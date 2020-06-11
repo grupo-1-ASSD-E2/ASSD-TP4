@@ -3,6 +3,7 @@
 //
 
 #include "OboeFfiStream.h"
+#include <utils/logging.h>
 
 // The Sample Rate for effects
 static int SAMPLE_RATE = 48000;
@@ -43,7 +44,7 @@ void OboeFfiStream::createCallback() {
 oboe::AudioStreamBuilder OboeFfiStream::defaultBuilder() {
     return *oboe::AudioStreamBuilder()
             .setPerformanceMode(oboe::PerformanceMode::LowLatency)
-            ->setSharingMode(oboe::SharingMode::Exclusive);
+            ->setSharingMode(oboe::SharingMode::Shared);
 }
 
 void OboeFfiStream::openInStream() {

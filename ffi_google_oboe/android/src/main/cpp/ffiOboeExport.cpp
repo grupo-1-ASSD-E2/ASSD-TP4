@@ -3,7 +3,8 @@
 //
 
 #include "OboeFfiStream.h"
-#include "utils/logging.h"
+#include <utils/logging.h>
+#include <android/log.h>
 
 #ifdef __cplusplus
 #define EXTERNC extern "C"
@@ -12,6 +13,7 @@
 #endif
 
 EXTERNC void* stream_create() {
+    LOGE("CREATING STREAM\n");
     return new OboeFfiStream();
 }
 

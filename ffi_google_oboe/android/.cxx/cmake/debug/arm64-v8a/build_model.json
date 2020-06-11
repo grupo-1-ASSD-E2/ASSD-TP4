@@ -1,203 +1,70 @@
 {
-  "abi": "ARM64_V8A",
-  "abiPlatformVersion": 16,
-  "buildSettings": {
-    "environmentVariables": []
-  },
-  "cmake": {
-    "cmakeArtifactsBaseFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\arm64-v8a",
-    "cmakeServerLogFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\arm64-v8a\\cmake_server_log.txt",
-    "cmakeWrappingBaseFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cxx\\debug\\arm64-v8a",
-    "effectiveConfiguration": {
-      "name": "traditional-android-studio-cmake-environment",
-      "description": "Composite reified CMakeSettings configuration",
-      "generator": "Ninja",
-      "inheritEnvironments": [
-        "ndk"
-      ],
-      "buildRoot": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\arm64-v8a",
-      "cmakeToolchain": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
-      "cmakeExecutable": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
-      "variables": [
-        {
-          "name": "CMAKE_FIND_ROOT_PATH",
-          "value": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\prefab\\arm64-v8a\\prefab"
-        },
-        {
-          "name": "CMAKE_BUILD_TYPE",
-          "value": "Debug"
-        },
-        {
-          "name": "CMAKE_TOOLCHAIN_FILE",
-          "value": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake"
-        },
-        {
-          "name": "ANDROID_ABI",
-          "value": "arm64-v8a"
-        },
-        {
-          "name": "ANDROID_NDK",
-          "value": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462"
-        },
-        {
-          "name": "ANDROID_PLATFORM",
-          "value": "android-16"
-        },
-        {
-          "name": "CMAKE_ANDROID_ARCH_ABI",
-          "value": "arm64-v8a"
-        },
-        {
-          "name": "CMAKE_ANDROID_NDK",
-          "value": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462"
-        },
-        {
-          "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
-          "value": "ON"
-        },
-        {
-          "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
-          "value": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\example\\build\\ffi_google_oboe\\intermediates\\cmake\\debug\\obj\\arm64-v8a"
-        },
-        {
-          "name": "CMAKE_MAKE_PROGRAM",
-          "value": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe"
-        },
-        {
-          "name": "CMAKE_SYSTEM_NAME",
-          "value": "Android"
-        },
-        {
-          "name": "CMAKE_SYSTEM_VERSION",
-          "value": "16"
-        }
-      ]
-    }
-  },
-  "cxxBuildFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\arm64-v8a",
-  "info": {
-    "abi": "ARM64_V8A",
-    "bitness": 64,
-    "deprecated": false,
-    "default": true
-  },
-  "originalCxxBuildFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\arm64-v8a",
   "variant": {
-    "buildSystemArgumentList": [],
-    "buildTargetSet": [],
-    "cFlagsList": [],
-    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
-    "cppFlagsList": [],
-    "isDebuggableEnabled": true,
     "module": {
-      "buildSystem": "CMAKE",
-      "cmake": {
-        "cmakeExe": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
-        "minimumCmakeVersion": "3.10.2",
-        "ninjaExe": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe"
-      },
-      "cmakeToolchainFile": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
-      "cxxFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx",
+      "rootBuildGradleFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\sound3d\\android",
+      "sdkFolder": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\sound3d\\build\\ffi_google_oboe\\intermediates",
       "gradleModulePathName": ":ffi_google_oboe",
-      "intermediatesFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\example\\build\\ffi_google_oboe\\intermediates",
-      "makeFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\CMakeLists.txt",
-      "moduleBuildFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\build.gradle",
       "moduleRootFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android",
-      "ndkDefaultAbiList": [
-        "ARMEABI_V7A",
-        "ARM64_V8A",
-        "X86",
-        "X86_64"
-      ],
-      "ndkFolder": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462",
-      "ndkMetaAbiList": [
-        {
-          "abi": "ARMEABI_V7A",
-          "bitness": 32,
-          "deprecated": false,
-          "default": true
-        },
-        {
-          "abi": "ARM64_V8A",
-          "bitness": 64,
-          "deprecated": false,
-          "default": true
-        },
-        {
-          "abi": "X86",
-          "bitness": 32,
-          "deprecated": false,
-          "default": true
-        },
-        {
-          "abi": "X86_64",
-          "bitness": 64,
-          "deprecated": false,
-          "default": true
-        }
-      ],
-      "ndkMetaPlatforms": {
-        "min": 16,
-        "max": 29,
-        "aliases": {
-          "20": 19,
-          "25": 24,
-          "J": 16,
-          "J-MR1": 17,
-          "J-MR2": 18,
-          "K": 19,
-          "L": 21,
-          "L-MR1": 22,
-          "M": 23,
-          "N": 24,
-          "N-MR1": 24,
-          "O": 26,
-          "O-MR1": 27,
-          "P": 28,
-          "Q": 29
-        }
-      },
+      "makeFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\sound3d\\android\\.cxx",
+      "cxxFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx",
+      "ndkFolder": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\21.1.6352462",
+      "ndkVersion": "21.1.6352462",
       "ndkSupportedAbiList": [
         "ARMEABI_V7A",
         "ARM64_V8A",
         "X86",
         "X86_64"
       ],
-      "ndkDefaultStl": "LIBCXX_STATIC",
-      "ndkVersion": "21.1.6352462",
-      "project": {
-        "compilerSettingsCacheFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\example\\android\\.cxx",
-        "cxxFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\example\\android\\.cxx",
-        "isBuildOnlyTargetAbiEnabled": true,
-        "isCmakeBuildCohabitationEnabled": false,
-        "isNativeCompilerSettingsCacheEnabled": false,
-        "rootBuildGradleFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\example\\android",
-        "sdkFolder": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk",
-        "isPrefabEnabled": false
-      },
-      "splitsAbiFilterSet": [],
-      "stlSharedObjectMap": {
-        "LIBCXX_SHARED": {
-          "ARMEABI_V7A": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
-          "ARM64_V8A": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
-          "X86": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\i686-linux-android\\libc++_shared.so",
-          "X86_64": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so"
-        },
-        "LIBCXX_STATIC": {},
-        "NONE": {},
-        "SYSTEM": {}
-      }
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
     },
-    "objFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\example\\build\\ffi_google_oboe\\intermediates\\cmake\\debug\\obj",
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
     "variantName": "debug",
+    "soFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\sound3d\\build\\ffi_google_oboe\\intermediates\\cmake\\debug\\lib",
+    "objFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\sound3d\\build\\ffi_google_oboe\\intermediates\\cmake\\debug\\obj",
+    "jsonFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug",
+    "gradleBuildOutputFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
     "validAbiList": [
       "ARMEABI_V7A",
       "ARM64_V8A",
       "X86",
       "X86_64"
     ],
-    "prefabDirectory": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\prefab",
-    "prefabPackageDirectoryList": []
+    "buildTargetSet": []
   },
-  "prefabFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\prefab\\arm64-v8a"
+  "abi": "ARM64_V8A",
+  "abiPlatformVersion": 16,
+  "cxxBuildFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\arm64-v8a",
+  "jsonFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\arm64-v8a\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cxx\\debug\\arm64-v8a",
+  "objFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\sound3d\\build\\ffi_google_oboe\\intermediates\\cmake\\debug\\obj\\arm64-v8a",
+  "buildCommandFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\arm64-v8a\\build_command.txt",
+  "buildOutputFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\arm64-v8a\\build_output.txt",
+  "modelOutputFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\arm64-v8a\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cxx\\debug\\arm64-v8a\\CMakeLists.txt",
+    "toolchainWrapperFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cxx\\debug\\arm64-v8a\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cxx\\debug\\arm64-v8a\\build_generation_state.json",
+    "cacheKeyFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cxx\\debug\\arm64-v8a\\compiler_cache_key.json",
+    "compilerCacheUseFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cxx\\debug\\arm64-v8a\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cxx\\debug\\arm64-v8a\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cxx\\debug\\arm64-v8a\\compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\arm64-v8a\\json_generation_record.json",
+  "compileCommandsJsonFile": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\arm64-v8a\\compile_commands.json"
 }
