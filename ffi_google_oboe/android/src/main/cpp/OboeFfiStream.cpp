@@ -15,7 +15,7 @@ void OboeFfiStream::beginStreams() {
     // This ordering is extremely important
     openInStream();
     if (inStream->getFormat() == oboe::AudioFormat::Float) {
-        functionList.emplace<FunctionList<float *>>();
+        functionList.emplace<FunctionList<float *>>().addEffect([](float*, float*){});
         createCallback<float_t>();
     } else if (inStream->getFormat() == oboe::AudioFormat::I16) {
         createCallback<int16_t>();
@@ -82,21 +82,14 @@ oboe::Result OboeFfiStream::stopStreams() {
 }
 
 int32_t OboeFfiStream::getSampleRate() {
-    return managedStream->getSampleRate();
+    return inStream->getSampleRate();
 }
 
 void OboeFfiStream::close() {
-    managedStream->close();
-}
-
-void OboeFfiStream::start() {
-    managedStream->requestStart();
-}
-
-void OboeFfiStream::stop() {
-    managedStream->requestStop();
+    inStream->close();
+    outStream->close();
 }
 
 void OboeFfiStream::write(float *data, int32_t size) {
-    managedStream->write(data, size, 1000000);
+    inStream->write(data, size, 1000000);
 }

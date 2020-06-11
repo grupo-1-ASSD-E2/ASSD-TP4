@@ -24,8 +24,6 @@ public:
 
     int32_t getSampleRate();
     void close();
-    void start();
-    void stop();
     void write(float* data, int32_t size);
 
     void beginStreams();
@@ -47,8 +45,6 @@ private:
     oboe::ManagedStream inStream;
     std::unique_ptr<oboe::AudioStreamCallback> mCallback;
     oboe::ManagedStream outStream;
-
-    oboe::ManagedStream managedStream;
 };
 
 

@@ -27,12 +27,12 @@ EXTERNC int32_t stream_sample_rate(void* ptr) {
 
 EXTERNC void stream_start(void* ptr) {
     auto stream = static_cast<OboeFfiStream*>(ptr);
-    stream->start();
+    stream->startStreams();
 }
 
 EXTERNC void stream_stop(void* ptr) {
     auto stream = static_cast<OboeFfiStream*>(ptr);
-    stream->stop();
+    stream->stopStreams();
 }
 
 EXTERNC void stream_write(void* ptr, void* data, int32_t size) {
