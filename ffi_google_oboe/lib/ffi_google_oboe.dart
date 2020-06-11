@@ -20,9 +20,6 @@ typedef OboeStreamStartStop = void Function(Pointer<Void>);
 typedef oboe_stream_write = Void Function(Pointer<Void>, Pointer<Float>, Int32);
 typedef OboeStreamWrite = void Function(Pointer<Void>, Pointer<Float>, int);
 
-typedef oboe_load_file = Void Function();
-typedef OboeLoadFile = void Function();
-
 
 class FfiGoogleOboe {
   static const MethodChannel _channel =
@@ -49,7 +46,6 @@ class FfiGoogleOboe {
   OboeStreamStartStop _streamStart;
   OboeStreamStartStop _streamStop;
   OboeStreamWrite _streamWrite;
-  OboeLoadFile _loadFile;
 
   FfiGoogleOboe._() {
     final oboeLib = DynamicLibrary.open('libffi_google_oboe.so');
@@ -76,10 +72,6 @@ class FfiGoogleOboe {
 
     _streamWrite = oboeLib
         .lookup<NativeFunction<oboe_stream_write>>('stream_write')
-        .asFunction();
-
-    _loadFile = oboeLib
-        .lookup<NativeFunction<oboe_load_file>>('load_file')
         .asFunction();
   }
 
@@ -116,9 +108,5 @@ class OboeStream {
 
     FfiGoogleOboe()._streamWrite(_nativeInstance, copy, length);
     free(copy);
-  }
-
-  void loadFile(String path) {
-    
   }
 }

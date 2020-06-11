@@ -40,7 +40,3 @@ EXTERNC void stream_write(void* ptr, void* data, int32_t size) {
     auto dataToWrite = static_cast<float*>(data);
     stream->write(dataToWrite, size);
 }
-
-EXTERNC void load_file(void* ptr) {
-
-}

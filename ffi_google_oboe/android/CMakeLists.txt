@@ -1,4 +1,9 @@
-cmake_minimum_required(VERSION 3.4.1)
+cmake_minimum_required(VERSION 3.4.2)
+
+# Require C++17 compiler with no extensions
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_library(ffi_google_oboe
         SHARED
@@ -13,6 +18,13 @@ add_library(ffi_google_oboe
         # Utils files
         #            src/main/cpp/utils/UtilityFunctions.cpp
         )
+
+# Compile with warnings for safety
+if(MSVC)
+    target_compile_options(ffi_google_oboe PRIVATE /W4 /WX)
+else()
+    target_compile_options(ffi_google_oboe PRIVATE -Wall -Wextra -pedantic)
+endif()
 
 
 # Set the path to the Oboe directory.

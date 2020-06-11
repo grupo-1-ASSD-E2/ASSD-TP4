@@ -20,6 +20,10 @@
       "cmakeExecutable": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
       "variables": [
         {
+          "name": "CMAKE_FIND_ROOT_PATH",
+          "value": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\prefab\\x86_64\\prefab"
+        },
+        {
           "name": "CMAKE_BUILD_TYPE",
           "value": "Debug"
         },
@@ -159,6 +163,7 @@
         "X86",
         "X86_64"
       ],
+      "ndkDefaultStl": "LIBCXX_STATIC",
       "ndkVersion": "21.1.6352462",
       "project": {
         "compilerSettingsCacheFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\example\\android\\.cxx",
@@ -167,7 +172,8 @@
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
         "rootBuildGradleFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\example\\android",
-        "sdkFolder": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk"
+        "sdkFolder": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk",
+        "isPrefabEnabled": false
       },
       "splitsAbiFilterSet": [],
       "stlSharedObjectMap": {
@@ -189,6 +195,9 @@
       "ARM64_V8A",
       "X86",
       "X86_64"
-    ]
-  }
+    ],
+    "prefabDirectory": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\prefab",
+    "prefabPackageDirectoryList": []
+  },
+  "prefabFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\prefab\\x86_64"
 }
