@@ -13,7 +13,8 @@
 #endif
 
 EXTERNC void* stream_create() {
-    LOGE("CREATING STREAM\n");
+    LOGE("CREATING STREAM");
+    LOGE(" ");
     return new OboeFfiStream();
 }
 

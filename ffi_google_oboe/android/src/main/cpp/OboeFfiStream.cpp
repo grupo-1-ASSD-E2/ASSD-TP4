@@ -5,38 +5,40 @@
 #include "OboeFfiStream.h"
 #include <utils/logging.h>
 
-// The Sample Rate for effects
-static int SAMPLE_RATE = 48000;
 
-OboeFfiStream::OboeFfiStream() {
+OboeFfiStream::OboeFfiStream(int sr, void * data, size_t size, oboe::AudioFormat f) {
+    format = oboe::AudioFormat::Float;      // In the future could be changed to accept argument f.
+    sampleRate = sr;
+    write(data, size);
+    LOGE("INPUT DATA WRITTEN");
+    LOGE(" ");
     beginStreams();
+    LOGE("STREAMS INITIALISED");
+    LOGE(" ");
+}
+
+void OboeFfiStream::write(void * data, size_t size) {
+    auto floatData = static_cast<float *>(data);
+    inSource = std::vector<float>(floatData, floatData + size);
 }
 
 void OboeFfiStream::beginStreams() {
-    // This ordering is extremely important
-    openInStream();
-    if (inStream->getFormat() == oboe::AudioFormat::Float) {
-        functionList.emplace<FunctionList<float *>>().addEffect([](float*, float*){});
-        createCallback<float_t>();
-    } else if (inStream->getFormat() == oboe::AudioFormat::I16) {
-        createCallback<int16_t>();
-    } else {
-        stopStreams();
-    }
-    SAMPLE_RATE = inStream->getSampleRate();
+    functionList.emplace<FunctionList<float *>>().addEffect([](float*, float*){});
+    createCallback();
+    LOGE("CALLBACK CREATED SUCCESSFULLY");
+    LOGE(" ");
     openOutStream();
 
     oboe::Result result = startStreams();
     if (result != oboe::Result::OK) stopStreams();
 }
 
-template<class numeric>
 void OboeFfiStream::createCallback() {
-    mCallback = std::make_unique<OboeFfiCallback<numeric>>(
-            *inStream, [&functionStack = this->functionList](numeric *beg, numeric *end) {
-                std::get<FunctionList<numeric *>>(functionStack)(beg, end);
+    mCallback = std::make_unique<OboeFfiCallback<float>>(
+            inSource,
+            [&functionStack = this->functionList](float *beg, float *end) {
+                std::get<FunctionList<float *>>(functionStack)(beg, end);
             },
-            inStream->getBufferCapacityInFrames(),
             std::bind(&OboeFfiStream::beginStreams, this));
 }
 
@@ -47,17 +49,10 @@ oboe::AudioStreamBuilder OboeFfiStream::defaultBuilder() {
             ->setSharingMode(oboe::SharingMode::Shared);
 }
 
-void OboeFfiStream::openInStream() {
-    defaultBuilder().setDirection(oboe::Direction::Input)
-            ->setFormat(oboe::AudioFormat::Float) // For now
-            ->setChannelCount(1) // Mono in for effects processing
-            ->openManagedStream(inStream);
-}
-
 void OboeFfiStream::openOutStream() {
     defaultBuilder().setCallback(mCallback.get())
-            ->setSampleRate(inStream->getSampleRate())
-            ->setFormat(inStream->getFormat())
+            ->setSampleRate(sampleRate)
+            ->setFormat(format)
             ->setChannelCount(2) // Stereo out
             ->openManagedStream(outStream);
 }
@@ -71,26 +66,17 @@ oboe::Result OboeFfiStream::startStreams() {
         result = outStream->waitForStateChange(currentState, &nextState, timeoutNanos);
         currentState = nextState;
     }
-    if (result != oboe::Result::OK) return result;
-    return inStream->requestStart();
+    return result;
 }
 
 oboe::Result OboeFfiStream::stopStreams() {
-    oboe::Result outputResult = inStream->requestStop();
-    oboe::Result inputResult = outStream->requestStop();
-    if (outputResult != oboe::Result::OK) return outputResult;
-    return inputResult;
+    return outStream->requestStop();
 }
 
 int32_t OboeFfiStream::getSampleRate() {
-    return inStream->getSampleRate();
+    return sampleRate;
 }
 
 void OboeFfiStream::close() {
-    inStream->close();
     outStream->close();
-}
-
-void OboeFfiStream::write(float *data, int32_t size) {
-    inStream->write(data, size, 1000000);
 }

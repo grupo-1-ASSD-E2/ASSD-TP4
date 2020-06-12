@@ -19,12 +19,12 @@
 
 class OboeFfiStream {
 public:
-    OboeFfiStream();
+    OboeFfiStream(int sr=48000, void * data=nullptr, size_t size=0, oboe::AudioFormat f=oboe::AudioFormat::Float);
     virtual ~OboeFfiStream() = default;
 
     int32_t getSampleRate();
     void close();
-    void write(float* data, int32_t size);
+    void write(void * data, size_t size);
 
     void beginStreams();
     oboe::Result startStreams();
@@ -34,15 +34,15 @@ public:
     std::variant<FunctionList<int16_t *>, FunctionList<float *>> functionList{std::in_place_type<FunctionList<int16_t *>>};
 
 private:
-
-    void openInStream();
     void openOutStream();
     static oboe::AudioStreamBuilder defaultBuilder();
 
-    template<class numeric>
     void createCallback();
 
-    oboe::ManagedStream inStream;
+    oboe::AudioFormat format;
+    int sampleRate;
+    std::vector<float> inSource;
+
     std::unique_ptr<oboe::AudioStreamCallback> mCallback;
     oboe::ManagedStream outStream;
 };

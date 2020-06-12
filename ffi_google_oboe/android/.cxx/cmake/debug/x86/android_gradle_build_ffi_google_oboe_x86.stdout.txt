@@ -1,38 +1,7 @@
 ninja: Entering directory `C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\android\.cxx\cmake\debug\x86'
 [1/2] Building CXX object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o
-In file included from ../../../../src/main/cpp/OboeFfiStream.cpp:5:
-In file included from ../../../../src/main/cpp/OboeFfiStream.h:16:
-../../../../src/main/cpp/OboeFfiCallback.h:44:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned int') and 'int' [-Wsign-compare]
-            for (size_t j = 0; j < outputChannelCount; j++) {
-                               ~ ^ ~~~~~~~~~~~~~~~~~~
-../../../../src/main/cpp/OboeFfiCallback.h:20:5: note: in instantiation of member function 'OboeFfiCallback<float>::onAudioReady' requested here
-    OboeFfiCallback(oboe::AudioStream &inStream,
-    ^
-C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\memory:3003:32: note: in instantiation of member function 'OboeFfiCallback<float>::OboeFfiCallback' requested here
-    return unique_ptr<_Tp>(new _Tp(_VSTD::forward<_Args>(__args)...));
-                               ^
-../../../../src/main/cpp/OboeFfiStream.cpp:35:22: note: in instantiation of function template specialization 'std::__ndk1::make_unique<OboeFfiCallback<float>, oboe::AudioStream &, (lambda at ../../../../src/main/cpp/OboeFfiStream.cpp:36:24), int, std::__ndk1::__bind<void (OboeFfiStream::*)(), OboeFfiStream *> >' requested here
-    mCallback = std::make_unique<OboeFfiCallback<numeric>>(
-                     ^
-../../../../src/main/cpp/OboeFfiStream.cpp:20:9: note: in instantiation of function template specialization 'OboeFfiStream::createCallback<float>' requested here
-        createCallback<float_t>();
-        ^
-In file included from ../../../../src/main/cpp/OboeFfiStream.cpp:5:
-In file included from ../../../../src/main/cpp/OboeFfiStream.h:16:
-../../../../src/main/cpp/OboeFfiCallback.h:44:34: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned int') and 'int' [-Wsign-compare]
-            for (size_t j = 0; j < outputChannelCount; j++) {
-                               ~ ^ ~~~~~~~~~~~~~~~~~~
-../../../../src/main/cpp/OboeFfiCallback.h:20:5: note: in instantiation of member function 'OboeFfiCallback<short>::onAudioReady' requested here
-    OboeFfiCallback(oboe::AudioStream &inStream,
-    ^
-C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\memory:3003:32: note: in instantiation of member function 'OboeFfiCallback<short>::OboeFfiCallback' requested here
-    return unique_ptr<_Tp>(new _Tp(_VSTD::forward<_Args>(__args)...));
-                               ^
-../../../../src/main/cpp/OboeFfiStream.cpp:35:22: note: in instantiation of function template specialization 'std::__ndk1::make_unique<OboeFfiCallback<short>, oboe::AudioStream &, (lambda at ../../../../src/main/cpp/OboeFfiStream.cpp:36:24), int, std::__ndk1::__bind<void (OboeFfiStream::*)(), OboeFfiStream *> >' requested here
-    mCallback = std::make_unique<OboeFfiCallback<numeric>>(
-                     ^
-../../../../src/main/cpp/OboeFfiStream.cpp:22:9: note: in instantiation of function template specialization 'OboeFfiStream::createCallback<short>' requested here
-        createCallback<int16_t>();
-        ^
-2 warnings generated.
+../../../../src/main/cpp/OboeFfiStream.cpp:9:82: warning: unused parameter 'f' [-Wunused-parameter]
+OboeFfiStream::OboeFfiStream(int sr, void * data, size_t size, oboe::AudioFormat f) {
+                                                                                 ^
+1 warning generated.
 [2/2] Linking CXX shared library C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\sound3d\build\ffi_google_oboe\intermediates\cmake\debug\obj\x86\libffi_google_oboe.so
