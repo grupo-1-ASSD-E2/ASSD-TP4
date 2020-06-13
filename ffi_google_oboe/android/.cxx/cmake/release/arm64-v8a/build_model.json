@@ -16,16 +16,20 @@
         "ndk"
       ],
       "buildRoot": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\release\\arm64-v8a",
-      "cmakeToolchain": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+      "cmakeToolchain": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
       "cmakeExecutable": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
       "variables": [
+        {
+          "name": "CMAKE_FIND_ROOT_PATH",
+          "value": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\release\\prefab\\arm64-v8a\\prefab"
+        },
         {
           "name": "CMAKE_BUILD_TYPE",
           "value": "Release"
         },
         {
           "name": "CMAKE_TOOLCHAIN_FILE",
-          "value": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake"
+          "value": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake"
         },
         {
           "name": "ANDROID_ABI",
@@ -33,7 +37,7 @@
         },
         {
           "name": "ANDROID_NDK",
-          "value": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\21.1.6352462"
+          "value": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462"
         },
         {
           "name": "ANDROID_PLATFORM",
@@ -45,7 +49,7 @@
         },
         {
           "name": "CMAKE_ANDROID_NDK",
-          "value": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\21.1.6352462"
+          "value": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462"
         },
         {
           "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
@@ -92,7 +96,7 @@
         "minimumCmakeVersion": "3.10.2",
         "ninjaExe": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe"
       },
-      "cmakeToolchainFile": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+      "cmakeToolchainFile": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
       "cxxFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx",
       "gradleModulePathName": ":ffi_google_oboe",
       "intermediatesFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\example\\build\\ffi_google_oboe\\intermediates",
@@ -105,7 +109,7 @@
         "X86",
         "X86_64"
       ],
-      "ndkFolder": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\21.1.6352462",
+      "ndkFolder": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462",
       "ndkMetaAbiList": [
         {
           "abi": "ARMEABI_V7A",
@@ -159,6 +163,7 @@
         "X86",
         "X86_64"
       ],
+      "ndkDefaultStl": "LIBCXX_STATIC",
       "ndkVersion": "21.1.6352462",
       "project": {
         "compilerSettingsCacheFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\example\\android\\.cxx",
@@ -167,15 +172,16 @@
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
         "rootBuildGradleFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\example\\android",
-        "sdkFolder": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk"
+        "sdkFolder": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk",
+        "isPrefabEnabled": false
       },
       "splitsAbiFilterSet": [],
       "stlSharedObjectMap": {
         "LIBCXX_SHARED": {
-          "ARMEABI_V7A": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
-          "ARM64_V8A": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
-          "X86": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\i686-linux-android\\libc++_shared.so",
-          "X86_64": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so"
+          "ARMEABI_V7A": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
+          "ARM64_V8A": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
+          "X86": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\i686-linux-android\\libc++_shared.so",
+          "X86_64": "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so"
         },
         "LIBCXX_STATIC": {},
         "NONE": {},
@@ -189,6 +195,9 @@
       "ARM64_V8A",
       "X86",
       "X86_64"
-    ]
-  }
+    ],
+    "prefabDirectory": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\release\\prefab",
+    "prefabPackageDirectoryList": []
+  },
+  "prefabFolder": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\release\\prefab\\arm64-v8a"
 }

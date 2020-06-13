@@ -287,6 +287,11 @@
           "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\OboeFfiStream.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\DSPCallback.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],

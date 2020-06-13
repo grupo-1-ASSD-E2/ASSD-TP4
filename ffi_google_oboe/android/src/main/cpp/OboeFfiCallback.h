@@ -6,7 +6,8 @@
 #define ANDROID_OBOEFFICALLBACK_H
 
 #include <oboe/Oboe.h>
-#include <vector>
+#include <queue>
+#include <utils/logging.h>
 
 
 
@@ -14,30 +15,41 @@
 // It takes a function which operates on two pointers (beginning and end)
 // of underlying data.
 
-template<class numeric_type>
 class OboeFfiCallback : public oboe::AudioStreamCallback {
 public:
 
-    OboeFfiCallback(std::vector<numeric_type>& inVect,
-                    std::function<void(numeric_type *, numeric_type *)> fun,
+    OboeFfiCallback(std::queue<float>& inQ,
+                    std::function<void(float *, float *)> fun,
                     std::function<void(void)> restartFunction) :
-                    inSource(inVect), f(fun), restart(restartFunction) {}
+                    inQueue(inQ), f(fun), restart(restartFunction) {}
 
 
     oboe::DataCallbackResult onAudioReady(oboe::AudioStream *outputStream, void *audioData, int32_t numFrames) override {
-        auto *outputData = static_cast<numeric_type *>(audioData);
+        LOGE("CALLBACK CALLED");
+        LOGE("numFrames = %d", numFrames);
+        LOGE("Frames left in inQueue = %d", inQueue.size());
+        auto *outputData = static_cast<float *>(audioData);
         auto outputChannelCount = outputStream->getChannelCount();
 
         // Silence first to simplify glitch detection
         std::fill(outputData, outputData + numFrames * outputChannelCount, 0);
-        auto data_to_process = std::vector<numeric_type>(inSource.begin() + cycle_count * numFrames, inSource.begin() + (cycle_count + 1) * numFrames);
 
-//        f(inputBuffer.get(), inputBuffer.get() + numFrames);
-//        for (int i = 0; i < numFrames; i++) {
-//            for (int j = 0; j < outputChannelCount; j++) {
-//                *outputData++ = inputBuffer[i];
-//            }
-//        }
+        if (inQueue.size() > 0){
+            LOGE("PROCESSING DATA");
+            LOGE(" ");
+            // Processing (for now it's just pass-through)
+            for (int i = 0; i < numFrames; i++) {
+                float temp_sound = inQueue.front();
+                inQueue.pop();
+                for (int j = 0; j < outputChannelCount; j++) {
+                    *outputData++ = temp_sound;
+                }
+            }
+        }
+        else {
+            LOGE("NO DATA TO PROCESS");
+            LOGE(" ");
+        }
         return oboe::DataCallbackResult::Continue;
     }
 
@@ -50,8 +62,8 @@ public:
 
 private:
     size_t cycle_count;
-    std::vector<numeric_type>& inSource;
-    std::function<void(numeric_type *, numeric_type *)> f;
+    std::queue<float>& inQueue;
+    std::function<void(float *, float *)> f;
     std::function<void(void)> restart;
 };
 

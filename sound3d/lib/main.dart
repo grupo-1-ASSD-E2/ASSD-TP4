@@ -1,12 +1,12 @@
 import 'dart:math';
 import 'dart:typed_data';
+import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'dart:async';
+import 'package:flutter_sound/flutter_sound.dart';
 
 import 'package:ffi_google_oboe/ffi_google_oboe.dart';
-// import 'package:flutter/services.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,11 +26,11 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    // for (var i = 0; i < noise.length; i++) {
-    //   noise[i] = sin(8 * pi * i / noise.length);
-    // }
+    for (var i = 0; i < noise.length; i++) {
+      noise[i] = sin(8 * pi * i / noise.length);
+    }
     
-    _loadSound();
+    // _loadSound();
   }
 
   void _loadSound() async {
@@ -72,11 +72,11 @@ class _MyAppState extends State<MyApp> {
   }
 
   void start() {
-    stream.start();
     var interval = (512000 / stream.getSampleRate()).floor() + 1;
     t = Timer.periodic(Duration(milliseconds: interval), (_) {
       stream.write(noise);
      });
+    stream.start();
   }
 
   void stop() {

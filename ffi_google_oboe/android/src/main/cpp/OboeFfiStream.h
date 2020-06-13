@@ -8,12 +8,10 @@
 
 #include <oboe/Oboe.h>
 #include <cstdint>
-#include <cstring>
-#include <array>
-#include <algorithm>
 #include <variant>
+#include <queue>
 
-#include "OboeFfiCallback.h"
+#include "DSPCallback.h"
 #include "FunctionList.h"
 
 
@@ -27,21 +25,21 @@ public:
     void write(void * data, size_t size);
 
     void beginStreams();
-    oboe::Result startStreams();
-    oboe::Result stopStreams();
+    void startStreams();
+    void stopStreams();
 
 
     std::variant<FunctionList<int16_t *>, FunctionList<float *>> functionList{std::in_place_type<FunctionList<int16_t *>>};
 
 private:
     void openOutStream();
-    static oboe::AudioStreamBuilder defaultBuilder();
+    oboe::AudioStreamBuilder defaultBuilder();
 
     void createCallback();
 
     oboe::AudioFormat format;
     int sampleRate;
-    std::vector<float> inSource;
+    std::queue<float> inQueue;
 
     std::unique_ptr<oboe::AudioStreamCallback> mCallback;
     oboe::ManagedStream outStream;

@@ -11,6 +11,7 @@ add_library(ffi_google_oboe
         # Oboe ffi files
         src/main/cpp/ffiOboeExport.cpp
         src/main/cpp/OboeFfiStream.cpp
+        src/main/cpp/DSPCallback.cpp
 
         # Audio engine files
 #        src/main/cpp/audio/AAssetDataSource.cpp

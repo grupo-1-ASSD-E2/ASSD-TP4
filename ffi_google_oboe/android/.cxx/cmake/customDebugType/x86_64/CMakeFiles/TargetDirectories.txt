@@ -1,0 +1,14 @@
+C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/customDebugType/x86_64/CMakeFiles/ffi_google_oboe.dir
+C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/customDebugType/x86_64/CMakeFiles/install/local.dir
+C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/customDebugType/x86_64/CMakeFiles/install.dir
+C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/customDebugType/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/customDebugType/x86_64/CMakeFiles/rebuild_cache.dir
+C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/customDebugType/x86_64/CMakeFiles/list_install_components.dir
+C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/customDebugType/x86_64/CMakeFiles/install/strip.dir
+C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/customDebugType/x86_64/oboe/CMakeFiles/oboe.dir
+C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/customDebugType/x86_64/oboe/CMakeFiles/install/local.dir
+C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/customDebugType/x86_64/oboe/CMakeFiles/install.dir
+C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/customDebugType/x86_64/oboe/CMakeFiles/edit_cache.dir
+C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/customDebugType/x86_64/oboe/CMakeFiles/rebuild_cache.dir
+C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/customDebugType/x86_64/oboe/CMakeFiles/list_install_components.dir
+C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/customDebugType/x86_64/oboe/CMakeFiles/install/strip.dir

@@ -1,7 +1,2 @@
 ninja: Entering directory `C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\android\.cxx\cmake\debug\x86'
-[1/2] Building CXX object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o
-../../../../src/main/cpp/OboeFfiStream.cpp:9:82: warning: unused parameter 'f' [-Wunused-parameter]
-OboeFfiStream::OboeFfiStream(int sr, void * data, size_t size, oboe::AudioFormat f) {
-                                                                                 ^
-1 warning generated.
-[2/2] Linking CXX shared library C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\sound3d\build\ffi_google_oboe\intermediates\cmake\debug\obj\x86\libffi_google_oboe.so
+ninja: no work to do.
