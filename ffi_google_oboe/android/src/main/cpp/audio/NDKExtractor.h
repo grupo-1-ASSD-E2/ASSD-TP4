@@ -20,6 +20,7 @@
 
 #include <cstdint>
 #include <android/asset_manager.h>
+#include <audio/DataSource.h>
 
 
 class NDKExtractor {

@@ -21,7 +21,6 @@
 #include <array>
 
 #include <chrono>
-#include <memory>
 #include <atomic>
 
 #include <android/asset_manager.h>

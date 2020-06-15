@@ -37,9 +37,9 @@ include rules.ninja
 # Order-only phony target for ffi_google_oboe
 
 build cmake_object_order_depends_target_ffi_google_oboe: phony || cmake_object_order_depends_target_oboe
-build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/native-lib.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/native-lib.cpp || cmake_object_order_depends_target_ffi_google_oboe
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/ffiOboeExport.cpp || cmake_object_order_depends_target_ffi_google_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
-  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\native-lib.cpp.o.d
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\ffiOboeExport.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
   INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
@@ -72,24 +72,31 @@ build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o: CXX_COMPIL
   INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/NDKExtractor.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/audio/NDKExtractor.cpp || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio\NDKExtractor.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target ffi_google_oboe
 
 
 #############################################
-# Link the shared library C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\example\build\ffi_google_oboe\intermediates\cmake\debug\obj\x86\libffi_google_oboe.so
+# Link the shared library C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\sound3d\build\ffi_google_oboe\intermediates\cmake\debug\obj\x86\libffi_google_oboe.so
 
-build C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86/libffi_google_oboe.so: CXX_SHARED_LIBRARY_LINKER__ffi_google_oboe CMakeFiles/ffi_google_oboe.dir/src/main/cpp/native-lib.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPAudioEngine.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPCallback.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o | oboe/liboboe.a || oboe/liboboe.a
+build C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/sound3d/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86/libffi_google_oboe.so: CXX_SHARED_LIBRARY_LINKER__ffi_google_oboe CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPAudioEngine.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPCallback.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/NDKExtractor.cpp.o | oboe/liboboe.a oboe/liboboe.a || oboe/liboboe.a
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
-  LINK_LIBRARIES = oboe/liboboe.a -llog -lOpenSLES -latomic -lm
+  LINK_LIBRARIES = -llog -landroid oboe/liboboe.a -lGLESv2 -lmediandk oboe/liboboe.a -llog -lOpenSLES -latomic -lm
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   SONAME = libffi_google_oboe.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\example\build\ffi_google_oboe\intermediates\cmake\debug\obj\x86\libffi_google_oboe.so
+  TARGET_FILE = C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\sound3d\build\ffi_google_oboe\intermediates\cmake\debug\obj\x86\libffi_google_oboe.so
   TARGET_PDB = ffi_google_oboe.so.dbg
 
 #############################################
@@ -573,8 +580,8 @@ build oboe/install/strip: phony oboe/CMakeFiles/install/strip.util
 # =============================================================================
 # Target aliases.
 
-build ffi_google_oboe: phony C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86/libffi_google_oboe.so
-build libffi_google_oboe.so: phony C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86/libffi_google_oboe.so
+build ffi_google_oboe: phony C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/sound3d/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86/libffi_google_oboe.so
+build libffi_google_oboe.so: phony C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/sound3d/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86/libffi_google_oboe.so
 build liboboe.a: phony oboe/liboboe.a
 build oboe: phony oboe/liboboe.a
 # =============================================================================
@@ -594,7 +601,7 @@ build  oboe/all: phony oboe
 #############################################
 # The main all target.
 
-build all: phony C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86/libffi_google_oboe.so oboe/liboboe.a
+build all: phony C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/sound3d/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86/libffi_google_oboe.so oboe/liboboe.a
 
 #############################################
 # Make the all target the default.

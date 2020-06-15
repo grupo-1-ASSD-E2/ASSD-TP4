@@ -5,20 +5,23 @@ import 'package:ffi/ffi.dart';
 import 'package:flutter/services.dart';
 
 
-typedef oboe_stream_init = Pointer<Void> Function();
-typedef OboeStreamInit = Pointer<Void> Function();
+typedef oboe_engine_init = Pointer<Void> Function();
+typedef OboeEngineInit = Pointer<Void> Function();
 
-typedef oboe_stream_dispose = Void Function(Pointer<Void>);
-typedef OboeStreamDispose = void Function(Pointer<Void>);
+typedef oboe_engine_dispose = Void Function(Pointer<Void>);
+typedef OboeEngineDispose = void Function(Pointer<Void>);
 
-typedef oboe_stream_sample_rate = Int32 Function(Pointer<Void>);
-typedef OboeStreamSampleRate = int Function(Pointer<Void>);
+typedef oboe_engine_sample_rate = Int32 Function(Pointer<Void>);
+typedef OboeEngineSampleRate = int Function(Pointer<Void>);
 
-typedef oboe_stream_start_stop = Void Function(Pointer<Void>);
-typedef OboeStreamStartStop = void Function(Pointer<Void>);
+typedef oboe_engine_start_stop = Void Function(Pointer<Void>);
+typedef OboeEngineStartStop = void Function(Pointer<Void>);
 
-typedef oboe_stream_write = Void Function(Pointer<Void>, Pointer<Float>, Int32);
-typedef OboeStreamWrite = void Function(Pointer<Void>, Pointer<Float>, int);
+typedef oboe_engine_write = Void Function(Pointer<Void>, Pointer<Float>, Int32);
+typedef OboeEngineWrite = void Function(Pointer<Void>, Pointer<Float>, int);
+
+typedef oboe_engine_load_file = Int32 Function(Pointer<Void>, Pointer<Utf8>);
+typedef OboeEngineLoadFile = int Function(Pointer<Void>, Pointer<Utf8>);
 
 
 class FfiGoogleOboe {
@@ -40,65 +43,70 @@ class FfiGoogleOboe {
   }
 
 
-  OboeStreamInit _streamInit;
-  OboeStreamDispose _streamDispose;
-  OboeStreamSampleRate _streamSampleRate;
-  OboeStreamStartStop _streamStart;
-  OboeStreamStartStop _streamStop;
-  OboeStreamWrite _streamWrite;
+  OboeEngineInit _engineInit;
+  OboeEngineDispose _engineDispose;
+  OboeEngineSampleRate _engineSampleRate;
+  OboeEngineStartStop _engineStart;
+  OboeEngineStartStop _engineStop;
+  OboeEngineWrite _engineWrite;
+  OboeEngineLoadFile _engineLoadFile;
 
   FfiGoogleOboe._() {
     final oboeLib = DynamicLibrary.open('libffi_google_oboe.so');
 
-    _streamInit = oboeLib
-        .lookup<NativeFunction<oboe_stream_init>>('stream_create')
+    _engineInit = oboeLib
+        .lookup<NativeFunction<oboe_engine_init>>('engine_create')
         .asFunction();
 
-    _streamDispose = oboeLib
-        .lookup<NativeFunction<oboe_stream_dispose>>('stream_dispose')
+    _engineDispose = oboeLib
+        .lookup<NativeFunction<oboe_engine_dispose>>('engine_dispose')
         .asFunction();
 
-    _streamSampleRate = oboeLib
-        .lookup<NativeFunction<oboe_stream_sample_rate>>('stream_sample_rate')
+    _engineSampleRate = oboeLib
+        .lookup<NativeFunction<oboe_engine_sample_rate>>('engine_sample_rate')
         .asFunction();
 
-    _streamStart = oboeLib
-        .lookup<NativeFunction<oboe_stream_start_stop>>('stream_start')
+    _engineStart = oboeLib
+        .lookup<NativeFunction<oboe_engine_start_stop>>('engine_start')
         .asFunction();
 
-    _streamStop = oboeLib
-        .lookup<NativeFunction<oboe_stream_start_stop>>('stream_stop')
+    _engineStop = oboeLib
+        .lookup<NativeFunction<oboe_engine_start_stop>>('engine_stop')
         .asFunction();
 
-    _streamWrite = oboeLib
-        .lookup<NativeFunction<oboe_stream_write>>('stream_write')
+    _engineWrite = oboeLib
+        .lookup<NativeFunction<oboe_engine_write>>('engine_write')
+        .asFunction();
+
+    _engineLoadFile = oboeLib
+        .lookup<NativeFunction<oboe_engine_load_file>>('engine_load_audio')
         .asFunction();
   }
 
 }
 
 
-class OboeStream {
+class OboeEngine {
   Pointer<Void> _nativeInstance;
 
-  OboeStream() {
-    _nativeInstance = FfiGoogleOboe()._streamInit();
+  OboeEngine() {
+    _nativeInstance = FfiGoogleOboe()._engineInit();
   }
 
   void dispose() {
-    FfiGoogleOboe()._streamDispose(_nativeInstance);
+    FfiGoogleOboe()._engineDispose(_nativeInstance);
   }
 
   int getSampleRate() {
-    return FfiGoogleOboe()._streamSampleRate(_nativeInstance);
+    return FfiGoogleOboe()._engineSampleRate(_nativeInstance);
   }
 
   void start() {
-    FfiGoogleOboe()._streamStart(_nativeInstance);
+    FfiGoogleOboe()._engineStart(_nativeInstance);
   }
 
   void stop() {
-    FfiGoogleOboe()._streamStop(_nativeInstance);
+    FfiGoogleOboe()._engineStop(_nativeInstance);
   }
 
   void write(Float32List original) {
@@ -106,7 +114,7 @@ class OboeStream {
     var copy = allocate<Float>(count: length)
         ..asTypedList(length).setAll(0, original);
 
-    FfiGoogleOboe()._streamWrite(_nativeInstance, copy, length);
+    FfiGoogleOboe()._engineWrite(_nativeInstance, copy, length);
     free(copy);
   }
 }

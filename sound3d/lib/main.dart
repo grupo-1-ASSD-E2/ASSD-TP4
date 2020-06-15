@@ -18,7 +18,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final stream = OboeStream();
+  final engine = OboeEngine();
 
   var cycleCount = 128;
   var noise = Float32List(512);
@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
     for (var i = 0; i < noise.length; i++) {
       noise[i] = sin(10 * pi * i / noise.length);
     }
-    stream.write(noise);
+    engine.write(noise);
     
     // _loadSound();
   }
@@ -42,7 +42,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   void dispose() {
-    stream.dispose();
+    engine.dispose();
     super.dispose();
   }
 
@@ -57,7 +57,7 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text('Running at: ${stream.getSampleRate()}\n'),
+              Text('Running at: ${engine.getSampleRate()}\n'),
               RaisedButton(
                 child: Text('START'),
                 onPressed: start,
@@ -74,10 +74,10 @@ class _MyAppState extends State<MyApp> {
   }
 
   void start() {
-    stream.start();
-    var interval = (512000 / stream.getSampleRate()).floor() + 1;
+    engine.start();
+    var interval = (512000 / engine.getSampleRate()).floor() + 1;
     t = Timer.periodic(Duration(milliseconds: interval), (_) {
-      stream.write(noise);
+      engine.write(noise);
       cycleCount--;
       if (cycleCount == 0) {
         cycleCount = 128;
@@ -89,6 +89,6 @@ class _MyAppState extends State<MyApp> {
   void stop() {
     t?.cancel();
     t = null;
-    stream.stop();
+    engine.stop();
   }
 }

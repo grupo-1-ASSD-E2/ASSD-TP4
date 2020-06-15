@@ -9,17 +9,24 @@ add_library(ffi_google_oboe
         SHARED
 
         # Oboe ffi files
-        src/main/cpp/native-lib.cpp
+        src/main/cpp/ffiOboeExport.cpp
         src/main/cpp/DSPAudioEngine.cpp
         src/main/cpp/DSPCallback.cpp
 
         # Audio engine files
         src/main/cpp/audio/AAssetDataSource.cpp
+#        src/main/cpp/audio/NDKExtractor.cpp
         src/main/cpp/audio/Player.cpp
 
         # Utils files
-        #            src/main/cpp/utils/UtilityFunctions.cpp
+#        src/main/cpp/utils/UtilityFunctions.cpp
         )
+
+
+set (TARGET_LIBS log android oboe GLESv2)
+target_sources( ffi_google_oboe PRIVATE src/main/cpp/audio/NDKExtractor.cpp )
+set (TARGET_LIBS ${TARGET_LIBS} mediandk)
+target_link_libraries( ffi_google_oboe ${TARGET_LIBS} )
 
 # Compile with warnings for safety
 if(MSVC)

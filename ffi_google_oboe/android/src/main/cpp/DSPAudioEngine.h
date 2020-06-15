@@ -7,7 +7,7 @@
 
 
 #include <cstdint>
-#include <string>
+#include <cstring>
 #include <variant>
 #include <queue>
 #include <vector>
@@ -51,7 +51,7 @@ private:
     std::unique_ptr<oboe::AudioStreamCallback> mCallback;
     oboe::ManagedStream outStream;
     Mixer mMixer;
-    std::vector<Player> players;
+    std::vector<std::unique_ptr<Player>> players;
 
     AAssetManager &mAssetManager;
 };

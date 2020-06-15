@@ -117,10 +117,10 @@ bool DSPAudioEngine::loadAudioSource(std::string path) {
         LOGE("Could not load source data for backing track");
         return false;
     }
-    players.emplace_back(backingTrackSource);
+    players.emplace_back(std::make_unique<Player>(backingTrackSource));
 
     // Adding player to a mixer
-    mMixer.addTrack(&players.back());
+    mMixer.addTrack(players.back().get());
 
     return true;
 }

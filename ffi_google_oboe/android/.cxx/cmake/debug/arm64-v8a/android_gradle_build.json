@@ -284,7 +284,7 @@
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\OboeFfiStream.cpp",
+          "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\DSPAudioEngine.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
@@ -300,6 +300,11 @@
         },
         {
           "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\audio\\Player.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\audio\\NDKExtractor.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         }

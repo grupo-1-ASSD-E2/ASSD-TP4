@@ -1,63 +1,74 @@
 ninja: Entering directory `C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\android\.cxx\cmake\debug\armeabi-v7a'
-[1/5] Building CXX object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o
-[2/5] Building CXX object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o
-FAILED: CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o 
-C:\Users\facun\AppData\Local\Android\Sdk\ndk\21.1.6352462\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z -MD -MT CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o -MF CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio\AAssetDataSource.cpp.o.d -o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o -c ../../../../src/main/cpp/audio/AAssetDataSource.cpp
-../../../../src/main/cpp/audio/AAssetDataSource.cpp:24:2: error: USE_FFMPEG should be defined in app.gradle
-#error USE_FFMPEG should be defined in app.gradle
- ^
-1 error generated.
-[3/5] Building CXX object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o
-[4/5] Building CXX object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o
-FAILED: CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o 
-C:\Users\facun\AppData\Local\Android\Sdk\ndk\21.1.6352462\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z -MD -MT CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o -MF CMakeFiles\ffi_google_oboe.dir\src\main\cpp\OboeFfiStream.cpp.o.d -o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o -c ../../../../src/main/cpp/OboeFfiStream.cpp
-../../../../src/main/cpp/OboeFfiStream.cpp:9:16: error: constructor for 'OboeFfiStream' must explicitly initialize the reference member 'mAssetManager'
-OboeFfiStream::OboeFfiStream(int sr, void * data, size_t size, oboe::AudioFormat f) {
-               ^
-../../../../src/main/cpp/OboeFfiStream.h:56:20: note: declared here
-    AAssetManager &mAssetManager;
-                   ^
-../../../../src/main/cpp/OboeFfiStream.cpp:9:82: warning: unused parameter 'f' [-Wunused-parameter]
-OboeFfiStream::OboeFfiStream(int sr, void * data, size_t size, oboe::AudioFormat f) {
-                                                                                 ^
-In file included from ../../../../src/main/cpp/OboeFfiStream.cpp:5:
-In file included from ../../../../src/main/cpp/OboeFfiStream.h:10:
-In file included from C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\string:504:
-In file included from C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\string_view:175:
-In file included from C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\__string:56:
-In file included from C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\algorithm:643:
-C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\memory:1825:31: error: call to implicitly-deleted copy constructor of 'Player'
-            ::new((void*)__p) _Up(_VSTD::forward<_Args>(__args)...);
-                              ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\memory:1717:18: note: in instantiation of function template specialization 'std::__ndk1::allocator<Player>::construct<Player, Player>' requested here
-            {__a.construct(__p, _VSTD::forward<_Args>(__args)...);}
-                 ^
-C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\memory:1560:14: note: in instantiation of function template specialization 'std::__ndk1::allocator_traits<std::__ndk1::allocator<Player> >::__construct<Player, Player>' requested here
-            {__construct(__has_construct<allocator_type, _Tp*, _Args...>(),
-             ^
-C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\memory:1679:17: note: in instantiation of function template specialization 'std::__ndk1::allocator_traits<std::__ndk1::allocator<Player> >::construct<Player, Player>' requested here
-                construct(__a, _VSTD::__to_raw_pointer(__end2-1), _VSTD::move_if_noexcept(*--__end1));
-                ^
-C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\vector:951:21: note: in instantiation of function template specialization 'std::__ndk1::allocator_traits<std::__ndk1::allocator<Player> >::__construct_backward<Player *>' requested here
-    __alloc_traits::__construct_backward(this->__alloc(), this->__begin_, this->__end_, __v.__begin_);
-                    ^
-C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\vector:1664:5: note: in instantiation of member function 'std::__ndk1::vector<Player, std::__ndk1::allocator<Player> >::__swap_out_circular_buffer' requested here
-    __swap_out_circular_buffer(__v);
-    ^
-C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\vector:1682:9: note: in instantiation of function template specialization 'std::__ndk1::vector<Player, std::__ndk1::allocator<Player> >::__emplace_back_slow_path<std::__ndk1::shared_ptr<AAssetDataSource> &>' requested here
-        __emplace_back_slow_path(_VSTD::forward<_Args>(__args)...);
-        ^
-../../../../src/main/cpp/OboeFfiStream.cpp:121:13: note: in instantiation of function template specialization 'std::__ndk1::vector<Player, std::__ndk1::allocator<Player> >::emplace_back<std::__ndk1::shared_ptr<AAssetDataSource> &>' requested here
-    players.emplace_back(backingTrackSource);
-            ^
-../../../../src/main/cpp\audio/Player.h:53:23: note: copy constructor of 'Player' is implicitly deleted because field 'mIsPlaying' has a deleted copy constructor
-    std::atomic<bool> mIsPlaying { false };
-                      ^
-C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\atomic:1643:7: note: copy constructor of 'atomic<bool>' is implicitly deleted because base class '__atomic_base<bool>' has a deleted copy constructor
-    : public __atomic_base<_Tp>
-      ^
-C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1\atomic:1542:5: note: '__atomic_base' has been explicitly marked deleted here
-    __atomic_base(const __atomic_base&) = delete;
-    ^
-1 warning and 2 errors generated.
-ninja: build stopped: subcommand failed.
+[1/57] Building CXX object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/NDKExtractor.cpp.o
+[2/57] Building CXX object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o
+[3/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o
+[4/57] Building CXX object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o
+[5/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o
+[6/57] Building CXX object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPCallback.cpp.o
+../../../../src/main/cpp/DSPCallback.cpp:24:24: warning: comparison of integers of different signs: 'std::__ndk1::queue<float, std::__ndk1::deque<float, std::__ndk1::allocator<float> > >::size_type' (aka 'unsigned int') and 'int32_t' (aka 'int') [-Wsign-compare]
+    if (inQueue.size() > numFrames){
+        ~~~~~~~~~~~~~~ ^ ~~~~~~~~~
+In file included from ../../../../src/main/cpp/DSPCallback.cpp:5:
+../../../../src/main/cpp/DSPCallback.h:21:12: warning: private field 'cycle_count' is not used [-Wunused-private-field]
+    size_t cycle_count=0;
+           ^
+2 warnings generated.
+[7/57] Building CXX object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o
+../../../../src/main/cpp/ffiOboeExport.cpp:17:128: warning: unused parameter 'instance' [-Wunused-parameter]
+EXTERNC JNIEXPORT void * JNICALL Java_com_google_oboe_sample_rhythmgame_MainActivity_native_1engineCreate(JNIEnv *env, jobject instance, jobject jAssetManager) {
+                                                                                                                               ^
+1 warning generated.
+[8/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o
+[9/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o
+[10/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o
+[11/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o
+[12/57] Building CXX object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPAudioEngine.cpp.o
+../../../../src/main/cpp/DSPAudioEngine.cpp:9:109: warning: unused parameter 'f' [-Wunused-parameter]
+DSPAudioEngine::DSPAudioEngine(AAssetManager& aManager, int sr, void * data, size_t size, oboe::AudioFormat f) : sampleRate(sr), mAssetManager(aManager) {
+                                                                                                            ^
+1 warning generated.
+[13/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o
+[14/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o
+[15/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o
+[16/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o
+[17/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o
+[18/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o
+[19/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o
+[20/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o
+[21/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o
+[22/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o
+[23/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o
+[24/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o
+[25/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o
+[26/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o
+[27/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o
+[28/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o
+[29/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o
+[30/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o
+[31/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o
+[32/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o
+[33/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o
+[34/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o
+[35/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o
+[36/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o
+[37/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o
+[38/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o
+[39/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o
+[40/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o
+[41/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o
+[42/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o
+[43/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o
+[44/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o
+[45/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o
+[46/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o
+[47/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o
+[48/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o
+[49/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o
+[50/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o
+[51/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o
+[52/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o
+[53/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o
+[54/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o
+[55/57] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o
+[56/57] Linking CXX static library oboe\liboboe.a
+[57/57] Linking CXX shared library C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\sound3d\build\ffi_google_oboe\intermediates\cmake\debug\obj\armeabi-v7a\libffi_google_oboe.so
