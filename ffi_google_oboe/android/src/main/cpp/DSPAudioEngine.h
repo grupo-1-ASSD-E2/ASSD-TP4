@@ -2,8 +2,8 @@
 // Created by facun on 23/05/2020.
 //
 
-#ifndef ANDROID_OBOEFFISTREAM_H
-#define ANDROID_OBOEFFISTREAM_H
+#ifndef ANDROID_DSPAUDIOENGINE_H
+#define ANDROID_DSPAUDIOENGINE_H
 
 
 #include <cstdint>
@@ -21,10 +21,10 @@
 #include "FunctionList.h"
 
 
-class OboeFfiStream {
+class DSPAudioEngine {
 public:
-    OboeFfiStream(int sr=48000, void * data=nullptr, size_t size=0, oboe::AudioFormat f=oboe::AudioFormat::Float);
-    virtual ~OboeFfiStream() = default;
+    DSPAudioEngine(AAssetManager& aManager, int sr=48000, void * data=nullptr, size_t size=0, oboe::AudioFormat f=oboe::AudioFormat::Float);
+    virtual ~DSPAudioEngine() = default;
 
     int32_t getSampleRate();
     void close();
@@ -57,4 +57,4 @@ private:
 };
 
 
-#endif //ANDROID_OBOEFFISTREAM_H
+#endif //ANDROID_DSPAUDIOENGINE_H

@@ -2,13 +2,12 @@
 // Created by facun on 23/05/2020.
 //
 
-#include "OboeFfiStream.h"
+#include "DSPAudioEngine.h"
 #include <utils/logging.h>
 
 
-OboeFfiStream::OboeFfiStream(int sr, void * data, size_t size, oboe::AudioFormat f) {
+DSPAudioEngine::DSPAudioEngine(AAssetManager& aManager, int sr, void * data, size_t size, oboe::AudioFormat f) : sampleRate(sr), mAssetManager(aManager) {
     format = oboe::AudioFormat::Float;      // In the future could be changed to accept argument f.
-    sampleRate = sr;
     write(data, size);
     LOGE("INPUT DATA WRITTEN");
     LOGE(" ");
@@ -16,7 +15,7 @@ OboeFfiStream::OboeFfiStream(int sr, void * data, size_t size, oboe::AudioFormat
     beginStreams();
 }
 
-void OboeFfiStream::write(void * data, size_t size) {
+void DSPAudioEngine::write(void * data, size_t size) {
     if (data == nullptr) {
         inQueue.push(0);
     }
@@ -29,7 +28,7 @@ void OboeFfiStream::write(void * data, size_t size) {
     }
 }
 
-void OboeFfiStream::beginStreams() {
+void DSPAudioEngine::beginStreams() {
     functionList.emplace<FunctionList<float *>>().addEffect([](float*, float*){});
     createCallback();
     LOGE("CALLBACK CREATED SUCCESSFULLY");
@@ -37,17 +36,17 @@ void OboeFfiStream::beginStreams() {
     openOutStream();
 }
 
-void OboeFfiStream::createCallback() {
+void DSPAudioEngine::createCallback() {
     mCallback = std::make_unique<DSPCallback>(
             inQueue,
             [&functionStack = this->functionList](float *beg, float *end) {
                 std::get<FunctionList<float *>>(functionStack)(beg, end);
             },
-            std::bind(&OboeFfiStream::beginStreams, this));
+            std::bind(&DSPAudioEngine::beginStreams, this));
 }
 
 
-oboe::AudioStreamBuilder OboeFfiStream::defaultBuilder() {
+oboe::AudioStreamBuilder DSPAudioEngine::defaultBuilder() {
     return *oboe::AudioStreamBuilder()
             .setPerformanceMode(oboe::PerformanceMode::LowLatency)
             ->setSharingMode(oboe::SharingMode::Shared)
@@ -56,7 +55,7 @@ oboe::AudioStreamBuilder OboeFfiStream::defaultBuilder() {
             ->setFramesPerCallback(512);
 }
 
-void OboeFfiStream::openOutStream() {
+void DSPAudioEngine::openOutStream() {
     oboe::AudioStreamBuilder builder = defaultBuilder();
     builder.setChannelCount(2); // Stereo out
     builder.setCallback(mCallback.get());
@@ -66,7 +65,7 @@ void OboeFfiStream::openOutStream() {
     builder.openManagedStream(outStream);
 }
 
-void OboeFfiStream::startStreams() {
+void DSPAudioEngine::startStreams() {
     oboe::Result result = outStream->requestStart();
     int64_t timeoutNanos = 500 * 1000000; // arbitrary 1/2 second
     auto currentState = outStream->getState();
@@ -85,7 +84,7 @@ void OboeFfiStream::startStreams() {
     }
 }
 
-void OboeFfiStream::stopStreams() {
+void DSPAudioEngine::stopStreams() {
     oboe::Result result = outStream->requestStop();
 
     if (result != oboe::Result::OK) {
@@ -97,15 +96,15 @@ void OboeFfiStream::stopStreams() {
     }
 }
 
-int32_t OboeFfiStream::getSampleRate() {
+int32_t DSPAudioEngine::getSampleRate() {
     return sampleRate;
 }
 
-void OboeFfiStream::close() {
+void DSPAudioEngine::close() {
     outStream->close();
 }
 
-bool OboeFfiStream::loadAudioSource(std::string path) {
+bool DSPAudioEngine::loadAudioSource(std::string path) {
 
     // Set the properties of our audio source(s) to match that of our audio stream
     AudioProperties targetProperties {outStream->getChannelCount(),outStream->getSampleRate()};

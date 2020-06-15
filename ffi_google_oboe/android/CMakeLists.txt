@@ -9,8 +9,8 @@ add_library(ffi_google_oboe
         SHARED
 
         # Oboe ffi files
-        src/main/cpp/ffiOboeExport.cpp
-        src/main/cpp/OboeFfiStream.cpp
+        src/main/cpp/native-lib.cpp
+        src/main/cpp/DSPAudioEngine.cpp
         src/main/cpp/DSPCallback.cpp
 
         # Audio engine files

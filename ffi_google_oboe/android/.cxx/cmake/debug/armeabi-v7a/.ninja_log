@@ -82,3 +82,5 @@
 1644	2145	613884099	C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/sound3d/build/ffi_google_oboe/intermediates/cmake/debug/obj/armeabi-v7a/libffi_google_oboe.so	768a6069146806ad
 10	1085	613884421	CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPCallback.cpp.o	3b1f66d6a98c5c9e
 1085	1386	613884422	C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/sound3d/build/ffi_google_oboe/intermediates/cmake/debug/obj/armeabi-v7a/libffi_google_oboe.so	768a6069146806ad
+52	1704	613947690	CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o	32fddb420f9a971a
+26	2284	613947691	CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o	b0f4f067d2f50766
