@@ -18,7 +18,7 @@
 ANDROID_ABI:UNINITIALIZED=x86
 
 //No help, variable specified on the command line.
-ANDROID_NDK:UNINITIALIZED=C:\Users\facun\AppData\Local\Android\sdk\ndk\21.1.6352462
+ANDROID_NDK:UNINITIALIZED=C:\Users\facun\AppData\Local\Android\Sdk\ndk\21.1.6352462
 
 //No help, variable specified on the command line.
 ANDROID_PLATFORM:UNINITIALIZED=android-16
@@ -27,7 +27,7 @@ ANDROID_PLATFORM:UNINITIALIZED=android-16
 CMAKE_ANDROID_ARCH_ABI:UNINITIALIZED=x86
 
 //No help, variable specified on the command line.
-CMAKE_ANDROID_NDK:UNINITIALIZED=C:\Users\facun\AppData\Local\Android\sdk\ndk\21.1.6352462
+CMAKE_ANDROID_NDK:UNINITIALIZED=C:\Users\facun\AppData\Local\Android\Sdk\ndk\21.1.6352462
 
 //Archiver
 CMAKE_AR:FILEPATH=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/i686-linux-android-ar.exe
@@ -113,11 +113,14 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Enable/Disable output of compile commands during generation.
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON
 
+//No help, variable specified on the command line.
+CMAKE_FIND_ROOT_PATH:UNINITIALIZED=C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\android\.cxx\cmake\debug\prefab\x86\prefab
+
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Project
 
 //No help, variable specified on the command line.
-CMAKE_LIBRARY_OUTPUT_DIRECTORY:UNINITIALIZED=C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\sound3d\build\ffi_google_oboe\intermediates\cmake\debug\obj\x86
+CMAKE_LIBRARY_OUTPUT_DIRECTORY:UNINITIALIZED=C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\example\build\ffi_google_oboe\intermediates\cmake\debug\obj\x86
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/i686-linux-android-ld.exe
@@ -201,8 +204,8 @@ CMAKE_SYSTEM_NAME:UNINITIALIZED=Android
 //No help, variable specified on the command line.
 CMAKE_SYSTEM_VERSION:UNINITIALIZED=16
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=C:\Users\facun\AppData\Local\Android\Sdk\ndk\21.1.6352462\build\cmake\android.toolchain.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console

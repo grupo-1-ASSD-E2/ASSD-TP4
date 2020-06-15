@@ -104,3 +104,24 @@ int32_t OboeFfiStream::getSampleRate() {
 void OboeFfiStream::close() {
     outStream->close();
 }
+
+bool OboeFfiStream::loadAudioSource(std::string path) {
+
+    // Set the properties of our audio source(s) to match that of our audio stream
+    AudioProperties targetProperties {outStream->getChannelCount(),outStream->getSampleRate()};
+
+    // Create a data source and player for our backing track
+    std::shared_ptr<AAssetDataSource> backingTrackSource {
+            AAssetDataSource::newFromCompressedAsset(mAssetManager, path.c_str(), &targetProperties)
+    };
+    if (backingTrackSource == nullptr){
+        LOGE("Could not load source data for backing track");
+        return false;
+    }
+    players.emplace_back(backingTrackSource);
+
+    // Adding player to a mixer
+    mMixer.addTrack(&players.back());
+
+    return true;
+}

@@ -26,7 +26,7 @@
 
 #include <android/asset_manager.h>
 
-#include "shared/IRenderableAudio.h"
+#include <shared/IRenderableAudio.h>
 #include "DataSource.h"
 
 class Player : public IRenderableAudio{
