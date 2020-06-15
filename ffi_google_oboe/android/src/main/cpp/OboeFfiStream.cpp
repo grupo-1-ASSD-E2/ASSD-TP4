@@ -27,7 +27,6 @@ void OboeFfiStream::write(void * data, size_t size) {
             floatData++;
         }
     }
-    createCallback();
 }
 
 void OboeFfiStream::beginStreams() {
@@ -53,7 +52,8 @@ oboe::AudioStreamBuilder OboeFfiStream::defaultBuilder() {
             .setPerformanceMode(oboe::PerformanceMode::LowLatency)
             ->setSharingMode(oboe::SharingMode::Shared)
             ->setSampleRate(sampleRate)
-            ->setFormat(format);
+            ->setFormat(format)
+            ->setFramesPerCallback(512);
 }
 
 void OboeFfiStream::openOutStream() {

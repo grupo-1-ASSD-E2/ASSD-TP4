@@ -20,6 +20,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   final stream = OboeStream();
 
+  var cycleCount = 128;
   var noise = Float32List(512);
   Timer t;
 
@@ -27,8 +28,9 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     for (var i = 0; i < noise.length; i++) {
-      noise[i] = sin(8 * pi * i / noise.length);
+      noise[i] = sin(10 * pi * i / noise.length);
     }
+    stream.write(noise);
     
     // _loadSound();
   }
@@ -72,11 +74,16 @@ class _MyAppState extends State<MyApp> {
   }
 
   void start() {
+    stream.start();
     var interval = (512000 / stream.getSampleRate()).floor() + 1;
     t = Timer.periodic(Duration(milliseconds: interval), (_) {
       stream.write(noise);
+      cycleCount--;
+      if (cycleCount == 0) {
+        cycleCount = 128;
+        stop();
+      }
      });
-    stream.start();
   }
 
   void stop() {

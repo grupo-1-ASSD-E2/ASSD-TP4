@@ -3,11 +3,13 @@
 //
 
 #include "DSPCallback.h"
-
 #include <utility>
 
-DSPCallback::DSPCallback(std::queue<float> &inQ, std::function<void(float *, float *)> fun, std::function<void(void)> restartFunction)
-: inQueue(inQ), f(std::move(fun)), restart(std::move(restartFunction)) {}
+
+DSPCallback::DSPCallback(std::queue<float> &inQ, std::function<void(float *, float *)> fun, std::function<void(void)> restartFunction) : inQueue(inQ), f(std::move(fun)), restart(std::move(restartFunction)) {
+    LOGE("DSPCallback CREATED");
+    LOGE("ELEMENTS IN inQueue TO PROCESS: %d", inQueue.size());
+}
 
 oboe::DataCallbackResult DSPCallback::onAudioReady(oboe::AudioStream *outputStream, void *audioData, int32_t numFrames) {
     LOGE("CALLBACK CALLED");
@@ -19,7 +21,7 @@ oboe::DataCallbackResult DSPCallback::onAudioReady(oboe::AudioStream *outputStre
     // Silence first to simplify glitch detection
     std::fill(outputData, outputData + numFrames * outputChannelCount, 0);
 
-    if (!inQueue.empty()){
+    if (inQueue.size() > numFrames){
         LOGE("PROCESSING DATA");
         LOGE(" ");
         // Processing (for now it's just pass-through)
@@ -30,12 +32,14 @@ oboe::DataCallbackResult DSPCallback::onAudioReady(oboe::AudioStream *outputStre
                 *outputData++ = temp_sound;
             }
         }
+
+        return oboe::DataCallbackResult::Continue;
     }
     else {
         LOGE("NO DATA TO PROCESS");
         LOGE(" ");
+        return oboe::DataCallbackResult::Stop;
     }
-    return oboe::DataCallbackResult::Continue;
 }
 
 void DSPCallback::onErrorAfterClose(oboe::AudioStream *, oboe::Result result) {
