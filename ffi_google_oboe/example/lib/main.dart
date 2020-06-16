@@ -21,7 +21,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final stream = OboeStream();
+  final stream = OboeEngine();
 
   var noise = Float32List(512);
   Timer t;

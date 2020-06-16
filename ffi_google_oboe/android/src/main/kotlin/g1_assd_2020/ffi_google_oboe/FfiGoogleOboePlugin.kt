@@ -7,7 +7,8 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
-import io.flutter.plugin.common.PluginRegistry.Registrar
+
+import andorid.content.res
 
 /** FfiGoogleOboePlugin */
 public class FfiGoogleOboePlugin: FlutterPlugin, MethodCallHandler {
@@ -42,6 +43,8 @@ public class FfiGoogleOboePlugin: FlutterPlugin, MethodCallHandler {
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
     if (call.method == "getPlatformVersion") {
       result.success("Android ${android.os.Build.VERSION.RELEASE}")
+    } else if (call.method == "engine_create") {
+      result.success("Method called: engine_create")
     } else {
       result.notImplemented()
     }

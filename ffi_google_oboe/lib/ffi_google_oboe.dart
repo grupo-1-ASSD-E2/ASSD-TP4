@@ -42,8 +42,12 @@ class FfiGoogleOboe {
     return _instance;
   }
 
+  Future<Pointer<Void>> _engineInit(String path) async {
+    final String result = await _channel.invokeMethod('engine_create');
+  }
 
-  OboeEngineInit _engineInit;
+
+  // OboeEngineInit _engineInit;
   OboeEngineDispose _engineDispose;
   OboeEngineSampleRate _engineSampleRate;
   OboeEngineStartStop _engineStart;
@@ -54,9 +58,9 @@ class FfiGoogleOboe {
   FfiGoogleOboe._() {
     final oboeLib = DynamicLibrary.open('libffi_google_oboe.so');
 
-    _engineInit = oboeLib
-        .lookup<NativeFunction<oboe_engine_init>>('engine_create')
-        .asFunction();
+    // _engineInit = oboeLib
+    //     .lookup<NativeFunction<oboe_engine_init>>('engine_create')
+    //     .asFunction();
 
     _engineDispose = oboeLib
         .lookup<NativeFunction<oboe_engine_dispose>>('engine_dispose')
