@@ -14,8 +14,8 @@
 #define EXTERNC
 #endif
 
-EXTERNC JNIEXPORT void * JNICALL Java_com_google_oboe_sample_rhythmgame_MainActivity_native_1engineCreate(JNIEnv *env, jobject instance, jobject jAssetManager) {
-    AAssetManager *assetManager = AAssetManager_fromJava(env, jAssetManager);
+EXTERNC void *engine_create(void) {
+    AAssetManager *assetManager = AAssetManager_fromJava(env, jAssetManager);   // How do I get these?
     if (assetManager == nullptr) {
         LOGE("Could not obtain the AAssetManager");
         return nullptr;
