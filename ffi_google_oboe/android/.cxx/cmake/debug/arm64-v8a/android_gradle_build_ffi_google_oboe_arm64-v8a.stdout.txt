@@ -1,2 +1,0 @@
-ninja: Entering directory `C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\android\.cxx\cmake\debug\arm64-v8a'
-ninja: no work to do.

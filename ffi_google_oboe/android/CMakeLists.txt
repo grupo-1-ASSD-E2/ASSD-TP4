@@ -5,6 +5,13 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+#file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR} "src/main/cpp/SDL/src/thread/*.c")
+file(GLOB SDL_SOURCES_1 RELATIVE ${CMAKE_SOURCE_DIR} "src/main/cpp/SDL/src/*.c")
+file(GLOB SDL_SOURCES_2 RELATIVE ${CMAKE_SOURCE_DIR} "src/main/cpp/SDL/src/core/android/*.c")
+file(GLOB SDL_SOURCES_3 RELATIVE ${CMAKE_SOURCE_DIR} "src/main/cpp/SDL/src/dynapi/*.c")
+file(GLOB SDL_SOURCES_4 RELATIVE ${CMAKE_SOURCE_DIR} "src/main/cpp/SDL/src/atomic/*.c")
+file(GLOB_RECURSE SDL_SOURCES_6 RELATIVE ${CMAKE_SOURCE_DIR} "src/main/cpp/SDL/src/video/*.c")
+
 add_library(ffi_google_oboe
         SHARED
 
@@ -17,9 +24,23 @@ add_library(ffi_google_oboe
         src/main/cpp/audio/AAssetDataSource.cpp
         src/main/cpp/audio/Player.cpp
 
+        # SDL source files
+        ${SDL_SOURCES_1}
+        ${SDL_SOURCES_2}
+        ${SDL_SOURCES_3}
+        ${SDL_SOURCES_4}
+        ${SDL_SOURCES_5}
+        ${SDL_SOURCES_6}
+
         # Utils files
         #            src/main/cpp/utils/UtilityFunctions.cpp
         )
+
+
+set (TARGET_LIBS log android oboe GLESv2)
+target_sources( ffi_google_oboe PRIVATE src/main/cpp/audio/NDKExtractor.cpp )
+set (TARGET_LIBS ${TARGET_LIBS} mediandk)
+target_link_libraries( ffi_google_oboe ${TARGET_LIBS} )
 
 # Compile with warnings for safety
 if(MSVC)
@@ -44,6 +65,7 @@ add_subdirectory (${OBOE_DIR} ./oboe)
 include_directories (
         ${OBOE_DIR}/include
         src/main/cpp
+        src/main/cpp/SDL/include
 )
 
 target_link_libraries(

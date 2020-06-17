@@ -41,35 +41,973 @@ build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o: CXX_COMPI
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
   DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\ffiOboeExport.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
-  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp
 build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/OboeFfiStream.cpp || cmake_object_order_depends_target_ffi_google_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
   DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\OboeFfiStream.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
-  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp
 build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPCallback.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/DSPCallback.cpp || cmake_object_order_depends_target_ffi_google_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
   DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\DSPCallback.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
-  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp
 build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/audio/AAssetDataSource.cpp || cmake_object_order_depends_target_ffi_google_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
   DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio\AAssetDataSource.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
-  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio
 build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/audio/Player.cpp || cmake_object_order_depends_target_ffi_google_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
   DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio\Player.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
-  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/SDL.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/SDL.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\SDL.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/SDL_assert.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/SDL_assert.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\SDL_assert.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/SDL_dataqueue.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/SDL_dataqueue.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\SDL_dataqueue.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/SDL_error.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/SDL_error.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\SDL_error.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/SDL_hints.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/SDL_hints.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\SDL_hints.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/SDL_log.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/SDL_log.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\SDL_log.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/core/android/SDL_android.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/core/android/SDL_android.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\core\android\SDL_android.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\core\android
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/dynapi/SDL_dynapi.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/dynapi/SDL_dynapi.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\dynapi\SDL_dynapi.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\dynapi
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/atomic/SDL_atomic.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/atomic/SDL_atomic.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\atomic\SDL_atomic.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\atomic
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/atomic/SDL_spinlock.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/atomic/SDL_spinlock.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\atomic\SDL_spinlock.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\atomic
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_RLEaccel.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_RLEaccel.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_RLEaccel.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_blit.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_blit.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit_0.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_blit_0.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_blit_0.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit_1.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_blit_1.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_blit_1.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit_A.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_blit_A.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_blit_A.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit_N.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_blit_N.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_blit_N.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit_auto.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_blit_auto.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_blit_auto.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit_copy.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_blit_copy.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_blit_copy.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit_slow.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_blit_slow.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_blit_slow.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_bmp.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_bmp.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_bmp.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_clipboard.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_clipboard.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_clipboard.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_egl.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_egl.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_egl.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_fillrect.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_fillrect.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_fillrect.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_pixels.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_pixels.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_pixels.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_rect.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_rect.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_rect.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_shape.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_shape.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_shape.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_stretch.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_stretch.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_stretch.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_surface.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_surface.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_surface.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_video.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_video.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_video.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_vulkan_utils.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_vulkan_utils.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_vulkan_utils.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_yuv.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/SDL_yuv.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\SDL_yuv.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidclipboard.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/android/SDL_androidclipboard.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android\SDL_androidclipboard.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidevents.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/android/SDL_androidevents.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android\SDL_androidevents.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidgl.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/android/SDL_androidgl.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android\SDL_androidgl.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidkeyboard.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/android/SDL_androidkeyboard.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android\SDL_androidkeyboard.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidmessagebox.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/android/SDL_androidmessagebox.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android\SDL_androidmessagebox.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidmouse.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/android/SDL_androidmouse.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android\SDL_androidmouse.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidtouch.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/android/SDL_androidtouch.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android\SDL_androidtouch.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidvideo.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/android/SDL_androidvideo.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android\SDL_androidvideo.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidvulkan.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/android/SDL_androidvulkan.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android\SDL_androidvulkan.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidwindow.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/android/SDL_androidwindow.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android\SDL_androidwindow.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\android
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_WM.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_WM.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb\SDL_DirectFB_WM.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_dyn.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_dyn.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb\SDL_DirectFB_dyn.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_events.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_events.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb\SDL_DirectFB_events.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_modes.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_modes.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb\SDL_DirectFB_modes.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_mouse.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_mouse.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb\SDL_DirectFB_mouse.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_opengl.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_opengl.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb\SDL_DirectFB_opengl.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_render.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_render.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb\SDL_DirectFB_render.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_shape.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_shape.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb\SDL_DirectFB_shape.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_video.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_video.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb\SDL_DirectFB_video.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_window.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_window.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb\SDL_DirectFB_window.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\directfb
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/dummy/SDL_nullevents.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/dummy/SDL_nullevents.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\dummy\SDL_nullevents.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\dummy
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/dummy/SDL_nullframebuffer.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/dummy/SDL_nullframebuffer.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\dummy\SDL_nullframebuffer.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\dummy
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/dummy/SDL_nullvideo.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/dummy/SDL_nullvideo.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\dummy\SDL_nullvideo.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\dummy
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenevents.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenevents.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\emscripten\SDL_emscriptenevents.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\emscripten
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenframebuffer.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenframebuffer.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\emscripten\SDL_emscriptenframebuffer.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\emscripten
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenmouse.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenmouse.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\emscripten\SDL_emscriptenmouse.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\emscripten
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenopengles.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenopengles.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\emscripten\SDL_emscriptenopengles.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\emscripten
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenvideo.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenvideo.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\emscripten\SDL_emscriptenvideo.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\emscripten
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmdyn.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmdyn.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\kmsdrm\SDL_kmsdrmdyn.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\kmsdrm
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmevents.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmevents.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\kmsdrm\SDL_kmsdrmevents.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\kmsdrm
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmmouse.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmmouse.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\kmsdrm\SDL_kmsdrmmouse.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\kmsdrm
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmopengles.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmopengles.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\kmsdrm\SDL_kmsdrmopengles.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\kmsdrm
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmvideo.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmvideo.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\kmsdrm\SDL_kmsdrmvideo.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\kmsdrm
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclevents.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/nacl/SDL_naclevents.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\nacl\SDL_naclevents.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\nacl
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclglue.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/nacl/SDL_naclglue.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\nacl\SDL_naclglue.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\nacl
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclopengles.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/nacl/SDL_naclopengles.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\nacl\SDL_naclopengles.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\nacl
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclvideo.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/nacl/SDL_naclvideo.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\nacl\SDL_naclvideo.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\nacl
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclwindow.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/nacl/SDL_naclwindow.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\nacl\SDL_naclwindow.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\nacl
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenevents.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/offscreen/SDL_offscreenevents.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\offscreen\SDL_offscreenevents.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\offscreen
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenframebuffer.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/offscreen/SDL_offscreenframebuffer.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\offscreen\SDL_offscreenframebuffer.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\offscreen
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenopengl.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/offscreen/SDL_offscreenopengl.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\offscreen\SDL_offscreenopengl.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\offscreen
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenvideo.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/offscreen/SDL_offscreenvideo.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\offscreen\SDL_offscreenvideo.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\offscreen
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenwindow.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/offscreen/SDL_offscreenwindow.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\offscreen\SDL_offscreenwindow.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\offscreen
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/pandora/SDL_pandora.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/pandora/SDL_pandora.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\pandora\SDL_pandora.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\pandora
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/pandora/SDL_pandora_events.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/pandora/SDL_pandora_events.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\pandora\SDL_pandora_events.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\pandora
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/psp/SDL_pspevents.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/psp/SDL_pspevents.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\psp\SDL_pspevents.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\psp
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/psp/SDL_pspgl.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/psp/SDL_pspgl.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\psp\SDL_pspgl.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\psp
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/psp/SDL_pspmouse.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/psp/SDL_pspmouse.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\psp\SDL_pspmouse.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\psp
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/psp/SDL_pspvideo.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/psp/SDL_pspvideo.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\psp\SDL_pspvideo.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\psp
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/gl.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/qnx/gl.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\qnx\gl.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\qnx
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/keyboard.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/qnx/keyboard.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\qnx\keyboard.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\qnx
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/video.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/qnx/video.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\qnx\video.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\qnx
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/raspberry/SDL_rpievents.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/raspberry/SDL_rpievents.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\raspberry\SDL_rpievents.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\raspberry
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/raspberry/SDL_rpimouse.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/raspberry/SDL_rpimouse.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\raspberry\SDL_rpimouse.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\raspberry
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/raspberry/SDL_rpiopengles.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/raspberry/SDL_rpiopengles.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\raspberry\SDL_rpiopengles.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\raspberry
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/raspberry/SDL_rpivideo.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/raspberry/SDL_rpivideo.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\raspberry\SDL_rpivideo.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\raspberry
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/vivante/SDL_vivanteopengles.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/vivante/SDL_vivanteopengles.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\vivante\SDL_vivanteopengles.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\vivante
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/vivante/SDL_vivanteplatform.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/vivante/SDL_vivanteplatform.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\vivante\SDL_vivanteplatform.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\vivante
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/vivante/SDL_vivantevideo.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/vivante/SDL_vivantevideo.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\vivante\SDL_vivantevideo.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\vivante
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/vivante/SDL_vivantevulkan.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/vivante/SDL_vivantevulkan.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\vivante\SDL_vivantevulkan.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\vivante
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandclipboard.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/wayland/SDL_waylandclipboard.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland\SDL_waylandclipboard.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylanddatamanager.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/wayland/SDL_waylanddatamanager.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland\SDL_waylanddatamanager.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylanddyn.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/wayland/SDL_waylanddyn.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland\SDL_waylanddyn.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandevents.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/wayland/SDL_waylandevents.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland\SDL_waylandevents.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandmouse.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/wayland/SDL_waylandmouse.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland\SDL_waylandmouse.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandopengles.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/wayland/SDL_waylandopengles.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland\SDL_waylandopengles.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandtouch.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/wayland/SDL_waylandtouch.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland\SDL_waylandtouch.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandvideo.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/wayland/SDL_waylandvideo.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland\SDL_waylandvideo.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandvulkan.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/wayland/SDL_waylandvulkan.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland\SDL_waylandvulkan.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandwindow.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/wayland/SDL_waylandwindow.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland\SDL_waylandwindow.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\wayland
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsclipboard.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/windows/SDL_windowsclipboard.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows\SDL_windowsclipboard.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsevents.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/windows/SDL_windowsevents.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows\SDL_windowsevents.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsframebuffer.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/windows/SDL_windowsframebuffer.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows\SDL_windowsframebuffer.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowskeyboard.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/windows/SDL_windowskeyboard.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows\SDL_windowskeyboard.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsmessagebox.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/windows/SDL_windowsmessagebox.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows\SDL_windowsmessagebox.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsmodes.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/windows/SDL_windowsmodes.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows\SDL_windowsmodes.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsmouse.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/windows/SDL_windowsmouse.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows\SDL_windowsmouse.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsopengl.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/windows/SDL_windowsopengl.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows\SDL_windowsopengl.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsopengles.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/windows/SDL_windowsopengles.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows\SDL_windowsopengles.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsshape.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/windows/SDL_windowsshape.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows\SDL_windowsshape.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsvideo.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/windows/SDL_windowsvideo.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows\SDL_windowsvideo.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsvulkan.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/windows/SDL_windowsvulkan.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows\SDL_windowsvulkan.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowswindow.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/windows/SDL_windowswindow.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows\SDL_windowswindow.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\windows
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11clipboard.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11clipboard.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11clipboard.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11dyn.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11dyn.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11dyn.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11events.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11events.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11events.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11framebuffer.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11framebuffer.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11framebuffer.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11keyboard.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11keyboard.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11keyboard.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11messagebox.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11messagebox.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11messagebox.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11modes.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11modes.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11modes.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11mouse.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11mouse.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11mouse.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11opengl.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11opengl.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11opengl.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11opengles.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11opengles.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11opengles.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11shape.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11shape.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11shape.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11touch.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11touch.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11touch.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11video.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11video.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11video.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11vulkan.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11vulkan.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11vulkan.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11window.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11window.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11window.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11xinput2.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/SDL_x11xinput2.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\SDL_x11xinput2.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/edid-parse.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/edid-parse.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\edid-parse.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/imKStoUCS.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/x11/imKStoUCS.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11\imKStoUCS.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\x11
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/yuv2rgb/yuv_rgb.c.o: C_COMPILER__ffi_google_oboe ../../../../src/main/cpp/SDL/src/video/yuv2rgb/yuv_rgb.c || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\yuv2rgb\yuv_rgb.c.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\yuv2rgb
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/NDKExtractor.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/audio/NDKExtractor.cpp || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio\NDKExtractor.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio
 
@@ -80,10 +1018,10 @@ build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o: CXX_COMPIL
 #############################################
 # Link the shared library C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\example\build\ffi_google_oboe\intermediates\cmake\debug\obj\x86\libffi_google_oboe.so
 
-build C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86/libffi_google_oboe.so: CXX_SHARED_LIBRARY_LINKER__ffi_google_oboe CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPCallback.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o | oboe/liboboe.a || oboe/liboboe.a
+build C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/debug/obj/x86/libffi_google_oboe.so: CXX_SHARED_LIBRARY_LINKER__ffi_google_oboe CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPCallback.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/SDL.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/SDL_assert.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/SDL_dataqueue.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/SDL_error.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/SDL_hints.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/SDL_log.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/core/android/SDL_android.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/dynapi/SDL_dynapi.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/atomic/SDL_atomic.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/atomic/SDL_spinlock.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_RLEaccel.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit_0.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit_1.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit_A.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit_N.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit_auto.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit_copy.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_blit_slow.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_bmp.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_clipboard.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_egl.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_fillrect.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_pixels.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_rect.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_shape.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_stretch.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_surface.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_video.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_vulkan_utils.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/SDL_yuv.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidclipboard.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidevents.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidgl.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidkeyboard.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidmessagebox.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidmouse.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidtouch.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidvideo.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidvulkan.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidwindow.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_WM.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_dyn.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_events.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_modes.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_mouse.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_opengl.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_render.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_shape.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_video.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_window.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/dummy/SDL_nullevents.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/dummy/SDL_nullframebuffer.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/dummy/SDL_nullvideo.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenevents.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenframebuffer.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenmouse.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenopengles.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenvideo.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmdyn.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmevents.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmmouse.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmopengles.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmvideo.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclevents.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclglue.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclopengles.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclvideo.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclwindow.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenevents.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenframebuffer.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenopengl.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenvideo.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenwindow.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/pandora/SDL_pandora.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/pandora/SDL_pandora_events.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/psp/SDL_pspevents.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/psp/SDL_pspgl.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/psp/SDL_pspmouse.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/psp/SDL_pspvideo.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/gl.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/keyboard.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/video.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/raspberry/SDL_rpievents.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/raspberry/SDL_rpimouse.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/raspberry/SDL_rpiopengles.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/raspberry/SDL_rpivideo.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/vivante/SDL_vivanteopengles.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/vivante/SDL_vivanteplatform.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/vivante/SDL_vivantevideo.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/vivante/SDL_vivantevulkan.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandclipboard.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylanddatamanager.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylanddyn.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandevents.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandmouse.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandopengles.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandtouch.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandvideo.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandvulkan.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/wayland/SDL_waylandwindow.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsclipboard.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsevents.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsframebuffer.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowskeyboard.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsmessagebox.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsmodes.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsmouse.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsopengl.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsopengles.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsshape.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsvideo.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowsvulkan.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/windows/SDL_windowswindow.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11clipboard.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11dyn.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11events.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11framebuffer.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11keyboard.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11messagebox.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11modes.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11mouse.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11opengl.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11opengles.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11shape.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11touch.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11video.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11vulkan.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11window.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/SDL_x11xinput2.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/edid-parse.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/x11/imKStoUCS.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/yuv2rgb/yuv_rgb.c.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/NDKExtractor.cpp.o | oboe/liboboe.a oboe/liboboe.a || oboe/liboboe.a
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
-  LINK_LIBRARIES = oboe/liboboe.a -llog -lOpenSLES -latomic -lm
+  LINK_LIBRARIES = -llog -landroid oboe/liboboe.a -lGLESv2 -lmediandk oboe/liboboe.a -llog -lOpenSLES -latomic -lm
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -91,6 +1029,7 @@ build C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/exa
   SONAME_FLAG = -Wl,-soname,
   TARGET_FILE = C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\example\build\ffi_google_oboe\intermediates\cmake\debug\obj\x86\libffi_google_oboe.so
   TARGET_PDB = ffi_google_oboe.so.dbg
+  RSP_FILE = CMakeFiles/ffi_google_oboe.rsp
 
 #############################################
 # Utility command for install/local

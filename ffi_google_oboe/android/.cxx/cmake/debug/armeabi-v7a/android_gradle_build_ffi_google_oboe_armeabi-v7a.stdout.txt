@@ -1,2 +1,194 @@
 ninja: Entering directory `C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\android\.cxx\cmake\debug\armeabi-v7a'
-ninja: no work to do.
+[1/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidclipboard.c.o
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidclipboard.c:30:26: warning: unused parameter '_this' [-Wunused-parameter]
+Android_SetClipboardText(_THIS, const char *text)
+                         ^
+../../../../src/main/cpp/SDL/src/video/android/../SDL_sysvideo.h:147:34: note: expanded from macro '_THIS'
+#define _THIS   SDL_VideoDevice *_this
+                                 ^
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidclipboard.c:36:26: warning: unused parameter '_this' [-Wunused-parameter]
+Android_GetClipboardText(_THIS)
+                         ^
+../../../../src/main/cpp/SDL/src/video/android/../SDL_sysvideo.h:147:34: note: expanded from macro '_THIS'
+#define _THIS   SDL_VideoDevice *_this
+                                 ^
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidclipboard.c:41:35: warning: unused parameter '_this' [-Wunused-parameter]
+SDL_bool Android_HasClipboardText(_THIS)
+                                  ^
+../../../../src/main/cpp/SDL/src/video/android/../SDL_sysvideo.h:147:34: note: expanded from macro '_THIS'
+#define _THIS   SDL_VideoDevice *_this
+                                 ^
+3 warnings generated.
+[2/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidgl.c.o
+[3/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidmessagebox.c.o
+[4/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidtouch.c.o
+[5/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidevents.c.o
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidevents.c:151:64: warning: comparison of integers of different signs: 'int' and 'Uint32' (aka 'unsigned int') [-Wsign-compare]
+            if (SDL_NumberOfEvents(SDL_APP_DIDENTERBACKGROUND) > SDL_SemValue(Android_PauseSem)) {
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidevents.c:222:64: warning: comparison of integers of different signs: 'int' and 'Uint32' (aka 'unsigned int') [-Wsign-compare]
+            if (SDL_NumberOfEvents(SDL_APP_DIDENTERBACKGROUND) > SDL_SemValue(Android_PauseSem)) {
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[6/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidkeyboard.c.o
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidkeyboard.c:330:17: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+    if (keycode < SDL_arraysize(Android_Keycodes)) {
+        ~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidkeyboard.c:352:34: warning: unused parameter '_this' [-Wunused-parameter]
+Android_HasScreenKeyboardSupport(_THIS)
+                                 ^
+../../../../src/main/cpp/SDL/src/video/android/../SDL_sysvideo.h:147:34: note: expanded from macro '_THIS'
+#define _THIS   SDL_VideoDevice *_this
+                                 ^
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidkeyboard.c:358:31: warning: unused parameter '_this' [-Wunused-parameter]
+Android_IsScreenKeyboardShown(_THIS, SDL_Window * window)
+                              ^
+../../../../src/main/cpp/SDL/src/video/android/../SDL_sysvideo.h:147:34: note: expanded from macro '_THIS'
+#define _THIS   SDL_VideoDevice *_this
+                                 ^
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidkeyboard.c:358:51: warning: unused parameter 'window' [-Wunused-parameter]
+Android_IsScreenKeyboardShown(_THIS, SDL_Window * window)
+                                                  ^
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidkeyboard.c:371:23: warning: unused parameter '_this' [-Wunused-parameter]
+Android_StopTextInput(_THIS)
+                      ^
+../../../../src/main/cpp/SDL/src/video/android/../SDL_sysvideo.h:147:34: note: expanded from macro '_THIS'
+#define _THIS   SDL_VideoDevice *_this
+                                 ^
+5 warnings generated.
+[7/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidmouse.c.o
+[8/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidvulkan.c.o
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidvulkan.c:63:48: warning: assigning to 'PFN_vkGetInstanceProcAddr' (aka 'void (*(*)(struct VkInstance_T *, const char *) __attribute__((pcs("aapcs-vfp"))))(void) __attribute__((pcs("aapcs-vfp")))') from 'void *' converts between void pointer and function pointer [-Wpedantic]
+    _this->vulkan_config.vkGetInstanceProcAddr = (void *)vkGetInstanceProcAddr;
+                                               ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidvulkan.c:64:65: warning: assigning to 'PFN_vkEnumerateInstanceExtensionProperties' (aka 'enum VkResult (*)(const char *, unsigned int *, struct VkExtensionProperties *) __attribute__((pcs("aapcs-vfp")))') from 'void *' converts between void pointer and function pointer [-Wpedantic]
+    _this->vulkan_config.vkEnumerateInstanceExtensionProperties =
+                                                                ^
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidvulkan.c:113:55: warning: unused parameter 'window' [-Wunused-parameter]
+                                          SDL_Window *window,
+                                                      ^
+3 warnings generated.
+[9/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidwindow.c.o
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidwindow.c:106:24: warning: unused parameter '_this' [-Wunused-parameter]
+Android_SetWindowTitle(_THIS, SDL_Window *window)
+                       ^
+../../../../src/main/cpp/SDL/src/video/android/../SDL_sysvideo.h:147:34: note: expanded from macro '_THIS'
+#define _THIS   SDL_VideoDevice *_this
+                                 ^
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidwindow.c:112:29: warning: unused parameter '_this' [-Wunused-parameter]
+Android_SetWindowFullscreen(_THIS, SDL_Window *window, SDL_VideoDisplay *display, SDL_bool fullscreen)
+                            ^
+../../../../src/main/cpp/SDL/src/video/android/../SDL_sysvideo.h:147:34: note: expanded from macro '_THIS'
+#define _THIS   SDL_VideoDevice *_this
+                                 ^
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidwindow.c:112:74: warning: unused parameter 'display' [-Wunused-parameter]
+Android_SetWindowFullscreen(_THIS, SDL_Window *window, SDL_VideoDisplay *display, SDL_bool fullscreen)
+                                                                         ^
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidwindow.c:163:24: warning: unused parameter '_this' [-Wunused-parameter]
+Android_MinimizeWindow(_THIS, SDL_Window *window)
+                       ^
+../../../../src/main/cpp/SDL/src/video/android/../SDL_sysvideo.h:147:34: note: expanded from macro '_THIS'
+#define _THIS   SDL_VideoDevice *_this
+                                 ^
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidwindow.c:163:43: warning: unused parameter 'window' [-Wunused-parameter]
+Android_MinimizeWindow(_THIS, SDL_Window *window)
+                                          ^
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidwindow.c:193:25: warning: unused parameter '_this' [-Wunused-parameter]
+Android_GetWindowWMInfo(_THIS, SDL_Window *window, SDL_SysWMinfo *info)
+                        ^
+../../../../src/main/cpp/SDL/src/video/android/../SDL_sysvideo.h:147:34: note: expanded from macro '_THIS'
+#define _THIS   SDL_VideoDevice *_this
+                                 ^
+6 warnings generated.
+[10/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_events.c.o
+[11/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_modes.c.o
+[12/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/android/SDL_androidvideo.c.o
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidvideo.c:93:26: warning: unused parameter 'devindex' [-Wunused-parameter]
+Android_CreateDevice(int devindex)
+                         ^
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidvideo.c:217:19: warning: unused parameter '_this' [-Wunused-parameter]
+Android_VideoQuit(_THIS)
+                  ^
+../../../../src/main/cpp/SDL/src/video/android/../../events/../video/SDL_sysvideo.h:147:34: note: expanded from macro '_THIS'
+#define _THIS   SDL_VideoDevice *_this
+                                 ^
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidvideo.c:224:23: warning: unused parameter '_this' [-Wunused-parameter]
+Android_GetDisplayDPI(_THIS, SDL_VideoDisplay *display, float *ddpi, float *hdpi, float *vdpi)
+                      ^
+../../../../src/main/cpp/SDL/src/video/android/../../events/../video/SDL_sysvideo.h:147:34: note: expanded from macro '_THIS'
+#define _THIS   SDL_VideoDevice *_this
+                                 ^
+../../../../src/main/cpp/SDL/src/video/android/SDL_androidvideo.c:224:48: warning: unused parameter 'display' [-Wunused-parameter]
+Android_GetDisplayDPI(_THIS, SDL_VideoDisplay *display, float *ddpi, float *hdpi, float *vdpi)
+                                               ^
+4 warnings generated.
+[13/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_WM.c.o
+[14/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_dyn.c.o
+[15/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_opengl.c.o
+[16/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_mouse.c.o
+[17/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/dummy/SDL_nullvideo.c.o
+[18/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_render.c.o
+[19/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_shape.c.o
+[20/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_window.c.o
+[21/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/dummy/SDL_nullevents.c.o
+[22/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/dummy/SDL_nullframebuffer.c.o
+[23/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/directfb/SDL_DirectFB_video.c.o
+[24/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenevents.c.o
+[25/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenopengles.c.o
+[26/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenmouse.c.o
+[27/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenframebuffer.c.o
+[28/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmdyn.c.o
+[29/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmmouse.c.o
+[30/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmevents.c.o
+[31/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/psp/SDL_pspevents.c.o
+[32/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/emscripten/SDL_emscriptenvideo.c.o
+[33/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmopengles.c.o
+[34/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenvideo.c.o
+[35/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/psp/SDL_pspgl.c.o
+[36/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/pandora/SDL_pandora.c.o
+[37/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenwindow.c.o
+[38/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclevents.c.o
+[39/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/pandora/SDL_pandora_events.c.o
+[40/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenopengl.c.o
+[41/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclwindow.c.o
+[42/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclvideo.c.o
+[43/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclopengles.c.o
+[44/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/kmsdrm/SDL_kmsdrmvideo.c.o
+[45/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/nacl/SDL_naclglue.c.o
+[46/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenevents.c.o
+[47/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/offscreen/SDL_offscreenframebuffer.c.o
+[48/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/raspberry/SDL_rpievents.c.o
+[49/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/raspberry/SDL_rpimouse.c.o
+[50/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/psp/SDL_pspmouse.c.o
+[51/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/gl.c.o
+FAILED: CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/gl.c.o 
+C:\Users\facun\AppData\Local\Android\Sdk\ndk\21.1.6352462\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi21 --gcc-toolchain=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -MD -MT CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/gl.c.o -MF CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\qnx\gl.c.o.d -o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/gl.c.o   -c ../../../../src/main/cpp/SDL/src/video/qnx/gl.c
+In file included from ../../../../src/main/cpp/SDL/src/video/qnx/gl.c:23:
+../../../../src/main/cpp/SDL/src/video/qnx/sdl_qnx.h:26:10: fatal error: 'screen/screen.h' file not found
+#include <screen/screen.h>
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+[52/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/psp/SDL_pspvideo.c.o
+[53/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/video.c.o
+FAILED: CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/video.c.o 
+C:\Users\facun\AppData\Local\Android\Sdk\ndk\21.1.6352462\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi21 --gcc-toolchain=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -MD -MT CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/video.c.o -MF CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\qnx\video.c.o.d -o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/video.c.o   -c ../../../../src/main/cpp/SDL/src/video/qnx/video.c
+In file included from ../../../../src/main/cpp/SDL/src/video/qnx/video.c:23:
+../../../../src/main/cpp/SDL/src/video/qnx/sdl_qnx.h:26:10: fatal error: 'screen/screen.h' file not found
+#include <screen/screen.h>
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+[54/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/vivante/SDL_vivanteopengles.c.o
+[55/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/raspberry/SDL_rpiopengles.c.o
+[56/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/vivante/SDL_vivantevideo.c.o
+[57/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/keyboard.c.o
+FAILED: CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/keyboard.c.o 
+C:\Users\facun\AppData\Local\Android\Sdk\ndk\21.1.6352462\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe --target=armv7-none-linux-androideabi21 --gcc-toolchain=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS -I../../../../../../oboe/include -I../../../../src/main/cpp -I../../../../src/main/cpp/SDL/include -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -MD -MT CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/keyboard.c.o -MF CMakeFiles\ffi_google_oboe.dir\src\main\cpp\SDL\src\video\qnx\keyboard.c.o.d -o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/qnx/keyboard.c.o   -c ../../../../src/main/cpp/SDL/src/video/qnx/keyboard.c
+In file included from ../../../../src/main/cpp/SDL/src/video/qnx/keyboard.c:26:
+../../../../src/main/cpp/SDL/src/video/qnx/sdl_qnx.h:26:10: fatal error: 'screen/screen.h' file not found
+#include <screen/screen.h>
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+[58/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/raspberry/SDL_rpivideo.c.o
+[59/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/vivante/SDL_vivanteplatform.c.o
+[60/103] Building C object CMakeFiles/ffi_google_oboe.dir/src/main/cpp/SDL/src/video/vivante/SDL_vivantevulkan.c.o
+ninja: build stopped: subcommand failed.
