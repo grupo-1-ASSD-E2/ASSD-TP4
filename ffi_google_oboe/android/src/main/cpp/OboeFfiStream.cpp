@@ -8,7 +8,6 @@
 
 OboeFfiStream::OboeFfiStream(AAssetManager &assetManager, int sr, void * data, size_t size, oboe::AudioFormat f) : sampleRate(sr), mAssetManager(assetManager) {
     format = oboe::AudioFormat::Float;      // In the future could be changed to accept argument f.
-    sampleRate = sr;
     write(data, size);
     LOGE("INPUT DATA WRITTEN");
     LOGE(" ");

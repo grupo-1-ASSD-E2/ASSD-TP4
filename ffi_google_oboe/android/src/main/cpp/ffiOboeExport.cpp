@@ -16,7 +16,8 @@ EXTERNC void* stream_create() {
     LOGE("CREATING STREAM");
     LOGE(" ");
 
-    AAssetManager *assetManager = AAssetManager_fromJava(env, jAssetManager);
+//    AAssetManager *assetManager = AAssetManager_fromJava(env, jAssetManager);
+    AAssetManager *assetManager;
     if (assetManager == nullptr) {
         LOGE("Could not obtain the AAssetManager");
         return nullptr;
