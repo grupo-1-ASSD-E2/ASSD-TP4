@@ -51,6 +51,34 @@ build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o: CXX_COMPI
   INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPCallback.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/DSPCallback.cpp || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\DSPCallback.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/audio/AAssetDataSource.cpp || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio\AAssetDataSource.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/audio/Player.cpp || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio\Player.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/NDKExtractor.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/audio/NDKExtractor.cpp || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio\NDKExtractor.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target ffi_google_oboe
@@ -59,10 +87,10 @@ build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o: CXX_COMPI
 #############################################
 # Link the shared library C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\example\build\ffi_google_oboe\intermediates\cmake\customDebugType\obj\armeabi-v7a\libffi_google_oboe.so
 
-build C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/customDebugType/obj/armeabi-v7a/libffi_google_oboe.so: CXX_SHARED_LIBRARY_LINKER__ffi_google_oboe CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o | oboe/liboboe.a || oboe/liboboe.a
+build C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/customDebugType/obj/armeabi-v7a/libffi_google_oboe.so: CXX_SHARED_LIBRARY_LINKER__ffi_google_oboe CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPCallback.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/NDKExtractor.cpp.o | oboe/liboboe.a oboe/liboboe.a || oboe/liboboe.a
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments
-  LINK_LIBRARIES = oboe/liboboe.a -llog -lOpenSLES -latomic -lm
+  LINK_LIBRARIES = -llog -landroid oboe/liboboe.a -lGLESv2 -lmediandk oboe/liboboe.a -llog -lOpenSLES -latomic -lm
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

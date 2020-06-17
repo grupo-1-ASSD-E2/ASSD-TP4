@@ -15,6 +15,48 @@
   ],
   "buildTargetsCommand": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\customDebugType\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
+    "ffi_google_oboe-Debug-x86_64": {
+      "buildCommand": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\customDebugType\\x86_64\" ffi_google_oboe",
+      "buildType": "debug",
+      "toolchain": "494499843",
+      "abi": "x86_64",
+      "artifactName": "ffi_google_oboe",
+      "files": [
+        {
+          "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\ffiOboeExport.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\OboeFfiStream.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\DSPCallback.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\audio\\AAssetDataSource.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\audio\\Player.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\audio\\NDKExtractor.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\example\\build\\ffi_google_oboe\\intermediates\\cmake\\customDebugType\\obj\\x86_64\\libffi_google_oboe.so",
+      "runtimeFiles": []
+    },
     "oboe-Debug-x86_64": {
       "buildCommand": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\customDebugType\\x86_64\" oboe",
       "buildType": "debug",
@@ -270,28 +312,6 @@
       ],
       "headers": [],
       "output": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\customDebugType\\x86_64\\oboe\\liboboe.a",
-      "runtimeFiles": []
-    },
-    "ffi_google_oboe-Debug-x86_64": {
-      "buildCommand": "C:\\Users\\facun\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\customDebugType\\x86_64\" ffi_google_oboe",
-      "buildType": "debug",
-      "toolchain": "494499843",
-      "abi": "x86_64",
-      "artifactName": "ffi_google_oboe",
-      "files": [
-        {
-          "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\ffiOboeExport.cpp",
-          "flagsOrdinal": 1,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\OboeFfiStream.cpp",
-          "flagsOrdinal": 1,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "headers": [],
-      "output": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\example\\build\\ffi_google_oboe\\intermediates\\cmake\\customDebugType\\obj\\x86_64\\libffi_google_oboe.so",
       "runtimeFiles": []
     }
   },

@@ -19,7 +19,18 @@
 #include <oboe/Oboe.h>
 
 #include "AAssetDataSource.h"
+
+#define USE_FFMPEG 0
+
+#if !defined(USE_FFMPEG)
+#error USE_FFMPEG should be defined in app.gradle
+#endif
+
+#if USE_FFMPEG==1
+#include "FFMpegExtractor.h"
+#else
 #include "NDKExtractor.h"
+#endif
 
 
 constexpr int kMaxCompressionRatio { 12 };
@@ -79,4 +90,16 @@ AAssetDataSource* AAssetDataSource::newFromCompressedAsset(
     return new AAssetDataSource(std::move(outputBuffer),
             numSamples,
             *outputProperties);
+}
+
+AAssetDataSource *AAssetDataSource::newFromCompressedAsset(float *buffer, size_t len, AudioProperties *outputProperties) {
+    LOGD("Opened buffer, size %d", len);
+
+    const long maximumDataSizeInBytes = kMaxCompressionRatio * len * sizeof(int16_t);
+    auto decodedData = new uint8_t[maximumDataSizeInBytes];
+
+    if (!outputProperties) outputProperties = new AudioProperties();
+
+    int64_t bytesDecoded = NDKExtractor::decode(asset, decodedData, *outputProperties);
+    auto numSamples = bytesDecoded / sizeof(int16_t);
 }

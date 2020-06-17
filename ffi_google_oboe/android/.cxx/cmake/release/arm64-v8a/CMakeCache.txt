@@ -21,7 +21,7 @@ ANDROID_ABI:UNINITIALIZED=arm64-v8a
 ANDROID_NDK:UNINITIALIZED=C:\Users\facun\AppData\Local\Android\Sdk\ndk\21.1.6352462
 
 //No help, variable specified on the command line.
-ANDROID_PLATFORM:UNINITIALIZED=android-16
+ANDROID_PLATFORM:UNINITIALIZED=android-21
 
 //No help, variable specified on the command line.
 CMAKE_ANDROID_ARCH_ABI:UNINITIALIZED=arm64-v8a
@@ -202,7 +202,7 @@ CMAKE_STRIP:FILEPATH=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/t
 CMAKE_SYSTEM_NAME:UNINITIALIZED=Android
 
 //No help, variable specified on the command line.
-CMAKE_SYSTEM_VERSION:UNINITIALIZED=16
+CMAKE_SYSTEM_VERSION:UNINITIALIZED=21
 
 //The CMake toolchain file
 CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake
@@ -220,7 +220,7 @@ Project_BINARY_DIR:STATIC=C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/
 Project_SOURCE_DIR:STATIC=C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android
 
 //Dependencies for the target
-ffi_google_oboe_LIB_DEPENDS:STATIC=general;oboe;
+ffi_google_oboe_LIB_DEPENDS:STATIC=general;log;general;android;general;oboe;general;GLESv2;general;mediandk;general;oboe;
 
 //Value Computed by CMake
 oboe_BINARY_DIR:STATIC=C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/release/arm64-v8a/oboe

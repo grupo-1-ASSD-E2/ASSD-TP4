@@ -25,6 +25,14 @@
   },
   {
     "level": "INFO",
+    "message": "- a dependent build file changed"
+  },
+  {
+    "level": "INFO",
+    "message": "  - C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\CMakeLists.txt"
+  },
+  {
+    "level": "INFO",
     "message": "removing stale contents from \u0027C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\.cxx\\cmake\\debug\\armeabi-v7a\u0027"
   },
   {

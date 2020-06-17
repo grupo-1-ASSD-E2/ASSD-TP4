@@ -46,6 +46,8 @@ public:
         return newFromCompressedAsset(assetManager, filename, nullptr);
     };
 
+    static AAssetDataSource* newFromCompressedAsset(float* buffer, size_t len, AudioProperties *outputProperties);
+
 private:
 
     AAssetDataSource(std::unique_ptr<float[]> data, size_t size,
