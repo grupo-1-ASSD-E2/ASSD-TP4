@@ -15,7 +15,14 @@
 EXTERNC void* stream_create() {
     LOGE("CREATING STREAM");
     LOGE(" ");
-    return new OboeFfiStream();
+
+    AAssetManager *assetManager = AAssetManager_fromJava(env, jAssetManager);
+    if (assetManager == nullptr) {
+        LOGE("Could not obtain the AAssetManager");
+        return nullptr;
+    }
+
+    return new OboeFfiStream(*assetManager);
 }
 
 EXTERNC void stream_dispose(void* ptr) {

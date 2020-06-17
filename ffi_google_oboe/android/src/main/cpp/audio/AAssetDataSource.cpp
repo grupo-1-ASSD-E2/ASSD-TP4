@@ -19,16 +19,7 @@
 #include <oboe/Oboe.h>
 
 #include "AAssetDataSource.h"
-
-#if !defined(USE_FFMPEG)
-#error USE_FFMPEG should be defined in app.gradle
-#endif
-
-#if USE_FFMPEG==1
-#include "FFMpegExtractor.h"
-#else
 #include "NDKExtractor.h"
-#endif
 
 
 constexpr int kMaxCompressionRatio { 12 };

@@ -23,7 +23,7 @@
 
 class OboeFfiStream {
 public:
-    OboeFfiStream(int sr=48000, void * data=nullptr, size_t size=0, oboe::AudioFormat f=oboe::AudioFormat::Float);
+    OboeFfiStream(AAssetManager &assetManager, int sr=48000, void * data=nullptr, size_t size=0, oboe::AudioFormat f=oboe::AudioFormat::Float);
     virtual ~OboeFfiStream() = default;
 
     int32_t getSampleRate();
@@ -51,7 +51,7 @@ private:
     std::unique_ptr<oboe::AudioStreamCallback> mCallback;
     oboe::ManagedStream outStream;
     Mixer mMixer;
-    std::vector<Player> players;
+    std::vector<std::unique_ptr<Player>> players;
 
     AAssetManager &mAssetManager;
 };

@@ -21,6 +21,12 @@ add_library(ffi_google_oboe
         #            src/main/cpp/utils/UtilityFunctions.cpp
         )
 
+
+set (TARGET_LIBS log android oboe GLESv2)
+target_sources( ffi_google_oboe PRIVATE src/main/cpp/audio/NDKExtractor.cpp )
+set (TARGET_LIBS ${TARGET_LIBS} mediandk)
+target_link_libraries( ffi_google_oboe ${TARGET_LIBS} )
+
 # Compile with warnings for safety
 if(MSVC)
     target_compile_options(ffi_google_oboe PRIVATE /W4 /WX)
