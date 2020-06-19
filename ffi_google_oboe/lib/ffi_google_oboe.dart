@@ -17,8 +17,8 @@ typedef OboeStreamSampleRate = int Function(Pointer<Void>);
 typedef oboe_stream_start_stop = Void Function(Pointer<Void>);
 typedef OboeStreamStartStop = void Function(Pointer<Void>);
 
-typedef oboe_stream_write = Void Function(Pointer<Void>, Pointer<Float>, Int32);
-typedef OboeStreamWrite = void Function(Pointer<Void>, Pointer<Float>, int);
+typedef oboe_stream_write = Void Function(Pointer<Void>, Pointer<Uint8>, Int32);
+typedef OboeStreamWrite = void Function(Pointer<Void>, Pointer<Uint8>, int);
 
 
 class FfiGoogleOboe {
@@ -101,9 +101,9 @@ class OboeStream {
     FfiGoogleOboe()._streamStop(_nativeInstance);
   }
 
-  void write(Float32List original) {
+  void write(Uint8List original) {
     var length = original.length;
-    var copy = allocate<Float>(count: length)
+    var copy = allocate<Uint8>(count: length)
         ..asTypedList(length).setAll(0, original);
 
     FfiGoogleOboe()._streamWrite(_nativeInstance, copy, length);

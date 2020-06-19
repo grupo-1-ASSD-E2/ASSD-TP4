@@ -92,7 +92,7 @@ AAssetDataSource* AAssetDataSource::newFromCompressedAsset(
             *outputProperties);
 }
 
-AAssetDataSource *AAssetDataSource::newFromCompressedAsset(float *buffer, size_t len, AudioProperties *outputProperties) {
+AAssetDataSource *AAssetDataSource::newFromCompressedAsset(int8_t *buffer, size_t len, AudioProperties *outputProperties) {
     LOGD("Opened buffer, size %d", len);
 
     const long maximumDataSizeInBytes = kMaxCompressionRatio * len * sizeof(int16_t);
@@ -100,6 +100,6 @@ AAssetDataSource *AAssetDataSource::newFromCompressedAsset(float *buffer, size_t
 
     if (!outputProperties) outputProperties = new AudioProperties();
 
-    int64_t bytesDecoded = NDKExtractor::decode(asset, decodedData, *outputProperties);
+    int64_t bytesDecoded = NDKExtractor::decode(buffer, decodedData, *outputProperties);
     auto numSamples = bytesDecoded / sizeof(int16_t);
 }

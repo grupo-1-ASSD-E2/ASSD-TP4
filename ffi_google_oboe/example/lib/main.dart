@@ -23,7 +23,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   final stream = OboeStream();
 
-  var noise = Float32List(512);
+  var noise = Uint8List(512);
   Timer t;
 
   @override
@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
 
   void _loadSound() async {
     final ByteData data = await rootBundle.load('assets/queen_bohemian_rhapsody_cut.wav');
-    noise = data.buffer.asFloat32List();
+    noise = data.buffer.asUint8List();
   }
 
   @override

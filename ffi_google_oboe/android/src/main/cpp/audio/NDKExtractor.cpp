@@ -189,3 +189,7 @@ int32_t NDKExtractor::decode(AAsset *asset,
 
     return bytesWritten;
 }
+
+int32_t NDKExtractor::decode(int8_t *asset, uint8_t *targetData, AudioProperties &outputProperties) {
+    return 0;
+}

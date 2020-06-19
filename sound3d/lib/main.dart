@@ -21,23 +21,19 @@ class _MyAppState extends State<MyApp> {
   final stream = OboeStream();
 
   var cycleCount = 128;
-  var noise = Float32List(512);
+  var noise = Uint8List(512);
   Timer t;
 
   @override
   void initState() {
     super.initState();
-    for (var i = 0; i < noise.length; i++) {
-      noise[i] = sin(10 * pi * i / noise.length);
-    }
-    stream.write(noise);
     
-    // _loadSound();
+    _loadSound();
   }
 
   void _loadSound() async {
     final ByteData data = await rootBundle.load('assets/queen_bohemian_rhapsody_cut.wav');
-    noise = data.buffer.asFloat32List();
+    noise = data.buffer.asUint8List();
   }
 
   @override
