@@ -16,14 +16,7 @@ EXTERNC void* stream_create() {
     LOGE("CREATING STREAM");
     LOGE(" ");
 
-//    AAssetManager *assetManager = AAssetManager_fromJava(env, jAssetManager);
-    AAssetManager* assetManager;
-    if (assetManager == nullptr) {
-        LOGE("Could not obtain the AAssetManager");
-        return nullptr;
-    }
-
-    return new OboeFfiStream(*assetManager);
+    return new OboeFfiStream();
 }
 
 EXTERNC void stream_dispose(void* ptr) {
@@ -50,4 +43,9 @@ EXTERNC void stream_write(void* ptr, void* data, int32_t size) {
     auto stream = static_cast<OboeFfiStream*>(ptr);
     auto dataToWrite = static_cast<float*>(data);
     stream->write(dataToWrite, size);
+}
+
+EXTERNC void load_source(void* ptr, uint8_t* data_buffer, size_t len) {
+    auto stream = static_cast<OboeFfiStream*>(ptr);
+    stream->loadAudioSource(data_buffer, len);
 }

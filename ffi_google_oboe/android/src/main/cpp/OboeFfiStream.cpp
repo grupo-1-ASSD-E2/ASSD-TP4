@@ -6,7 +6,7 @@
 #include <utils/logging.h>
 
 
-OboeFfiStream::OboeFfiStream(AAssetManager &assetManager, int sr, void * data, size_t size, oboe::AudioFormat f) : sampleRate(sr), mAssetManager(assetManager) {
+OboeFfiStream::OboeFfiStream(int sr, void * data, size_t size, oboe::AudioFormat f) : sampleRate(sr) {
     format = oboe::AudioFormat::Float;      // In the future could be changed to accept argument f.
     write(data, size);
     LOGE("INPUT DATA WRITTEN");
@@ -104,14 +104,14 @@ void OboeFfiStream::close() {
     outStream->close();
 }
 
-bool OboeFfiStream::loadAudioSource(std::string path) {
+bool OboeFfiStream::loadAudioSource(uint8_t* data_buffer, size_t len) {
 
     // Set the properties of our audio source(s) to match that of our audio stream
     AudioProperties targetProperties {outStream->getChannelCount(),outStream->getSampleRate()};
 
     // Create a data source and player for our backing track
     std::shared_ptr<AAssetDataSource> backingTrackSource {
-            AAssetDataSource::newFromCompressedAsset(mAssetManager, path.c_str(), &targetProperties)
+            AAssetDataSource::newFromCompressedAsset(data_buffer, len, &targetProperties)
     };
     if (backingTrackSource == nullptr){
         LOGE("Could not load source data for backing track");

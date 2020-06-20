@@ -23,7 +23,7 @@
 
 class OboeFfiStream {
 public:
-    OboeFfiStream(AAssetManager &assetManager, int sr=48000, void * data=nullptr, size_t size=0, oboe::AudioFormat f=oboe::AudioFormat::Float);
+    OboeFfiStream(int sr=48000, void * data=nullptr, size_t size=0, oboe::AudioFormat f=oboe::AudioFormat::Float);
     virtual ~OboeFfiStream() = default;
 
     int32_t getSampleRate();
@@ -33,7 +33,7 @@ public:
     void beginStreams();
     void startStreams();
     void stopStreams();
-    bool loadAudioSource(std::string path);
+    bool loadAudioSource(uint8_t* data_buffer, size_t len);
 
 
     std::variant<FunctionList<int16_t *>, FunctionList<float *>> functionList{std::in_place_type<FunctionList<int16_t *>>};
@@ -52,8 +52,6 @@ private:
     oboe::ManagedStream outStream;
     Mixer mMixer;
     std::vector<std::unique_ptr<Player>> players;
-
-    AAssetManager &mAssetManager;
 };
 
 
