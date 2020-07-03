@@ -18,6 +18,7 @@
 #include <cstring>
 
 #include <media/NdkMediaExtractor.h>
+#include <media/NdkMediaDataSource.h>
 #include <utils/logging.h>
 #include <cinttypes>
 
@@ -53,7 +54,7 @@ int32_t NDKExtractor::decode(AAsset *asset,
     } else {
         LOGE("Failed to get sample rate");
         return 0;
-    };
+    }
 
     int32_t channelCount;
     if (AMediaFormat_getInt32(format, AMEDIAFORMAT_KEY_CHANNEL_COUNT, &channelCount)){
