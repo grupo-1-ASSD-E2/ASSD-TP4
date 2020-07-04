@@ -16,6 +16,7 @@ add_library(ffi_google_oboe
         # Audio engine files
         src/main/cpp/audio/AAssetDataSource.cpp
         src/main/cpp/audio/Player.cpp
+        src/main/cpp/audio/BufferMediaDataSource.cpp
 
         # Utils files
         #            src/main/cpp/utils/UtilityFunctions.cpp

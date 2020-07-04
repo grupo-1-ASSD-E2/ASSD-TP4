@@ -1,15 +1,11 @@
 import 'dart:math';
 import 'dart:typed_data';
+import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'dart:async';
-import 'package:path_provider/path_provider.dart';
-import 'package:audioplayer/audioplayer.dart';
-import 'dart:io';
 
 import 'package:ffi_google_oboe/ffi_google_oboe.dart';
-// import 'package:flutter/services.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,15 +19,13 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   final stream = OboeStream();
 
+  var cycleCount = 128;
   var noise = Uint8List(512);
   Timer t;
 
   @override
   void initState() {
     super.initState();
-    // for (var i = 0; i < noise.length; i++) {
-    //   noise[i] = sin(8 * pi * i / noise.length);
-    // }
     
     _loadSound();
   }
@@ -60,11 +54,11 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               Text('Running at: ${stream.getSampleRate()}\n'),
               RaisedButton(
-                child: Text('START'),
+                child: Text('START EXAMPLE'),
                 onPressed: start,
               ),
               RaisedButton(
-                child: Text('STOP'),
+                child: Text('STOP EXAMPLE'),
                 onPressed: stop,
               ),
             ],
@@ -79,6 +73,11 @@ class _MyAppState extends State<MyApp> {
     var interval = (512000 / stream.getSampleRate()).floor() + 1;
     t = Timer.periodic(Duration(milliseconds: interval), (_) {
       stream.write(noise);
+      cycleCount--;
+      if (cycleCount == 0) {
+        cycleCount = 128;
+        stop();
+      }
      });
   }
 

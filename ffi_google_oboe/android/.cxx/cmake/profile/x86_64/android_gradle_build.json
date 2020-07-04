@@ -1,8 +1,8 @@
 {
   "stringTable": {
     "0": "C:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/android/.cxx/cmake/profile/x86_64",
-    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -Wall -Wextra -pedantic -std=c++1z",
-    "2": "--target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DOBOE_ENABLE_LOGGING=1 -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z"
+    "1": "--target=x86_64-none-linux-android28 --gcc-toolchain=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -Wall -Wextra -pedantic -std=c++1z",
+    "2": "--target=x86_64-none-linux-android28 --gcc-toolchain=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/facun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DOBOE_ENABLE_LOGGING=1 -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z"
   },
   "buildFiles": [
     "C:\\Users\\facun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
@@ -44,6 +44,11 @@
         },
         {
           "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\audio\\Player.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\src\\main\\cpp\\audio\\BufferMediaDataSource.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },

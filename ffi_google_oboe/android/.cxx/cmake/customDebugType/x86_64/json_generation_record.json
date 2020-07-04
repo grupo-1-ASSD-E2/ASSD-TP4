@@ -1,7 +1,7 @@
 [
   {
     "level": "INFO",
-    "message": "Start JSON generation. Platform version: 21 min SDK version: x86_64",
+    "message": "Start JSON generation. Platform version: 28 min SDK version: x86_64",
     "file": "C:\\Users\\facun\\OneDrive\\Desktop\\ITBA\\6C-ASSD\\ASSD-TP4\\ffi_google_oboe\\android\\CMakeLists.txt",
     "tag": "customDebugType|x86_64"
   },

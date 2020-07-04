@@ -1,7 +1,0 @@
-Executable : C:\Users\facun\AppData\Local\Android\sdk\cmake\3.10.2.4988404\bin\ninja.exe
-arguments : 
--C
-C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\android\.cxx\cmake\debug\armeabi-v7a
-ffi_google_oboe
-jvmArgs : 
-

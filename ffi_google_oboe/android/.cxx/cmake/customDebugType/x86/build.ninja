@@ -40,42 +40,49 @@ build cmake_object_order_depends_target_ffi_google_oboe: phony || cmake_object_o
 build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/ffiOboeExport.cpp || cmake_object_order_depends_target_ffi_google_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
   DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\ffiOboeExport.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
   INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp
 build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/OboeFfiStream.cpp || cmake_object_order_depends_target_ffi_google_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
   DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\OboeFfiStream.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
   INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp
 build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPCallback.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/DSPCallback.cpp || cmake_object_order_depends_target_ffi_google_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
   DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\DSPCallback.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
   INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp
 build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/audio/AAssetDataSource.cpp || cmake_object_order_depends_target_ffi_google_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
   DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio\AAssetDataSource.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
   INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio
 build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/audio/Player.cpp || cmake_object_order_depends_target_ffi_google_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
   DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio\Player.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
+  INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
+  OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
+  OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio
+build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/BufferMediaDataSource.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/audio/BufferMediaDataSource.cpp || cmake_object_order_depends_target_ffi_google_oboe
+  DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
+  DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio\BufferMediaDataSource.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
   INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio
 build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/NDKExtractor.cpp.o: CXX_COMPILER__ffi_google_oboe ../../../../src/main/cpp/audio/NDKExtractor.cpp || cmake_object_order_depends_target_ffi_google_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1 -Dffi_google_oboe_EXPORTS
   DEP_FILE = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio\NDKExtractor.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -Wall -Wextra -pedantic -std=c++1z
   INCLUDES = -I../../../../../../oboe/include -I../../../../src/main/cpp -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
   OBJECT_FILE_DIR = CMakeFiles\ffi_google_oboe.dir\src\main\cpp\audio
@@ -87,8 +94,8 @@ build CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/NDKExtractor.cpp.o: CXX_
 #############################################
 # Link the shared library C:\Users\facun\OneDrive\Desktop\ITBA\6C-ASSD\ASSD-TP4\ffi_google_oboe\example\build\ffi_google_oboe\intermediates\cmake\customDebugType\obj\x86\libffi_google_oboe.so
 
-build C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/customDebugType/obj/x86/libffi_google_oboe.so: CXX_SHARED_LIBRARY_LINKER__ffi_google_oboe CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPCallback.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/NDKExtractor.cpp.o | oboe/liboboe.a oboe/liboboe.a || oboe/liboboe.a
-  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
+build C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/ffi_google_oboe/example/build/ffi_google_oboe/intermediates/cmake/customDebugType/obj/x86/libffi_google_oboe.so: CXX_SHARED_LIBRARY_LINKER__ffi_google_oboe CMakeFiles/ffi_google_oboe.dir/src/main/cpp/ffiOboeExport.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/OboeFfiStream.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/DSPCallback.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/AAssetDataSource.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/Player.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/BufferMediaDataSource.cpp.o CMakeFiles/ffi_google_oboe.dir/src/main/cpp/audio/NDKExtractor.cpp.o | oboe/liboboe.a oboe/liboboe.a || oboe/liboboe.a
+  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
   LINK_LIBRARIES = -llog -landroid oboe/liboboe.a -lGLESv2 -lmediandk oboe/liboboe.a -llog -lOpenSLES -latomic -lm
   OBJECT_DIR = CMakeFiles\ffi_google_oboe.dir
@@ -168,343 +175,343 @@ build cmake_object_order_depends_target_oboe: phony
 build oboe/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/aaudio/AAudioLoader.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\aaudio\AAudioLoader.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\aaudio
 build oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/aaudio/AudioStreamAAudio.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\aaudio\AudioStreamAAudio.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\aaudio
 build oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/AudioSourceCaller.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\AudioSourceCaller.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/AudioStream.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\AudioStream.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/AudioStreamBuilder.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\AudioStreamBuilder.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/DataConversionFlowGraph.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\DataConversionFlowGraph.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/FilterAudioStream.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\FilterAudioStream.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/FixedBlockAdapter.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\FixedBlockAdapter.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/FixedBlockReader.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\FixedBlockReader.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/FixedBlockWriter.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\FixedBlockWriter.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/LatencyTuner.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\LatencyTuner.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/SourceFloatCaller.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\SourceFloatCaller.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/SourceI16Caller.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\SourceI16Caller.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/Utilities.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\Utilities.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/QuirksManager.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\QuirksManager.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/fifo/FifoBuffer.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\fifo\FifoBuffer.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\fifo
 build oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/fifo/FifoController.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\fifo\FifoController.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\fifo
 build oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/fifo/FifoControllerBase.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\fifo\FifoControllerBase.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\fifo
 build oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/fifo/FifoControllerIndirect.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\fifo\FifoControllerIndirect.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\fifo
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/FlowGraphNode.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\FlowGraphNode.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/ClipToRange.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\ClipToRange.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/ManyToMultiConverter.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\ManyToMultiConverter.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/MonoToMultiConverter.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\MonoToMultiConverter.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/RampLinear.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\RampLinear.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/SampleRateConverter.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\SampleRateConverter.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/SinkFloat.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\SinkFloat.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/SinkI16.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\SinkI16.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/SinkI24.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\SinkI24.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/SourceFloat.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\SourceFloat.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/SourceI16.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\SourceI16.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/SourceI24.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\SourceI24.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/resampler/IntegerRatio.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\IntegerRatio.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/resampler/LinearResampler.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\LinearResampler.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\MultiChannelResampler.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/resampler/PolyphaseResampler.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\PolyphaseResampler.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/resampler/PolyphaseResamplerMono.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\PolyphaseResamplerMono.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\PolyphaseResamplerStereo.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/resampler/SincResampler.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\SincResampler.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
 build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/flowgraph/resampler/SincResamplerStereo.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\SincResamplerStereo.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
 build oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/opensles/AudioInputStreamOpenSLES.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\opensles\AudioInputStreamOpenSLES.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\opensles
 build oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/opensles/AudioOutputStreamOpenSLES.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\opensles\AudioOutputStreamOpenSLES.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\opensles
 build oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/opensles/AudioStreamBuffered.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\opensles\AudioStreamBuffered.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\opensles
 build oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/opensles/AudioStreamOpenSLES.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\opensles\AudioStreamOpenSLES.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\opensles
 build oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/opensles/EngineOpenSLES.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\opensles\EngineOpenSLES.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\opensles
 build oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/opensles/OpenSLESUtilities.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\opensles\OpenSLESUtilities.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\opensles
 build oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/opensles/OutputMixerOpenSLES.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\opensles\OutputMixerOpenSLES.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\opensles
 build oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/StabilizedCallback.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\StabilizedCallback.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/Trace.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\Trace.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
 build oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o: CXX_COMPILER__oboe C$:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src/common/Version.cpp || cmake_object_order_depends_target_oboe
   DEFINES = -DOBOE_ENABLE_LOGGING=1
   DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\Version.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++1z
   INCLUDES = -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/src -IC:/Users/facun/OneDrive/Desktop/ITBA/6C-ASSD/ASSD-TP4/oboe/include
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
@@ -517,7 +524,7 @@ build oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o: CXX_COMPILER__oboe C$:/
 # Link the static library oboe\liboboe.a
 
 build oboe/liboboe.a: CXX_STATIC_LIBRARY_LINKER__oboe oboe/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o oboe/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o oboe/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o oboe/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
+  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
   OBJECT_DIR = oboe\CMakeFiles\oboe.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

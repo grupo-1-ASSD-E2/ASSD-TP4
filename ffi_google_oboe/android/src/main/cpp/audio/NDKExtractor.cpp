@@ -18,7 +18,7 @@
 #include <cstring>
 
 #include <media/NdkMediaExtractor.h>
-#include <media/NdkMediaDataSource.h>
+#include <audio/BufferMediaDataSource.h>
 #include <utils/logging.h>
 #include <cinttypes>
 
@@ -190,7 +190,7 @@ int32_t NDKExtractor::decode(AAsset *asset,
     return bytesWritten;
 }
 
-int32_t NDKExtractor::decode(uint8_t *asset_as_buffer, size_t len, uint8_t *targetData, AudioProperties &outputProperties) {
+int32_t NDKExtractor::decode(uint8_t *assetAsBuffer, size_t len, uint8_t *targetData, AudioProperties &outputProperties) {
     LOGD("Using NDK decoder");
 
     // open asset as file descriptor
@@ -199,8 +199,8 @@ int32_t NDKExtractor::decode(uint8_t *asset_as_buffer, size_t len, uint8_t *targ
 
     // Extract the audio frames
     AMediaExtractor* extractor = AMediaExtractor_new();
-    AMediaDataSource* mediaSource = AMediaDataSource_new();
-    media_status_t amresult = AMediaExtractor_setDataSourceCustom(extractor, );
+    BufferMediaDataSource bufferMediaSource(AMediaDataSource_new(), assetAsBuffer, len);
+    media_status_t amresult = AMediaExtractor_setDataSourceCustom(extractor, bufferMediaSource.get());
     if (amresult != AMEDIA_OK){
         LOGE("Error setting extractor data source, err %d", amresult);
         return 0;
